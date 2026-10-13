@@ -1,0 +1,8 @@
+[submodule "Railway_hep"]
+	path = Railway_hep
+	url = https://github.com/JungWonSeok97/Railway_hep.git
+	branch = main
+[submodule "survey"]
+	path = survey
+	url = https://github.com/JungWonSeok97/survey.git
+	branch = main
