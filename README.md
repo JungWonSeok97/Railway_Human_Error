@@ -1,11 +1,12 @@
 # Railway Human Error
 
-철도 인적 오류 관련 프로젝트를 연결하는 상위 저장소입니다. 두 프로젝트는 Git 서브모듈로 등록되어 있으며 각 저장소에서 독립적으로 관리합니다.
+철도 인적 오류 관련 프로젝트를 연결하는 상위 저장소입니다. 세 프로젝트는 Git 서브모듈로 등록되어 있으며 각 저장소에서 독립적으로 관리합니다.
 
 | 경로 | 저장소 | 역할 |
 | --- | --- | --- |
 | `Railway_hep/` | [Railway_hep](https://github.com/JungWonSeok97/Railway_hep) | PSF 및 HEP 예측 웹앱 |
 | `survey/` | [survey](https://github.com/JungWonSeok97/survey) | 설문 프로젝트 |
+| `rail-psf-accuracy-memo/` | [rail-psf-accuracy-memo](https://github.com/abitocodes/rail-psf-accuracy-memo) | 철도 PSF 정확도 메모 프로젝트 |
 
 ## 전체 프로젝트 내려받기
 
@@ -27,9 +28,9 @@ git submodule update --init --recursive
 최신 `main` 커밋을 확인하고 반영하려면 상위 저장소에서 실행합니다.
 
 ```bash
-git submodule update --remote Railway_hep survey
+git submodule update --remote Railway_hep survey rail-psf-accuracy-memo
 git diff --submodule
-git add Railway_hep survey
+git add Railway_hep survey rail-psf-accuracy-memo
 git commit -m "Update submodule references"
 git push origin main
 ```

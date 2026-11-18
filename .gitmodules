@@ -6,3 +6,7 @@
 	path = survey
 	url = https://github.com/JungWonSeok97/survey.git
 	branch = main
+[submodule "rail-psf-accuracy-memo"]
+	path = rail-psf-accuracy-memo
+	url = https://github.com/abitocodes/rail-psf-accuracy-memo.git
+	branch = main
