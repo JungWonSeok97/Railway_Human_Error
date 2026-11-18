@@ -1,0 +1,2249 @@
+{
+ "catboost": {
+  "per_item_ms_single_cpu": 9.342,
+  "items": 630
+ },
+ "runs": {
+  "baseline-item-mean": {
+   "n": 630,
+   "errors": 0,
+   "unparsed": 0,
+   "per_psf": {
+    "1": {
+     "n": 90,
+     "accuracy": 0.533,
+     "macro_f1": 0.504,
+     "qwk": 0.449,
+     "mean_abs_level_err": 0.5,
+     "pred_dist": {
+      "보통": 15,
+      "나쁨": 53,
+      "매우나쁨": 22
+     },
+     "confusion": {
+      "보통->보통": 15,
+      "보통->나쁨": 25,
+      "보통->매우나쁨": 3,
+      "나쁨->매우나쁨": 13,
+      "나쁨->나쁨": 27,
+      "매우나쁨->매우나쁨": 6,
+      "매우나쁨->나쁨": 1
+     }
+    },
+    "2": {
+     "n": 90,
+     "accuracy": 0.722,
+     "macro_f1": 0.727,
+     "qwk": 0.742,
+     "mean_abs_level_err": 0.278,
+     "pred_dist": {
+      "보통": 53,
+      "좋음": 17,
+      "나쁨": 20
+     },
+     "confusion": {
+      "좋음->보통": 13,
+      "좋음->좋음": 17,
+      "보통->보통": 29,
+      "보통->나쁨": 1,
+      "나쁨->보통": 11,
+      "나쁨->나쁨": 19
+     }
+    },
+    "3": {
+     "n": 90,
+     "accuracy": 0.622,
+     "macro_f1": 0.629,
+     "qwk": 0.653,
+     "mean_abs_level_err": 0.378,
+     "pred_dist": {
+      "보통": 52,
+      "좋음": 14,
+      "나쁨": 24
+     },
+     "confusion": {
+      "좋음->보통": 16,
+      "좋음->좋음": 14,
+      "보통->보통": 24,
+      "보통->나쁨": 6,
+      "나쁨->보통": 12,
+      "나쁨->나쁨": 18
+     }
+    },
+    "5": {
+     "n": 90,
+     "accuracy": 0.756,
+     "macro_f1": 0.743,
+     "qwk": 0.511,
+     "mean_abs_level_err": 0.244,
+     "pred_dist": {
+      "나쁨": 65,
+      "보통": 25
+     },
+     "confusion": {
+      "보통->나쁨": 21,
+      "보통->보통": 24,
+      "나쁨->나쁨": 44,
+      "나쁨->보통": 1
+     }
+    },
+    "6": {
+     "n": 90,
+     "accuracy": 0.711,
+     "macro_f1": 0.416,
+     "qwk": 0.0,
+     "mean_abs_level_err": 0.289,
+     "pred_dist": {
+      "나쁨": 64,
+      "보통": 26
+     },
+     "confusion": {
+      "나쁨->나쁨": 64,
+      "나쁨->보통": 26
+     }
+    },
+    "7": {
+     "n": 90,
+     "accuracy": 0.467,
+     "macro_f1": 0.46,
+     "qwk": 0.488,
+     "mean_abs_level_err": 0.556,
+     "pred_dist": {
+      "좋음": 27,
+      "보통": 47,
+      "나쁨": 16
+     },
+     "confusion": {
+      "좋음->좋음": 7,
+      "보통->좋음": 18,
+      "보통->보통": 19,
+      "나쁨->보통": 28,
+      "나쁨->나쁨": 16,
+      "나쁨->좋음": 2
+     }
+    },
+    "8": {
+     "n": 90,
+     "accuracy": 0.7,
+     "macro_f1": 0.708,
+     "qwk": 0.738,
+     "mean_abs_level_err": 0.3,
+     "pred_dist": {
+      "약간 높음": 47,
+      "보통": 21,
+      "매우 높음": 22
+     },
+     "confusion": {
+      "보통->약간 높음": 12,
+      "보통->보통": 18,
+      "약간 높음->보통": 3,
+      "약간 높음->약간 높음": 25,
+      "약간 높음->매우 높음": 2,
+      "매우 높음->매우 높음": 20,
+      "매우 높음->약간 높음": 10
+     }
+    }
+   },
+   "accuracy_all": 0.644,
+   "accuracy_excl_f6": 0.633,
+   "macro_f1_mean_excl_f6": 0.628,
+   "hep": {
+    "profiles": 200,
+    "median_abs_log10_err": 0.034,
+    "within_x2": 0.855,
+    "within_x10": 0.985,
+    "same_order_of_magnitude": 0.845
+   },
+   "psf_multiplier": {
+    "median_abs_log10_err": 0.98,
+    "within_x2": 0.14,
+    "within_x10": 0.52
+   }
+  },
+  "baseline-logreg-9shot": {
+   "n": 630,
+   "errors": 0,
+   "unparsed": 0,
+   "per_psf": {
+    "1": {
+     "n": 90,
+     "accuracy": 0.489,
+     "macro_f1": 0.428,
+     "qwk": 0.447,
+     "mean_abs_level_err": 0.522,
+     "pred_dist": {
+      "보통": 40,
+      "나쁨": 33,
+      "매우나쁨": 17
+     },
+     "confusion": {
+      "보통->보통": 27,
+      "보통->나쁨": 16,
+      "나쁨->매우나쁨": 14,
+      "나쁨->나쁨": 14,
+      "나쁨->보통": 12,
+      "매우나쁨->나쁨": 3,
+      "매우나쁨->매우나쁨": 3,
+      "매우나쁨->보통": 1
+     }
+    },
+    "2": {
+     "n": 90,
+     "accuracy": 0.644,
+     "macro_f1": 0.627,
+     "qwk": 0.75,
+     "mean_abs_level_err": 0.356,
+     "pred_dist": {
+      "좋음": 44,
+      "보통": 22,
+      "나쁨": 24
+     },
+     "confusion": {
+      "좋음->좋음": 28,
+      "좋음->보통": 2,
+      "보통->좋음": 16,
+      "보통->보통": 10,
+      "보통->나쁨": 4,
+      "나쁨->나쁨": 20,
+      "나쁨->보통": 10
+     }
+    },
+    "3": {
+     "n": 90,
+     "accuracy": 0.478,
+     "macro_f1": 0.489,
+     "qwk": 0.519,
+     "mean_abs_level_err": 0.533,
+     "pred_dist": {
+      "보통": 46,
+      "좋음": 25,
+      "나쁨": 19
+     },
+     "confusion": {
+      "좋음->보통": 14,
+      "좋음->좋음": 16,
+      "보통->보통": 15,
+      "보통->좋음": 8,
+      "보통->나쁨": 7,
+      "나쁨->보통": 17,
+      "나쁨->나쁨": 12,
+      "나쁨->좋음": 1
+     }
+    },
+    "5": {
+     "n": 90,
+     "accuracy": 0.622,
+     "macro_f1": 0.575,
+     "qwk": 0.244,
+     "mean_abs_level_err": 0.378,
+     "pred_dist": {
+      "보통": 75,
+      "나쁨": 15
+     },
+     "confusion": {
+      "보통->보통": 43,
+      "보통->나쁨": 2,
+      "나쁨->보통": 32,
+      "나쁨->나쁨": 13
+     }
+    },
+    "6": {
+     "n": 90,
+     "accuracy": 1.0,
+     "macro_f1": 1.0,
+     "qwk": NaN,
+     "mean_abs_level_err": 0.0,
+     "pred_dist": {
+      "나쁨": 90
+     },
+     "confusion": {
+      "나쁨->나쁨": 90
+     }
+    },
+    "7": {
+     "n": 90,
+     "accuracy": 0.578,
+     "macro_f1": 0.507,
+     "qwk": 0.579,
+     "mean_abs_level_err": 0.444,
+     "pred_dist": {
+      "좋음": 24,
+      "보통": 15,
+      "나쁨": 51
+     },
+     "confusion": {
+      "좋음->좋음": 7,
+      "보통->좋음": 15,
+      "보통->보통": 8,
+      "보통->나쁨": 14,
+      "나쁨->나쁨": 37,
+      "나쁨->보통": 7,
+      "나쁨->좋음": 2
+     }
+    },
+    "8": {
+     "n": 90,
+     "accuracy": 0.722,
+     "macro_f1": 0.69,
+     "qwk": 0.815,
+     "mean_abs_level_err": 0.278,
+     "pred_dist": {
+      "보통": 41,
+      "매우 높음": 34,
+      "약간 높음": 15
+     },
+     "confusion": {
+      "보통->보통": 30,
+      "약간 높음->보통": 11,
+      "약간 높음->매우 높음": 9,
+      "약간 높음->약간 높음": 10,
+      "매우 높음->매우 높음": 25,
+      "매우 높음->약간 높음": 5
+     }
+    }
+   },
+   "accuracy_all": 0.648,
+   "accuracy_excl_f6": 0.589,
+   "macro_f1_mean_excl_f6": 0.553,
+   "latency_s": {
+    "p50": 0.0,
+    "p90": 0.0,
+    "max": 0.0
+   },
+   "hep": {
+    "profiles": 200,
+    "median_abs_log10_err": 0.046,
+    "within_x2": 0.795,
+    "within_x10": 0.96,
+    "same_order_of_magnitude": 0.805
+   },
+   "psf_multiplier": {
+    "median_abs_log10_err": 0.932,
+    "within_x2": 0.16,
+    "within_x10": 0.535
+   }
+  },
+  "baseline-majority": {
+   "n": 630,
+   "errors": 0,
+   "unparsed": 0,
+   "per_psf": {
+    "1": {
+     "n": 90,
+     "accuracy": 0.478,
+     "macro_f1": 0.216,
+     "qwk": 0.0,
+     "mean_abs_level_err": 0.6,
+     "pred_dist": {
+      "보통": 90
+     },
+     "confusion": {
+      "보통->보통": 43,
+      "나쁨->보통": 40,
+      "매우나쁨->보통": 7
+     }
+    },
+    "2": {
+     "n": 90,
+     "accuracy": 0.333,
+     "macro_f1": 0.167,
+     "qwk": 0.0,
+     "mean_abs_level_err": 0.667,
+     "pred_dist": {
+      "보통": 90
+     },
+     "confusion": {
+      "좋음->보통": 30,
+      "보통->보통": 30,
+      "나쁨->보통": 30
+     }
+    },
+    "3": {
+     "n": 90,
+     "accuracy": 0.333,
+     "macro_f1": 0.167,
+     "qwk": 0.0,
+     "mean_abs_level_err": 0.667,
+     "pred_dist": {
+      "보통": 90
+     },
+     "confusion": {
+      "좋음->보통": 30,
+      "보통->보통": 30,
+      "나쁨->보통": 30
+     }
+    },
+    "5": {
+     "n": 90,
+     "accuracy": 0.5,
+     "macro_f1": 0.333,
+     "qwk": 0.0,
+     "mean_abs_level_err": 0.5,
+     "pred_dist": {
+      "보통": 90
+     },
+     "confusion": {
+      "보통->보통": 45,
+      "나쁨->보통": 45
+     }
+    },
+    "6": {
+     "n": 90,
+     "accuracy": 1.0,
+     "macro_f1": 1.0,
+     "qwk": NaN,
+     "mean_abs_level_err": 0.0,
+     "pred_dist": {
+      "나쁨": 90
+     },
+     "confusion": {
+      "나쁨->나쁨": 90
+     }
+    },
+    "7": {
+     "n": 90,
+     "accuracy": 0.511,
+     "macro_f1": 0.225,
+     "qwk": 0.0,
+     "mean_abs_level_err": 0.567,
+     "pred_dist": {
+      "나쁨": 90
+     },
+     "confusion": {
+      "좋음->나쁨": 7,
+      "보통->나쁨": 37,
+      "나쁨->나쁨": 46
+     }
+    },
+    "8": {
+     "n": 90,
+     "accuracy": 0.333,
+     "macro_f1": 0.167,
+     "qwk": 0.0,
+     "mean_abs_level_err": 0.667,
+     "pred_dist": {
+      "약간 높음": 90
+     },
+     "confusion": {
+      "보통->약간 높음": 30,
+      "약간 높음->약간 높음": 30,
+      "매우 높음->약간 높음": 30
+     }
+    }
+   },
+   "accuracy_all": 0.498,
+   "accuracy_excl_f6": 0.415,
+   "macro_f1_mean_excl_f6": 0.213,
+   "hep": {
+    "profiles": 200,
+    "median_abs_log10_err": 0.056,
+    "within_x2": 0.885,
+    "within_x10": 0.98,
+    "same_order_of_magnitude": 0.835
+   },
+   "psf_multiplier": {
+    "median_abs_log10_err": 1.132,
+    "within_x2": 0.12,
+    "within_x10": 0.45
+   }
+  },
+  "kimi-fewshot": {
+   "n": 630,
+   "errors": 0,
+   "unparsed": 0,
+   "per_psf": {
+    "1": {
+     "n": 90,
+     "accuracy": 0.711,
+     "macro_f1": 0.672,
+     "qwk": 0.66,
+     "mean_abs_level_err": 0.289,
+     "pred_dist": {
+      "보통": 33,
+      "나쁨": 46,
+      "매우나쁨": 11
+     },
+     "confusion": {
+      "보통->보통": 29,
+      "보통->나쁨": 14,
+      "나쁨->매우나쁨": 6,
+      "나쁨->나쁨": 30,
+      "나쁨->보통": 4,
+      "매우나쁨->매우나쁨": 5,
+      "매우나쁨->나쁨": 2
+     }
+    },
+    "2": {
+     "n": 90,
+     "accuracy": 0.867,
+     "macro_f1": 0.865,
+     "qwk": 0.9,
+     "mean_abs_level_err": 0.133,
+     "pred_dist": {
+      "보통": 30,
+      "좋음": 28,
+      "나쁨": 32
+     },
+     "confusion": {
+      "좋음->보통": 6,
+      "좋음->좋음": 24,
+      "보통->보통": 24,
+      "보통->좋음": 4,
+      "보통->나쁨": 2,
+      "나쁨->나쁨": 30
+     }
+    },
+    "3": {
+     "n": 90,
+     "accuracy": 0.722,
+     "macro_f1": 0.725,
+     "qwk": 0.779,
+     "mean_abs_level_err": 0.278,
+     "pred_dist": {
+      "보통": 37,
+      "좋음": 19,
+      "나쁨": 34
+     },
+     "confusion": {
+      "좋음->보통": 12,
+      "좋음->좋음": 18,
+      "보통->좋음": 1,
+      "보통->보통": 21,
+      "보통->나쁨": 8,
+      "나쁨->나쁨": 26,
+      "나쁨->보통": 4
+     }
+    },
+    "5": {
+     "n": 90,
+     "accuracy": 0.756,
+     "macro_f1": 0.748,
+     "qwk": 0.511,
+     "mean_abs_level_err": 0.244,
+     "pred_dist": {
+      "보통": 61,
+      "나쁨": 29
+     },
+     "confusion": {
+      "보통->보통": 42,
+      "보통->나쁨": 3,
+      "나쁨->나쁨": 26,
+      "나쁨->보통": 19
+     }
+    },
+    "6": {
+     "n": 90,
+     "accuracy": 1.0,
+     "macro_f1": 1.0,
+     "qwk": NaN,
+     "mean_abs_level_err": 0.0,
+     "pred_dist": {
+      "나쁨": 90
+     },
+     "confusion": {
+      "나쁨->나쁨": 90
+     }
+    },
+    "7": {
+     "n": 90,
+     "accuracy": 0.8,
+     "macro_f1": 0.752,
+     "qwk": 0.742,
+     "mean_abs_level_err": 0.2,
+     "pred_dist": {
+      "좋음": 5,
+      "보통": 29,
+      "나쁨": 56
+     },
+     "confusion": {
+      "좋음->좋음": 4,
+      "좋음->보통": 3,
+      "보통->보통": 24,
+      "보통->나쁨": 12,
+      "보통->좋음": 1,
+      "나쁨->나쁨": 44,
+      "나쁨->보통": 2
+     }
+    },
+    "8": {
+     "n": 90,
+     "accuracy": 0.856,
+     "macro_f1": 0.852,
+     "qwk": 0.894,
+     "mean_abs_level_err": 0.144,
+     "pred_dist": {
+      "보통": 35,
+      "매우 높음": 28,
+      "약간 높음": 27
+     },
+     "confusion": {
+      "보통->보통": 30,
+      "약간 높음->보통": 5,
+      "약간 높음->매우 높음": 3,
+      "약간 높음->약간 높음": 22,
+      "매우 높음->매우 높음": 25,
+      "매우 높음->약간 높음": 5
+     }
+    }
+   },
+   "accuracy_all": 0.816,
+   "accuracy_excl_f6": 0.785,
+   "macro_f1_mean_excl_f6": 0.769,
+   "latency_s": {
+    "p50": 10.738,
+    "p90": 15.893,
+    "max": 45.889
+   },
+   "completion_tokens_mean": 92.9,
+   "hep": {
+    "profiles": 200,
+    "median_abs_log10_err": 0.008,
+    "within_x2": 0.905,
+    "within_x10": 0.985,
+    "same_order_of_magnitude": 0.885
+   },
+   "psf_multiplier": {
+    "median_abs_log10_err": 0.663,
+    "within_x2": 0.28,
+    "within_x10": 0.685
+   },
+   "meta": {
+    "run": "kimi-fewshot",
+    "backend": "chat",
+    "model": "kimi-k3.1-pro",
+    "shots": true,
+    "concurrency": 12,
+    "extra": "{\"reasoning_effort\":\"low\"}",
+    "wall_s": 605.5,
+    "n": 630
+   },
+   "throughput_items_per_s": 1.04
+  },
+  "kimi-zeroshot": {
+   "n": 630,
+   "errors": 0,
+   "unparsed": 0,
+   "per_psf": {
+    "1": {
+     "n": 90,
+     "accuracy": 0.433,
+     "macro_f1": 0.43,
+     "qwk": 0.53,
+     "mean_abs_level_err": 0.578,
+     "pred_dist": {
+      "보통": 18,
+      "나쁨": 38,
+      "매우나쁨": 34
+     },
+     "confusion": {
+      "보통->보통": 18,
+      "보통->나쁨": 24,
+      "보통->매우나쁨": 1,
+      "나쁨->매우나쁨": 26,
+      "나쁨->나쁨": 14,
+      "매우나쁨->매우나쁨": 7
+     }
+    },
+    "2": {
+     "n": 90,
+     "accuracy": 0.589,
+     "macro_f1": 0.565,
+     "qwk": 0.619,
+     "mean_abs_level_err": 0.433,
+     "pred_dist": {
+      "보통": 37,
+      "나쁨": 43,
+      "좋음": 10
+     },
+     "confusion": {
+      "좋음->보통": 19,
+      "좋음->나쁨": 2,
+      "좋음->좋음": 9,
+      "보통->나쁨": 13,
+      "보통->보통": 16,
+      "보통->좋음": 1,
+      "나쁨->나쁨": 28,
+      "나쁨->보통": 2
+     }
+    },
+    "3": {
+     "n": 90,
+     "accuracy": 0.556,
+     "macro_f1": 0.533,
+     "qwk": 0.583,
+     "mean_abs_level_err": 0.456,
+     "pred_dist": {
+      "보통": 47,
+      "좋음": 7,
+      "나쁨": 36
+     },
+     "confusion": {
+      "좋음->보통": 22,
+      "좋음->좋음": 7,
+      "좋음->나쁨": 1,
+      "보통->보통": 19,
+      "보통->나쁨": 11,
+      "나쁨->나쁨": 24,
+      "나쁨->보통": 6
+     }
+    },
+    "5": {
+     "n": 90,
+     "accuracy": 0.722,
+     "macro_f1": 0.699,
+     "qwk": 0.444,
+     "mean_abs_level_err": 0.278,
+     "pred_dist": {
+      "나쁨": 70,
+      "보통": 20
+     },
+     "confusion": {
+      "보통->나쁨": 25,
+      "보통->보통": 20,
+      "나쁨->나쁨": 45
+     }
+    },
+    "6": {
+     "n": 90,
+     "accuracy": 0.978,
+     "macro_f1": 0.494,
+     "qwk": 0.0,
+     "mean_abs_level_err": 0.022,
+     "pred_dist": {
+      "나쁨": 88,
+      "보통": 2
+     },
+     "confusion": {
+      "나쁨->나쁨": 88,
+      "나쁨->보통": 2
+     }
+    },
+    "7": {
+     "n": 90,
+     "accuracy": 0.711,
+     "macro_f1": 0.565,
+     "qwk": 0.579,
+     "mean_abs_level_err": 0.289,
+     "pred_dist": {
+      "보통": 37,
+      "좋음": 1,
+      "나쁨": 52
+     },
+     "confusion": {
+      "좋음->보통": 6,
+      "좋음->좋음": 1,
+      "보통->보통": 24,
+      "보통->나쁨": 13,
+      "나쁨->나쁨": 39,
+      "나쁨->보통": 7
+     }
+    },
+    "8": {
+     "n": 90,
+     "accuracy": 0.489,
+     "macro_f1": 0.443,
+     "qwk": 0.574,
+     "mean_abs_level_err": 0.511,
+     "pred_dist": {
+      "약간 높음": 42,
+      "보통": 5,
+      "매우 높음": 43
+     },
+     "confusion": {
+      "보통->약간 높음": 26,
+      "보통->보통": 4,
+      "약간 높음->보통": 1,
+      "약간 높음->매우 높음": 16,
+      "약간 높음->약간 높음": 13,
+      "매우 높음->매우 높음": 27,
+      "매우 높음->약간 높음": 3
+     }
+    }
+   },
+   "accuracy_all": 0.64,
+   "accuracy_excl_f6": 0.583,
+   "macro_f1_mean_excl_f6": 0.539,
+   "latency_s": {
+    "p50": 10.069,
+    "p90": 14.222,
+    "max": 29.102
+   },
+   "completion_tokens_mean": 79.1,
+   "hep": {
+    "profiles": 200,
+    "median_abs_log10_err": 0.009,
+    "within_x2": 0.89,
+    "within_x10": 0.97,
+    "same_order_of_magnitude": 0.875
+   },
+   "psf_multiplier": {
+    "median_abs_log10_err": 1.275,
+    "within_x2": 0.095,
+    "within_x10": 0.395
+   },
+   "meta": {
+    "run": "kimi-zeroshot",
+    "backend": "chat",
+    "model": "kimi-k3.1-pro",
+    "shots": false,
+    "concurrency": 12,
+    "extra": "{\"reasoning_effort\":\"low\"}",
+    "wall_s": 570.2,
+    "n": 630
+   },
+   "throughput_items_per_s": 1.1
+  },
+  "nemotron-fewshot": {
+   "n": 630,
+   "errors": 0,
+   "unparsed": 0,
+   "per_psf": {
+    "1": {
+     "n": 90,
+     "accuracy": 0.567,
+     "macro_f1": 0.539,
+     "qwk": 0.485,
+     "mean_abs_level_err": 0.444,
+     "pred_dist": {
+      "보통": 23,
+      "나쁨": 52,
+      "매우나쁨": 15
+     },
+     "confusion": {
+      "보통->보통": 19,
+      "보통->나쁨": 23,
+      "보통->매우나쁨": 1,
+      "나쁨->나쁨": 27,
+      "나쁨->매우나쁨": 9,
+      "나쁨->보통": 4,
+      "매우나쁨->매우나쁨": 5,
+      "매우나쁨->나쁨": 2
+     }
+    },
+    "2": {
+     "n": 90,
+     "accuracy": 0.722,
+     "macro_f1": 0.705,
+     "qwk": 0.771,
+     "mean_abs_level_err": 0.278,
+     "pred_dist": {
+      "보통": 41,
+      "좋음": 12,
+      "나쁨": 37
+     },
+     "confusion": {
+      "좋음->보통": 18,
+      "좋음->좋음": 12,
+      "보통->보통": 23,
+      "보통->나쁨": 7,
+      "나쁨->나쁨": 30
+     }
+    },
+    "3": {
+     "n": 90,
+     "accuracy": 0.556,
+     "macro_f1": 0.547,
+     "qwk": 0.649,
+     "mean_abs_level_err": 0.444,
+     "pred_dist": {
+      "보통": 36,
+      "좋음": 12,
+      "나쁨": 42
+     },
+     "confusion": {
+      "좋음->보통": 19,
+      "좋음->좋음": 11,
+      "보통->나쁨": 16,
+      "보통->좋음": 1,
+      "보통->보통": 13,
+      "나쁨->나쁨": 26,
+      "나쁨->보통": 4
+     }
+    },
+    "5": {
+     "n": 90,
+     "accuracy": 0.778,
+     "macro_f1": 0.769,
+     "qwk": 0.556,
+     "mean_abs_level_err": 0.222,
+     "pred_dist": {
+      "보통": 27,
+      "나쁨": 63
+     },
+     "confusion": {
+      "보통->보통": 26,
+      "보통->나쁨": 19,
+      "나쁨->나쁨": 44,
+      "나쁨->보통": 1
+     }
+    },
+    "6": {
+     "n": 90,
+     "accuracy": 1.0,
+     "macro_f1": 1.0,
+     "qwk": NaN,
+     "mean_abs_level_err": 0.0,
+     "pred_dist": {
+      "나쁨": 90
+     },
+     "confusion": {
+      "나쁨->나쁨": 90
+     }
+    },
+    "7": {
+     "n": 90,
+     "accuracy": 0.7,
+     "macro_f1": 0.662,
+     "qwk": 0.624,
+     "mean_abs_level_err": 0.3,
+     "pred_dist": {
+      "보통": 40,
+      "좋음": 7,
+      "나쁨": 43
+     },
+     "confusion": {
+      "좋음->보통": 3,
+      "좋음->좋음": 4,
+      "보통->보통": 25,
+      "보통->좋음": 3,
+      "보통->나쁨": 9,
+      "나쁨->나쁨": 34,
+      "나쁨->보통": 12
+     }
+    },
+    "8": {
+     "n": 90,
+     "accuracy": 0.756,
+     "macro_f1": 0.757,
+     "qwk": 0.814,
+     "mean_abs_level_err": 0.244,
+     "pred_dist": {
+      "보통": 27,
+      "약간 높음": 32,
+      "매우 높음": 31
+     },
+     "confusion": {
+      "보통->보통": 22,
+      "보통->약간 높음": 8,
+      "약간 높음->보통": 5,
+      "약간 높음->매우 높음": 5,
+      "약간 높음->약간 높음": 20,
+      "매우 높음->매우 높음": 26,
+      "매우 높음->약간 높음": 4
+     }
+    }
+   },
+   "accuracy_all": 0.725,
+   "accuracy_excl_f6": 0.68,
+   "macro_f1_mean_excl_f6": 0.663,
+   "latency_s": {
+    "p50": 0.758,
+    "p90": 0.892,
+    "max": 1.076
+   },
+   "completion_tokens_mean": 8.8,
+   "hep": {
+    "profiles": 200,
+    "median_abs_log10_err": 0.009,
+    "within_x2": 0.895,
+    "within_x10": 0.975,
+    "same_order_of_magnitude": 0.875
+   },
+   "psf_multiplier": {
+    "median_abs_log10_err": 1.083,
+    "within_x2": 0.155,
+    "within_x10": 0.47
+   },
+   "meta": {
+    "run": "nemotron-fewshot",
+    "backend": "chat",
+    "model": "nemotron-3.5-super-vl",
+    "shots": true,
+    "concurrency": 16,
+    "extra": "{\"chat_template_kwargs\":{\"enable_thinking\":false}}",
+    "wall_s": 30.4,
+    "n": 630
+   },
+   "throughput_items_per_s": 20.72
+  },
+  "nemotron-zeroshot-temp1": {
+   "n": 630,
+   "errors": 0,
+   "unparsed": 5,
+   "per_psf": {
+    "1": {
+     "n": 90,
+     "accuracy": 0.511,
+     "macro_f1": 0.493,
+     "qwk": 0.497,
+     "mean_abs_level_err": 0.5,
+     "pred_dist": {
+      "보통": 19,
+      "나쁨": 49,
+      "매우나쁨": 22
+     },
+     "confusion": {
+      "보통->보통": 17,
+      "보통->나쁨": 25,
+      "나쁨->나쁨": 23,
+      "나쁨->매우나쁨": 15,
+      "매우나쁨->나쁨": 1,
+      "매우나쁨->매우나쁨": 6,
+      "보통->매우나쁨": 1,
+      "나쁨->보통": 2
+     }
+    },
+    "2": {
+     "n": 90,
+     "accuracy": 0.511,
+     "macro_f1": 0.441,
+     "qwk": 0.519,
+     "mean_abs_level_err": 0.511,
+     "pred_dist": {
+      "보통": 46,
+      "나쁨": 42,
+      "좋음": 2
+     },
+     "confusion": {
+      "좋음->보통": 26,
+      "좋음->나쁨": 2,
+      "좋음->좋음": 2,
+      "보통->나쁨": 13,
+      "보통->보통": 17,
+      "나쁨->나쁨": 27,
+      "나쁨->보통": 3
+     }
+    },
+    "3": {
+     "n": 90,
+     "accuracy": 0.511,
+     "macro_f1": 0.52,
+     "qwk": 0.505,
+     "mean_abs_level_err": 0.522,
+     "pred_dist": {
+      "보통": 43,
+      "좋음": 13,
+      "나쁨": 34
+     },
+     "confusion": {
+      "좋음->보통": 16,
+      "좋음->좋음": 12,
+      "좋음->나쁨": 2,
+      "보통->보통": 16,
+      "보통->나쁨": 14,
+      "나쁨->나쁨": 18,
+      "나쁨->보통": 11,
+      "나쁨->좋음": 1
+     }
+    },
+    "5": {
+     "n": 90,
+     "accuracy": 0.622,
+     "macro_f1": 0.559,
+     "qwk": 0.244,
+     "mean_abs_level_err": 0.378,
+     "pred_dist": {
+      "나쁨": 79,
+      "보통": 11
+     },
+     "confusion": {
+      "보통->나쁨": 34,
+      "보통->보통": 11,
+      "나쁨->나쁨": 45
+     }
+    },
+    "6": {
+     "n": 90,
+     "accuracy": 0.8,
+     "macro_f1": 0.444,
+     "qwk": 0.0,
+     "mean_abs_level_err": 0.2,
+     "pred_dist": {
+      "나쁨": 72,
+      "보통": 18
+     },
+     "confusion": {
+      "나쁨->나쁨": 72,
+      "나쁨->보통": 18
+     }
+    },
+    "7": {
+     "n": 90,
+     "accuracy": 0.611,
+     "macro_f1": 0.562,
+     "qwk": 0.429,
+     "mean_abs_level_err": 0.389,
+     "pred_dist": {
+      "보통": 54,
+      "좋음": 2,
+      "나쁨": 34
+     },
+     "confusion": {
+      "좋음->보통": 5,
+      "좋음->좋음": 2,
+      "보통->보통": 28,
+      "보통->나쁨": 9,
+      "나쁨->나쁨": 25,
+      "나쁨->보통": 21
+     }
+    },
+    "8": {
+     "n": 90,
+     "accuracy": 0.511,
+     "macro_f1": 0.507,
+     "qwk": 0.463,
+     "mean_abs_level_err": 0.576,
+     "pred_dist": {
+      "보통": 46,
+      "약간 높음": 15,
+      "None": 5,
+      "매우 높음": 24
+     },
+     "confusion": {
+      "보통->보통": 22,
+      "보통->약간 높음": 5,
+      "보통->None": 3,
+      "약간 높음->보통": 14,
+      "약간 높음->약간 높음": 7,
+      "약간 높음->None": 2,
+      "약간 높음->매우 높음": 7,
+      "매우 높음->매우 높음": 17,
+      "매우 높음->약간 높음": 3,
+      "매우 높음->보통": 10
+     }
+    }
+   },
+   "accuracy_all": 0.583,
+   "accuracy_excl_f6": 0.546,
+   "macro_f1_mean_excl_f6": 0.514,
+   "latency_s": {
+    "p50": 0.375,
+    "p90": 0.467,
+    "max": 0.571
+   },
+   "completion_tokens_mean": 8.7,
+   "hep": {
+    "profiles": 191,
+    "median_abs_log10_err": 0.019,
+    "within_x2": 0.874,
+    "within_x10": 0.969,
+    "same_order_of_magnitude": 0.874
+   },
+   "psf_multiplier": {
+    "median_abs_log10_err": 1.083,
+    "within_x2": 0.147,
+    "within_x10": 0.455
+   },
+   "meta": {
+    "run": "nemotron-zeroshot-temp1",
+    "backend": "chat",
+    "model": "nemotron-3.5-super-vl",
+    "shots": false,
+    "concurrency": 16,
+    "extra": "{\"chat_template_kwargs\":{\"enable_thinking\":false}}",
+    "wall_s": 15.9,
+    "n": 630
+   },
+   "throughput_items_per_s": 39.62
+  },
+  "nemotron-zeroshot-think": {
+   "n": 630,
+   "errors": 0,
+   "unparsed": 2,
+   "per_psf": {
+    "1": {
+     "n": 90,
+     "accuracy": 0.544,
+     "macro_f1": 0.514,
+     "qwk": 0.473,
+     "mean_abs_level_err": 0.456,
+     "pred_dist": {
+      "보통": 13,
+      "매우나쁨": 14,
+      "나쁨": 63
+     },
+     "confusion": {
+      "보통->보통": 13,
+      "나쁨->매우나쁨": 9,
+      "보통->나쁨": 30,
+      "나쁨->나쁨": 31,
+      "매우나쁨->매우나쁨": 5,
+      "매우나쁨->나쁨": 2
+     }
+    },
+    "2": {
+     "n": 90,
+     "accuracy": 0.611,
+     "macro_f1": 0.582,
+     "qwk": 0.667,
+     "mean_abs_level_err": 0.4,
+     "pred_dist": {
+      "좋음": 9,
+      "보통": 36,
+      "나쁨": 45
+     },
+     "confusion": {
+      "좋음->좋음": 9,
+      "좋음->보통": 20,
+      "보통->나쁨": 14,
+      "보통->보통": 16,
+      "나쁨->나쁨": 30,
+      "좋음->나쁨": 1
+     }
+    },
+    "3": {
+     "n": 90,
+     "accuracy": 0.556,
+     "macro_f1": 0.551,
+     "qwk": 0.613,
+     "mean_abs_level_err": 0.456,
+     "pred_dist": {
+      "좋음": 12,
+      "보통": 39,
+      "나쁨": 39
+     },
+     "confusion": {
+      "좋음->좋음": 11,
+      "좋음->보통": 18,
+      "보통->보통": 15,
+      "보통->나쁨": 14,
+      "좋음->나쁨": 1,
+      "나쁨->나쁨": 24,
+      "보통->좋음": 1,
+      "나쁨->보통": 6
+     }
+    },
+    "5": {
+     "n": 90,
+     "accuracy": 0.633,
+     "macro_f1": 0.576,
+     "qwk": 0.267,
+     "mean_abs_level_err": 0.367,
+     "pred_dist": {
+      "나쁨": 78,
+      "보통": 12
+     },
+     "confusion": {
+      "보통->나쁨": 33,
+      "보통->보통": 12,
+      "나쁨->나쁨": 45
+     }
+    },
+    "6": {
+     "n": 90,
+     "accuracy": 0.978,
+     "macro_f1": 0.494,
+     "qwk": 0.0,
+     "mean_abs_level_err": 0.011,
+     "pred_dist": {
+      "나쁨": 88,
+      "None": 1,
+      "보통": 1
+     },
+     "confusion": {
+      "나쁨->나쁨": 88,
+      "나쁨->None": 1,
+      "나쁨->보통": 1
+     }
+    },
+    "7": {
+     "n": 90,
+     "accuracy": 0.522,
+     "macro_f1": 0.469,
+     "qwk": 0.36,
+     "mean_abs_level_err": 0.562,
+     "pred_dist": {
+      "보통": 31,
+      "좋음": 25,
+      "나쁨": 33,
+      "None": 1
+     },
+     "confusion": {
+      "좋음->보통": 3,
+      "좋음->좋음": 4,
+      "보통->보통": 17,
+      "보통->좋음": 13,
+      "보통->나쁨": 7,
+      "나쁨->나쁨": 26,
+      "나쁨->보통": 11,
+      "나쁨->좋음": 8,
+      "나쁨->None": 1
+     }
+    },
+    "8": {
+     "n": 90,
+     "accuracy": 0.567,
+     "macro_f1": 0.548,
+     "qwk": 0.661,
+     "mean_abs_level_err": 0.433,
+     "pred_dist": {
+      "보통": 13,
+      "약간 높음": 35,
+      "매우 높음": 42
+     },
+     "confusion": {
+      "보통->보통": 10,
+      "보통->약간 높음": 20,
+      "약간 높음->보통": 3,
+      "약간 높음->매우 높음": 14,
+      "약간 높음->약간 높음": 13,
+      "매우 높음->매우 높음": 28,
+      "매우 높음->약간 높음": 2
+     }
+    }
+   },
+   "accuracy_all": 0.63,
+   "accuracy_excl_f6": 0.572,
+   "macro_f1_mean_excl_f6": 0.54,
+   "latency_s": {
+    "p50": 7.4,
+    "p90": 18.062,
+    "max": 45.064
+   },
+   "completion_tokens_mean": 954.3,
+   "hep": {
+    "profiles": 193,
+    "median_abs_log10_err": 0.01,
+    "within_x2": 0.87,
+    "within_x10": 0.969,
+    "same_order_of_magnitude": 0.865
+   },
+   "psf_multiplier": {
+    "median_abs_log10_err": 1.24,
+    "within_x2": 0.114,
+    "within_x10": 0.409
+   },
+   "meta": {
+    "run": "nemotron-zeroshot-think",
+    "backend": "chat",
+    "model": "nemotron-3.5-super-vl",
+    "shots": false,
+    "concurrency": 32,
+    "extra": "{\"chat_template_kwargs\":{\"enable_thinking\":true}}",
+    "wall_s": 194.6,
+    "n": 630
+   },
+   "throughput_items_per_s": 3.24
+  },
+  "nemotron-zeroshot": {
+   "n": 630,
+   "errors": 0,
+   "unparsed": 0,
+   "per_psf": {
+    "1": {
+     "n": 90,
+     "accuracy": 0.533,
+     "macro_f1": 0.513,
+     "qwk": 0.426,
+     "mean_abs_level_err": 0.489,
+     "pred_dist": {
+      "보통": 15,
+      "나쁨": 58,
+      "매우나쁨": 17
+     },
+     "confusion": {
+      "보통->보통": 13,
+      "보통->나쁨": 28,
+      "보통->매우나쁨": 2,
+      "나쁨->매우나쁨": 9,
+      "나쁨->나쁨": 29,
+      "나쁨->보통": 2,
+      "매우나쁨->매우나쁨": 6,
+      "매우나쁨->나쁨": 1
+     }
+    },
+    "2": {
+     "n": 90,
+     "accuracy": 0.544,
+     "macro_f1": 0.48,
+     "qwk": 0.61,
+     "mean_abs_level_err": 0.456,
+     "pred_dist": {
+      "보통": 45,
+      "좋음": 3,
+      "나쁨": 42
+     },
+     "confusion": {
+      "좋음->보통": 27,
+      "좋음->좋음": 3,
+      "보통->보통": 17,
+      "보통->나쁨": 13,
+      "나쁨->나쁨": 29,
+      "나쁨->보통": 1
+     }
+    },
+    "3": {
+     "n": 90,
+     "accuracy": 0.6,
+     "macro_f1": 0.599,
+     "qwk": 0.661,
+     "mean_abs_level_err": 0.411,
+     "pred_dist": {
+      "보통": 35,
+      "좋음": 15,
+      "나쁨": 40
+     },
+     "confusion": {
+      "좋음->보통": 15,
+      "좋음->좋음": 14,
+      "좋음->나쁨": 1,
+      "보통->나쁨": 14,
+      "보통->보통": 15,
+      "보통->좋음": 1,
+      "나쁨->나쁨": 25,
+      "나쁨->보통": 5
+     }
+    },
+    "5": {
+     "n": 90,
+     "accuracy": 0.589,
+     "macro_f1": 0.505,
+     "qwk": 0.178,
+     "mean_abs_level_err": 0.411,
+     "pred_dist": {
+      "나쁨": 82,
+      "보통": 8
+     },
+     "confusion": {
+      "보통->나쁨": 37,
+      "보통->보통": 8,
+      "나쁨->나쁨": 45
+     }
+    },
+    "6": {
+     "n": 90,
+     "accuracy": 0.856,
+     "macro_f1": 0.461,
+     "qwk": 0.0,
+     "mean_abs_level_err": 0.144,
+     "pred_dist": {
+      "나쁨": 77,
+      "보통": 13
+     },
+     "confusion": {
+      "나쁨->나쁨": 77,
+      "나쁨->보통": 13
+     }
+    },
+    "7": {
+     "n": 90,
+     "accuracy": 0.622,
+     "macro_f1": 0.569,
+     "qwk": 0.441,
+     "mean_abs_level_err": 0.378,
+     "pred_dist": {
+      "보통": 57,
+      "좋음": 2,
+      "나쁨": 31
+     },
+     "confusion": {
+      "좋음->보통": 5,
+      "좋음->좋음": 2,
+      "보통->보통": 30,
+      "보통->나쁨": 7,
+      "나쁨->나쁨": 24,
+      "나쁨->보통": 22
+     }
+    },
+    "8": {
+     "n": 90,
+     "accuracy": 0.633,
+     "macro_f1": 0.603,
+     "qwk": 0.647,
+     "mean_abs_level_err": 0.422,
+     "pred_dist": {
+      "약간 높음": 14,
+      "보통": 41,
+      "매우 높음": 35
+     },
+     "confusion": {
+      "보통->약간 높음": 6,
+      "보통->보통": 24,
+      "약간 높음->보통": 12,
+      "약간 높음->약간 높음": 8,
+      "약간 높음->매우 높음": 10,
+      "매우 높음->매우 높음": 25,
+      "매우 높음->보통": 5
+     }
+    }
+   },
+   "accuracy_all": 0.625,
+   "accuracy_excl_f6": 0.587,
+   "macro_f1_mean_excl_f6": 0.545,
+   "latency_s": {
+    "p50": 0.405,
+    "p90": 0.555,
+    "max": 0.704
+   },
+   "completion_tokens_mean": 8.8,
+   "hep": {
+    "profiles": 200,
+    "median_abs_log10_err": 0.011,
+    "within_x2": 0.865,
+    "within_x10": 0.98,
+    "same_order_of_magnitude": 0.855
+   },
+   "psf_multiplier": {
+    "median_abs_log10_err": 1.16,
+    "within_x2": 0.16,
+    "within_x10": 0.435
+   },
+   "meta": {
+    "run": "nemotron-zeroshot",
+    "backend": "chat",
+    "model": "nemotron-3.5-super-vl",
+    "shots": false,
+    "concurrency": 16,
+    "extra": "{\"chat_template_kwargs\":{\"enable_thinking\":false}}",
+    "wall_s": 17.7,
+    "n": 630
+   },
+   "throughput_items_per_s": 35.59
+  },
+  "openjev-chat-fewshot": {
+   "n": 630,
+   "errors": 0,
+   "unparsed": 0,
+   "per_psf": {
+    "1": {
+     "n": 90,
+     "accuracy": 0.622,
+     "macro_f1": 0.609,
+     "qwk": 0.475,
+     "mean_abs_level_err": 0.378,
+     "pred_dist": {
+      "보통": 20,
+      "나쁨": 64,
+      "매우나쁨": 6
+     },
+     "confusion": {
+      "보통->보통": 17,
+      "보통->나쁨": 26,
+      "나쁨->나쁨": 35,
+      "나쁨->매우나쁨": 2,
+      "나쁨->보통": 3,
+      "매우나쁨->나쁨": 3,
+      "매우나쁨->매우나쁨": 4
+     }
+    },
+    "2": {
+     "n": 90,
+     "accuracy": 0.544,
+     "macro_f1": 0.498,
+     "qwk": 0.591,
+     "mean_abs_level_err": 0.478,
+     "pred_dist": {
+      "보통": 35,
+      "나쁨": 49,
+      "좋음": 6
+     },
+     "confusion": {
+      "좋음->보통": 22,
+      "좋음->나쁨": 2,
+      "좋음->좋음": 6,
+      "보통->나쁨": 17,
+      "보통->보통": 13,
+      "나쁨->나쁨": 30
+     }
+    },
+    "3": {
+     "n": 90,
+     "accuracy": 0.578,
+     "macro_f1": 0.556,
+     "qwk": 0.633,
+     "mean_abs_level_err": 0.444,
+     "pred_dist": {
+      "보통": 30,
+      "나쁨": 48,
+      "좋음": 12
+     },
+     "confusion": {
+      "좋음->보통": 17,
+      "좋음->나쁨": 2,
+      "좋음->좋음": 11,
+      "보통->나쁨": 17,
+      "보통->보통": 12,
+      "보통->좋음": 1,
+      "나쁨->나쁨": 29,
+      "나쁨->보통": 1
+     }
+    },
+    "5": {
+     "n": 90,
+     "accuracy": 0.811,
+     "macro_f1": 0.804,
+     "qwk": 0.622,
+     "mean_abs_level_err": 0.189,
+     "pred_dist": {
+      "나쁨": 62,
+      "보통": 28
+     },
+     "confusion": {
+      "보통->나쁨": 17,
+      "보통->보통": 28,
+      "나쁨->나쁨": 45
+     }
+    },
+    "6": {
+     "n": 90,
+     "accuracy": 1.0,
+     "macro_f1": 1.0,
+     "qwk": NaN,
+     "mean_abs_level_err": 0.0,
+     "pred_dist": {
+      "나쁨": 90
+     },
+     "confusion": {
+      "나쁨->나쁨": 90
+     }
+    },
+    "7": {
+     "n": 90,
+     "accuracy": 0.767,
+     "macro_f1": 0.707,
+     "qwk": 0.683,
+     "mean_abs_level_err": 0.233,
+     "pred_dist": {
+      "보통": 30,
+      "좋음": 3,
+      "나쁨": 57
+     },
+     "confusion": {
+      "좋음->보통": 4,
+      "좋음->좋음": 3,
+      "보통->나쁨": 14,
+      "보통->보통": 23,
+      "나쁨->나쁨": 43,
+      "나쁨->보통": 3
+     }
+    },
+    "8": {
+     "n": 90,
+     "accuracy": 0.744,
+     "macro_f1": 0.704,
+     "qwk": 0.835,
+     "mean_abs_level_err": 0.256,
+     "pred_dist": {
+      "보통": 44,
+      "약간 높음": 11,
+      "매우 높음": 35
+     },
+     "confusion": {
+      "보통->보통": 30,
+      "약간 높음->보통": 14,
+      "약간 높음->약간 높음": 9,
+      "약간 높음->매우 높음": 7,
+      "매우 높음->매우 높음": 28,
+      "매우 높음->약간 높음": 2
+     }
+    }
+   },
+   "accuracy_all": 0.724,
+   "accuracy_excl_f6": 0.678,
+   "macro_f1_mean_excl_f6": 0.646,
+   "latency_s": {
+    "p50": 0.508,
+    "p90": 0.828,
+    "max": 1.125
+   },
+   "completion_tokens_mean": 3.2,
+   "hep": {
+    "profiles": 200,
+    "median_abs_log10_err": 0.008,
+    "within_x2": 0.885,
+    "within_x10": 0.98,
+    "same_order_of_magnitude": 0.885
+   },
+   "psf_multiplier": {
+    "median_abs_log10_err": 1.16,
+    "within_x2": 0.125,
+    "within_x10": 0.435
+   },
+   "meta": {
+    "run": "openjev-chat-fewshot",
+    "backend": "chat",
+    "model": "qwen",
+    "shots": true,
+    "concurrency": 16,
+    "extra": "{\"chat_template_kwargs\":{\"enable_thinking\":false}}",
+    "wall_s": 22.3,
+    "n": 630
+   },
+   "throughput_items_per_s": 28.25
+  },
+  "openjev-chat-zeroshot": {
+   "n": 630,
+   "errors": 0,
+   "unparsed": 0,
+   "per_psf": {
+    "1": {
+     "n": 90,
+     "accuracy": 0.489,
+     "macro_f1": 0.388,
+     "qwk": 0.258,
+     "mean_abs_level_err": 0.511,
+     "pred_dist": {
+      "나쁨": 78,
+      "보통": 6,
+      "매우나쁨": 6
+     },
+     "confusion": {
+      "보통->나쁨": 37,
+      "보통->보통": 6,
+      "나쁨->나쁨": 36,
+      "나쁨->매우나쁨": 4,
+      "매우나쁨->나쁨": 5,
+      "매우나쁨->매우나쁨": 2
+     }
+    },
+    "2": {
+     "n": 90,
+     "accuracy": 0.5,
+     "macro_f1": 0.443,
+     "qwk": 0.458,
+     "mean_abs_level_err": 0.5,
+     "pred_dist": {
+      "보통": 67,
+      "좋음": 2,
+      "나쁨": 21
+     },
+     "confusion": {
+      "좋음->보통": 28,
+      "좋음->좋음": 2,
+      "보통->보통": 26,
+      "보통->나쁨": 4,
+      "나쁨->보통": 13,
+      "나쁨->나쁨": 17
+     }
+    },
+    "3": {
+     "n": 90,
+     "accuracy": 0.678,
+     "macro_f1": 0.663,
+     "qwk": 0.729,
+     "mean_abs_level_err": 0.322,
+     "pred_dist": {
+      "보통": 43,
+      "좋음": 11,
+      "나쁨": 36
+     },
+     "confusion": {
+      "좋음->보통": 19,
+      "좋음->좋음": 11,
+      "보통->보통": 22,
+      "보통->나쁨": 8,
+      "나쁨->나쁨": 28,
+      "나쁨->보통": 2
+     }
+    },
+    "5": {
+     "n": 90,
+     "accuracy": 0.689,
+     "macro_f1": 0.656,
+     "qwk": 0.378,
+     "mean_abs_level_err": 0.311,
+     "pred_dist": {
+      "나쁨": 73,
+      "보통": 17
+     },
+     "confusion": {
+      "보통->나쁨": 28,
+      "보통->보통": 17,
+      "나쁨->나쁨": 45
+     }
+    },
+    "6": {
+     "n": 90,
+     "accuracy": 1.0,
+     "macro_f1": 1.0,
+     "qwk": NaN,
+     "mean_abs_level_err": 0.0,
+     "pred_dist": {
+      "나쁨": 90
+     },
+     "confusion": {
+      "나쁨->나쁨": 90
+     }
+    },
+    "7": {
+     "n": 90,
+     "accuracy": 0.667,
+     "macro_f1": 0.579,
+     "qwk": 0.542,
+     "mean_abs_level_err": 0.333,
+     "pred_dist": {
+      "좋음": 3,
+      "보통": 35,
+      "나쁨": 52
+     },
+     "confusion": {
+      "좋음->좋음": 2,
+      "좋음->보통": 5,
+      "보통->보통": 21,
+      "보통->나쁨": 15,
+      "나쁨->나쁨": 37,
+      "나쁨->보통": 9,
+      "보통->좋음": 1
+     }
+    },
+    "8": {
+     "n": 90,
+     "accuracy": 0.533,
+     "macro_f1": 0.46,
+     "qwk": 0.517,
+     "mean_abs_level_err": 0.567,
+     "pred_dist": {
+      "보통": 27,
+      "약간 높음": 7,
+      "매우 높음": 56
+     },
+     "confusion": {
+      "보통->보통": 17,
+      "보통->약간 높음": 5,
+      "보통->매우 높음": 8,
+      "약간 높음->보통": 9,
+      "약간 높음->매우 높음": 19,
+      "약간 높음->약간 높음": 2,
+      "매우 높음->보통": 1,
+      "매우 높음->매우 높음": 29
+     }
+    }
+   },
+   "accuracy_all": 0.651,
+   "accuracy_excl_f6": 0.593,
+   "macro_f1_mean_excl_f6": 0.531,
+   "latency_s": {
+    "p50": 0.479,
+    "p90": 0.589,
+    "max": 0.998
+   },
+   "completion_tokens_mean": 3.3,
+   "hep": {
+    "profiles": 200,
+    "median_abs_log10_err": 0.01,
+    "within_x2": 0.865,
+    "within_x10": 0.965,
+    "same_order_of_magnitude": 0.865
+   },
+   "psf_multiplier": {
+    "median_abs_log10_err": 1.301,
+    "within_x2": 0.11,
+    "within_x10": 0.39
+   },
+   "meta": {
+    "run": "openjev-chat-zeroshot",
+    "backend": "chat",
+    "model": "qwen",
+    "shots": false,
+    "concurrency": 16,
+    "extra": "{\"chat_template_kwargs\":{\"enable_thinking\":false}}",
+    "wall_s": 20.1,
+    "n": 630
+   },
+   "throughput_items_per_s": 31.34
+  },
+  "openjev-systemone-fewshot": {
+   "n": 630,
+   "errors": 0,
+   "unparsed": 0,
+   "per_psf": {
+    "1": {
+     "n": 90,
+     "accuracy": 0.556,
+     "macro_f1": 0.534,
+     "qwk": 0.384,
+     "mean_abs_level_err": 0.489,
+     "pred_dist": {
+      "보통": 19,
+      "매우나쁨": 17,
+      "나쁨": 54
+     },
+     "confusion": {
+      "보통->보통": 15,
+      "보통->매우나쁨": 4,
+      "보통->나쁨": 24,
+      "나쁨->매우나쁨": 7,
+      "나쁨->보통": 4,
+      "나쁨->나쁨": 29,
+      "매우나쁨->나쁨": 1,
+      "매우나쁨->매우나쁨": 6
+     }
+    },
+    "2": {
+     "n": 90,
+     "accuracy": 0.533,
+     "macro_f1": 0.485,
+     "qwk": 0.563,
+     "mean_abs_level_err": 0.478,
+     "pred_dist": {
+      "보통": 47,
+      "좋음": 4,
+      "나쁨": 39
+     },
+     "confusion": {
+      "좋음->보통": 25,
+      "좋음->좋음": 4,
+      "좋음->나쁨": 1,
+      "보통->나쁨": 12,
+      "보통->보통": 18,
+      "나쁨->보통": 4,
+      "나쁨->나쁨": 26
+     }
+    },
+    "3": {
+     "n": 90,
+     "accuracy": 0.556,
+     "macro_f1": 0.528,
+     "qwk": 0.553,
+     "mean_abs_level_err": 0.5,
+     "pred_dist": {
+      "보통": 27,
+      "나쁨": 53,
+      "좋음": 10
+     },
+     "confusion": {
+      "좋음->보통": 15,
+      "좋음->나쁨": 5,
+      "좋음->좋음": 10,
+      "보통->보통": 11,
+      "보통->나쁨": 19,
+      "나쁨->나쁨": 29,
+      "나쁨->보통": 1
+     }
+    },
+    "5": {
+     "n": 90,
+     "accuracy": 0.822,
+     "macro_f1": 0.818,
+     "qwk": 0.644,
+     "mean_abs_level_err": 0.178,
+     "pred_dist": {
+      "나쁨": 59,
+      "보통": 31
+     },
+     "confusion": {
+      "보통->나쁨": 15,
+      "보통->보통": 30,
+      "나쁨->나쁨": 44,
+      "나쁨->보통": 1
+     }
+    },
+    "6": {
+     "n": 90,
+     "accuracy": 1.0,
+     "macro_f1": 1.0,
+     "qwk": NaN,
+     "mean_abs_level_err": 0.0,
+     "pred_dist": {
+      "나쁨": 90
+     },
+     "confusion": {
+      "나쁨->나쁨": 90
+     }
+    },
+    "7": {
+     "n": 90,
+     "accuracy": 0.444,
+     "macro_f1": 0.404,
+     "qwk": 0.275,
+     "mean_abs_level_err": 0.689,
+     "pred_dist": {
+      "보통": 27,
+      "좋음": 33,
+      "나쁨": 30
+     },
+     "confusion": {
+      "좋음->보통": 3,
+      "좋음->좋음": 4,
+      "보통->좋음": 17,
+      "보통->보통": 13,
+      "보통->나쁨": 7,
+      "나쁨->나쁨": 23,
+      "나쁨->좋음": 12,
+      "나쁨->보통": 11
+     }
+    },
+    "8": {
+     "n": 90,
+     "accuracy": 0.656,
+     "macro_f1": 0.643,
+     "qwk": 0.696,
+     "mean_abs_level_err": 0.356,
+     "pred_dist": {
+      "약간 높음": 38,
+      "보통": 14,
+      "매우 높음": 38
+     },
+     "confusion": {
+      "보통->약간 높음": 17,
+      "보통->보통": 12,
+      "보통->매우 높음": 1,
+      "약간 높음->보통": 2,
+      "약간 높음->매우 높음": 9,
+      "약간 높음->약간 높음": 19,
+      "매우 높음->매우 높음": 28,
+      "매우 높음->약간 높음": 2
+     }
+    }
+   },
+   "accuracy_all": 0.652,
+   "accuracy_excl_f6": 0.595,
+   "macro_f1_mean_excl_f6": 0.569,
+   "latency_s": {
+    "p50": 1.919,
+    "p90": 2.714,
+    "max": 3.373
+   },
+   "completion_tokens_mean": 0.0,
+   "hep": {
+    "profiles": 200,
+    "median_abs_log10_err": 0.01,
+    "within_x2": 0.875,
+    "within_x10": 0.975,
+    "same_order_of_magnitude": 0.86
+   },
+   "psf_multiplier": {
+    "median_abs_log10_err": 1.11,
+    "within_x2": 0.115,
+    "within_x10": 0.45
+   },
+   "meta": {
+    "run": "openjev-systemone-fewshot",
+    "backend": "systemone",
+    "model": "nemotron-3.5-super-vl",
+    "shots": true,
+    "concurrency": 16,
+    "extra": "",
+    "wall_s": 73.5,
+    "n": 630
+   },
+   "throughput_items_per_s": 8.57
+  },
+  "openjev-systemone-zeroshot": {
+   "n": 630,
+   "errors": 0,
+   "unparsed": 0,
+   "per_psf": {
+    "1": {
+     "n": 90,
+     "accuracy": 0.544,
+     "macro_f1": 0.523,
+     "qwk": 0.541,
+     "mean_abs_level_err": 0.456,
+     "pred_dist": {
+      "보통": 17,
+      "나쁨": 53,
+      "매우나쁨": 20
+     },
+     "confusion": {
+      "보통->보통": 17,
+      "보통->나쁨": 26,
+      "나쁨->매우나쁨": 14,
+      "나쁨->나쁨": 26,
+      "매우나쁨->매우나쁨": 6,
+      "매우나쁨->나쁨": 1
+     }
+    },
+    "2": {
+     "n": 90,
+     "accuracy": 0.5,
+     "macro_f1": 0.465,
+     "qwk": 0.547,
+     "mean_abs_level_err": 0.511,
+     "pred_dist": {
+      "보통": 44,
+      "좋음": 5,
+      "나쁨": 41
+     },
+     "confusion": {
+      "좋음->보통": 24,
+      "좋음->좋음": 5,
+      "좋음->나쁨": 1,
+      "보통->나쁨": 15,
+      "보통->보통": 15,
+      "나쁨->보통": 5,
+      "나쁨->나쁨": 25
+     }
+    },
+    "3": {
+     "n": 90,
+     "accuracy": 0.578,
+     "macro_f1": 0.548,
+     "qwk": 0.45,
+     "mean_abs_level_err": 0.544,
+     "pred_dist": {
+      "나쁨": 59,
+      "보통": 21,
+      "좋음": 10
+     },
+     "confusion": {
+      "좋음->나쁨": 11,
+      "좋음->보통": 9,
+      "좋음->좋음": 10,
+      "보통->나쁨": 18,
+      "보통->보통": 12,
+      "나쁨->나쁨": 30
+     }
+    },
+    "5": {
+     "n": 90,
+     "accuracy": 0.711,
+     "macro_f1": 0.685,
+     "qwk": 0.422,
+     "mean_abs_level_err": 0.289,
+     "pred_dist": {
+      "보통": 19,
+      "나쁨": 71
+     },
+     "confusion": {
+      "보통->보통": 19,
+      "보통->나쁨": 26,
+      "나쁨->나쁨": 45
+     }
+    },
+    "6": {
+     "n": 90,
+     "accuracy": 1.0,
+     "macro_f1": 1.0,
+     "qwk": NaN,
+     "mean_abs_level_err": 0.0,
+     "pred_dist": {
+      "나쁨": 90
+     },
+     "confusion": {
+      "나쁨->나쁨": 90
+     }
+    },
+    "7": {
+     "n": 90,
+     "accuracy": 0.411,
+     "macro_f1": 0.379,
+     "qwk": 0.247,
+     "mean_abs_level_err": 0.722,
+     "pred_dist": {
+      "좋음": 33,
+      "보통": 30,
+      "나쁨": 27
+     },
+     "confusion": {
+      "좋음->좋음": 4,
+      "좋음->보통": 3,
+      "보통->좋음": 17,
+      "보통->보통": 13,
+      "보통->나쁨": 7,
+      "나쁨->나쁨": 20,
+      "나쁨->보통": 14,
+      "나쁨->좋음": 12
+     }
+    },
+    "8": {
+     "n": 90,
+     "accuracy": 0.556,
+     "macro_f1": 0.514,
+     "qwk": 0.581,
+     "mean_abs_level_err": 0.478,
+     "pred_dist": {
+      "약간 높음": 33,
+      "보통": 8,
+      "매우 높음": 49
+     },
+     "confusion": {
+      "보통->약간 높음": 20,
+      "보통->보통": 7,
+      "보통->매우 높음": 3,
+      "약간 높음->약간 높음": 13,
+      "약간 높음->매우 높음": 16,
+      "약간 높음->보통": 1,
+      "매우 높음->매우 높음": 30
+     }
+    }
+   },
+   "accuracy_all": 0.614,
+   "accuracy_excl_f6": 0.55,
+   "macro_f1_mean_excl_f6": 0.519,
+   "latency_s": {
+    "p50": 0.438,
+    "p90": 0.552,
+    "max": 0.846
+   },
+   "completion_tokens_mean": 0.0,
+   "hep": {
+    "profiles": 200,
+    "median_abs_log10_err": 0.011,
+    "within_x2": 0.88,
+    "within_x10": 0.97,
+    "same_order_of_magnitude": 0.88
+   },
+   "psf_multiplier": {
+    "median_abs_log10_err": 1.339,
+    "within_x2": 0.1,
+    "within_x10": 0.395
+   },
+   "meta": {
+    "run": "openjev-systemone-zeroshot",
+    "backend": "systemone",
+    "model": "nemotron-3.5-super-vl",
+    "shots": false,
+    "concurrency": 16,
+    "extra": "",
+    "wall_s": 18.7,
+    "n": 630
+   },
+   "throughput_items_per_s": 33.69
+  }
+ },
+ "repeatability": {
+  "kimi-zeroshot": {
+   "n": 630,
+   "same_answer": 0.959
+  },
+  "nemotron-zeroshot": {
+   "n": 630,
+   "same_answer": 0.956
+  },
+  "openjev-chat-zeroshot": {
+   "n": 630,
+   "same_answer": 0.997
+  },
+  "openjev-systemone-zeroshot": {
+   "n": 630,
+   "same_answer": 1.0
+  },
+  "nemotron-zeroshot vs temperature 1.0": {
+   "n": 630,
+   "same_answer": 0.835
+  }
+ },
+ "monotonicity": {
+  "catboost": {
+   "n": 210,
+   "violations": 2
+  },
+  "kimi-fewshot": {
+   "n": 210,
+   "violations": 5
+  },
+  "nemotron-fewshot": {
+   "n": 210,
+   "violations": 3
+  },
+  "nemotron-zeroshot": {
+   "n": 210,
+   "violations": 5
+  },
+  "openjev-chat-fewshot": {
+   "n": 210,
+   "violations": 1
+  },
+  "openjev-systemone-zeroshot": {
+   "n": 210,
+   "violations": 1
+  }
+ },
+ "reference_hep": {
+  "profiles": 200,
+  "share_above_1": 0.87,
+  "median": 1.96,
+  "max": 2.0
+ }
+}

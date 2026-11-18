@@ -1,0 +1,6714 @@
+{
+ "reference": "catboost-fixed-app",
+ "sample_n": 960,
+ "full_n": 5036,
+ "consensus_n": 328,
+ "runs": {
+  "baseline-item-mean": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.491,
+    "accuracy_mean_psf": 0.546,
+    "macro_f1_mean_psf": 0.47,
+    "qwk_mean_psf": 0.396,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.113,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.345,
+      "macro_f1": 0.355,
+      "qwk": 0.279,
+      "severity_bias": 0.678,
+      "pred_dist": {
+       "보통": 16,
+       "나쁨": 47,
+       "매우나쁨": 24
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.5,
+      "macro_f1": 0.5,
+      "qwk": 0.526,
+      "severity_bias": 0.167,
+      "pred_dist": {
+       "좋음": 3,
+       "보통": 8,
+       "나쁨": 1
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.593,
+      "macro_f1": 0.505,
+      "qwk": 0.467,
+      "severity_bias": 0.203,
+      "pred_dist": {
+       "좋음": 4,
+       "보통": 37,
+       "나쁨": 18
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.857,
+      "macro_f1": 0.63,
+      "qwk": 0.774,
+      "severity_bias": -0.143,
+      "pred_dist": {
+       "좋음": 2,
+       "보통": 5
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.588,
+      "macro_f1": 0.588,
+      "qwk": 0.268,
+      "severity_bias": 0.353,
+      "pred_dist": {
+       "보통": 11,
+       "나쁨": 23
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.504,
+      "macro_f1": 0.507,
+      "qwk": 0.457,
+      "severity_bias": -0.407,
+      "pred_dist": {
+       "좋음": 23,
+       "보통": 66,
+       "나쁨": 24
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.438,
+      "macro_f1": 0.203,
+      "qwk": 0.0,
+      "severity_bias": -0.062,
+      "pred_dist": {
+       "약간 높음": 13,
+       "보통": 2,
+       "매우 높음": 1
+      }
+     }
+    },
+    "acc_ci95": [
+     0.439,
+     0.543
+    ],
+    "diff_vs_ref_ci95": [
+     -0.232,
+     -0.101
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.545,
+    "accuracy_mean_psf": 0.545,
+    "macro_f1_mean_psf": 0.488,
+    "qwk_mean_psf": 0.303,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.138,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.442,
+      "macro_f1": 0.432,
+      "qwk": 0.285,
+      "severity_bias": 0.525,
+      "pred_dist": {
+       "보통": 25,
+       "나쁨": 75,
+       "매우나쁨": 20
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.517,
+      "macro_f1": 0.401,
+      "qwk": 0.251,
+      "severity_bias": 0.092,
+      "pred_dist": {
+       "보통": 93,
+       "좋음": 12,
+       "나쁨": 15
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.567,
+      "macro_f1": 0.524,
+      "qwk": 0.391,
+      "severity_bias": 0.208,
+      "pred_dist": {
+       "나쁨": 34,
+       "좋음": 12,
+       "보통": 74
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.55,
+      "macro_f1": 0.484,
+      "qwk": 0.389,
+      "severity_bias": -0.075,
+      "pred_dist": {
+       "보통": 90,
+       "좋음": 18,
+       "나쁨": 12
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.7,
+      "macro_f1": 0.695,
+      "qwk": 0.435,
+      "severity_bias": 0.283,
+      "pred_dist": {
+       "보통": 51,
+       "나쁨": 69
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.7,
+      "macro_f1": 0.545,
+      "qwk": 0.104,
+      "severity_bias": 0.1,
+      "pred_dist": {
+       "보통": 19,
+       "나쁨": 101
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.458,
+      "macro_f1": 0.462,
+      "qwk": 0.373,
+      "severity_bias": -0.15,
+      "pred_dist": {
+       "보통": 71,
+       "좋음": 27,
+       "나쁨": 22
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.425,
+      "macro_f1": 0.364,
+      "qwk": 0.194,
+      "severity_bias": 0.117,
+      "pred_dist": {
+       "약간 높음": 85,
+       "매우 높음": 18,
+       "보통": 17
+      }
+     }
+    },
+    "acc_ci95": [
+     0.514,
+     0.576
+    ],
+    "diff_vs_ref_ci95": [
+     -0.064,
+     0.002
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.153,
+     "within_x10": 0.44,
+     "median_abs_log10": 1.198
+    }
+   },
+   "full": {
+    "n": 5036,
+    "accuracy": 0.519,
+    "accuracy_mean_psf": 0.52,
+    "macro_f1_mean_psf": 0.462,
+    "qwk_mean_psf": 0.249,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.142,
+    "per_psf": {
+     "1": {
+      "n": 582,
+      "accuracy": 0.385,
+      "macro_f1": 0.375,
+      "qwk": 0.246,
+      "severity_bias": 0.601,
+      "pred_dist": {
+       "나쁨": 334,
+       "보통": 99,
+       "매우나쁨": 149
+      }
+     },
+     "2": {
+      "n": 582,
+      "accuracy": 0.533,
+      "macro_f1": 0.439,
+      "qwk": 0.265,
+      "severity_bias": 0.041,
+      "pred_dist": {
+       "보통": 438,
+       "좋음": 76,
+       "나쁨": 68
+      }
+     },
+     "3": {
+      "n": 637,
+      "accuracy": 0.545,
+      "macro_f1": 0.494,
+      "qwk": 0.387,
+      "severity_bias": 0.212,
+      "pred_dist": {
+       "보통": 398,
+       "나쁨": 177,
+       "좋음": 62
+      }
+     },
+     "4": {
+      "n": 637,
+      "accuracy": 0.54,
+      "macro_f1": 0.447,
+      "qwk": 0.265,
+      "severity_bias": 0.02,
+      "pred_dist": {
+       "보통": 492,
+       "좋음": 77,
+       "나쁨": 68
+      }
+     },
+     "5": {
+      "n": 624,
+      "accuracy": 0.617,
+      "macro_f1": 0.616,
+      "qwk": 0.284,
+      "severity_bias": 0.271,
+      "pred_dist": {
+       "나쁨": 379,
+       "보통": 245
+      }
+     },
+     "6": {
+      "n": 624,
+      "accuracy": 0.657,
+      "macro_f1": 0.528,
+      "qwk": 0.074,
+      "severity_bias": 0.115,
+      "pred_dist": {
+       "보통": 113,
+       "나쁨": 511
+      }
+     },
+     "7": {
+      "n": 675,
+      "accuracy": 0.452,
+      "macro_f1": 0.443,
+      "qwk": 0.319,
+      "severity_bias": -0.221,
+      "pred_dist": {
+       "나쁨": 132,
+       "보통": 396,
+       "좋음": 147
+      }
+     },
+     "8": {
+      "n": 675,
+      "accuracy": 0.428,
+      "macro_f1": 0.357,
+      "qwk": 0.149,
+      "severity_bias": 0.096,
+      "pred_dist": {
+       "약간 높음": 492,
+       "보통": 98,
+       "매우 높음": 85
+      }
+     }
+    },
+    "acc_ci95": [
+     0.503,
+     0.534
+    ],
+    "diff_vs_ref_ci95": [
+     -0.065,
+     -0.036
+    ]
+   }
+  },
+  "baseline-logreg": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.662,
+    "accuracy_mean_psf": 0.646,
+    "macro_f1_mean_psf": 0.539,
+    "qwk_mean_psf": 0.435,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.093,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.609,
+      "macro_f1": 0.596,
+      "qwk": 0.429,
+      "severity_bias": 0.172,
+      "pred_dist": {
+       "보통": 40,
+       "나쁨": 43,
+       "매우나쁨": 4
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.583,
+      "macro_f1": 0.615,
+      "qwk": 0.651,
+      "severity_bias": 0.25,
+      "pred_dist": {
+       "좋음": 3,
+       "보통": 7,
+       "나쁨": 2
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.678,
+      "macro_f1": 0.597,
+      "qwk": 0.553,
+      "severity_bias": 0.085,
+      "pred_dist": {
+       "좋음": 6,
+       "보통": 40,
+       "나쁨": 13
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.571,
+      "macro_f1": 0.242,
+      "qwk": 0.0,
+      "severity_bias": 0.143,
+      "pred_dist": {
+       "보통": 7
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.853,
+      "macro_f1": 0.817,
+      "qwk": 0.638,
+      "severity_bias": -0.088,
+      "pred_dist": {
+       "보통": 26,
+       "나쁨": 8
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.664,
+      "macro_f1": 0.463,
+      "qwk": 0.41,
+      "severity_bias": 0.15,
+      "pred_dist": {
+       "보통": 49,
+       "나쁨": 64
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.562,
+      "macro_f1": 0.444,
+      "qwk": 0.364,
+      "severity_bias": -0.062,
+      "pred_dist": {
+       "약간 높음": 11,
+       "보통": 3,
+       "매우 높음": 2
+      }
+     }
+    },
+    "acc_ci95": [
+     0.61,
+     0.716
+    ],
+    "diff_vs_ref_ci95": [
+     -0.034,
+     0.04
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.578,
+    "accuracy_mean_psf": 0.578,
+    "macro_f1_mean_psf": 0.452,
+    "qwk_mean_psf": 0.244,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.135,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.583,
+      "macro_f1": 0.493,
+      "qwk": 0.338,
+      "severity_bias": 0.008,
+      "pred_dist": {
+       "보통": 72,
+       "나쁨": 43,
+       "매우나쁨": 5
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.533,
+      "macro_f1": 0.411,
+      "qwk": 0.334,
+      "severity_bias": 0.2,
+      "pred_dist": {
+       "보통": 92,
+       "좋음": 6,
+       "나쁨": 22
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.633,
+      "macro_f1": 0.594,
+      "qwk": 0.463,
+      "severity_bias": 0.175,
+      "pred_dist": {
+       "나쁨": 32,
+       "좋음": 14,
+       "보통": 74
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.492,
+      "macro_f1": 0.285,
+      "qwk": 0.113,
+      "severity_bias": 0.008,
+      "pred_dist": {
+       "보통": 114,
+       "나쁨": 5,
+       "좋음": 1
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.767,
+      "macro_f1": 0.696,
+      "qwk": 0.395,
+      "severity_bias": -0.067,
+      "pred_dist": {
+       "보통": 93,
+       "나쁨": 27
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.725,
+      "macro_f1": 0.42,
+      "qwk": -0.032,
+      "severity_bias": 0.242,
+      "pred_dist": {
+       "나쁨": 118,
+       "보통": 2
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.467,
+      "macro_f1": 0.362,
+      "qwk": 0.179,
+      "severity_bias": 0.417,
+      "pred_dist": {
+       "나쁨": 63,
+       "보통": 57
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.425,
+      "macro_f1": 0.352,
+      "qwk": 0.158,
+      "severity_bias": 0.1,
+      "pred_dist": {
+       "약간 높음": 89,
+       "매우 높음": 15,
+       "보통": 16
+      }
+     }
+    },
+    "acc_ci95": [
+     0.548,
+     0.609
+    ],
+    "diff_vs_ref_ci95": [
+     -0.019,
+     0.023
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.137,
+     "within_x10": 0.473,
+     "median_abs_log10": 1.085
+    }
+   },
+   "full": {
+    "n": 5036,
+    "accuracy": 0.572,
+    "accuracy_mean_psf": 0.574,
+    "macro_f1_mean_psf": 0.454,
+    "qwk_mean_psf": 0.241,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.123,
+    "per_psf": {
+     "1": {
+      "n": 582,
+      "accuracy": 0.57,
+      "macro_f1": 0.503,
+      "qwk": 0.357,
+      "severity_bias": 0.079,
+      "pred_dist": {
+       "보통": 286,
+       "매우나쁨": 32,
+       "나쁨": 264
+      }
+     },
+     "2": {
+      "n": 582,
+      "accuracy": 0.529,
+      "macro_f1": 0.421,
+      "qwk": 0.281,
+      "severity_bias": 0.158,
+      "pred_dist": {
+       "보통": 450,
+       "나쁨": 96,
+       "좋음": 36
+      }
+     },
+     "3": {
+      "n": 637,
+      "accuracy": 0.587,
+      "macro_f1": 0.542,
+      "qwk": 0.426,
+      "severity_bias": 0.11,
+      "pred_dist": {
+       "보통": 413,
+       "나쁨": 137,
+       "좋음": 87
+      }
+     },
+     "4": {
+      "n": 637,
+      "accuracy": 0.507,
+      "macro_f1": 0.306,
+      "qwk": 0.119,
+      "severity_bias": 0.074,
+      "pred_dist": {
+       "보통": 600,
+       "나쁨": 31,
+       "좋음": 6
+      }
+     },
+     "5": {
+      "n": 624,
+      "accuracy": 0.739,
+      "macro_f1": 0.677,
+      "qwk": 0.364,
+      "severity_bias": -0.111,
+      "pred_dist": {
+       "보통": 483,
+       "나쁨": 141
+      }
+     },
+     "6": {
+      "n": 624,
+      "accuracy": 0.705,
+      "macro_f1": 0.443,
+      "qwk": 0.029,
+      "severity_bias": 0.279,
+      "pred_dist": {
+       "나쁨": 613,
+       "보통": 11
+      }
+     },
+     "7": {
+      "n": 675,
+      "accuracy": 0.529,
+      "macro_f1": 0.395,
+      "qwk": 0.227,
+      "severity_bias": 0.341,
+      "pred_dist": {
+       "나쁨": 364,
+       "보통": 311
+      }
+     },
+     "8": {
+      "n": 675,
+      "accuracy": 0.427,
+      "macro_f1": 0.344,
+      "qwk": 0.128,
+      "severity_bias": 0.056,
+      "pred_dist": {
+       "약간 높음": 505,
+       "보통": 105,
+       "매우 높음": 65
+      }
+     }
+    },
+    "acc_ci95": [
+     0.559,
+     0.585
+    ],
+    "diff_vs_ref_ci95": [
+     -0.005,
+     0.013
+    ]
+   }
+  },
+  "baseline-majority": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.591,
+    "accuracy_mean_psf": 0.549,
+    "macro_f1_mean_psf": 0.25,
+    "qwk_mean_psf": 0.0,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.041,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.655,
+      "macro_f1": 0.264,
+      "qwk": 0.0,
+      "severity_bias": -0.414,
+      "pred_dist": {
+       "보통": 87
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.167,
+      "macro_f1": 0.095,
+      "qwk": 0.0,
+      "severity_bias": 0.333,
+      "pred_dist": {
+       "보통": 12
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.593,
+      "macro_f1": 0.248,
+      "qwk": 0.0,
+      "severity_bias": -0.034,
+      "pred_dist": {
+       "보통": 59
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.571,
+      "macro_f1": 0.242,
+      "qwk": 0.0,
+      "severity_bias": 0.143,
+      "pred_dist": {
+       "보통": 7
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.676,
+      "macro_f1": 0.404,
+      "qwk": 0.0,
+      "severity_bias": -0.324,
+      "pred_dist": {
+       "보통": 34
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.558,
+      "macro_f1": 0.239,
+      "qwk": 0.0,
+      "severity_bias": 0.584,
+      "pred_dist": {
+       "나쁨": 113
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.625,
+      "macro_f1": 0.256,
+      "qwk": 0.0,
+      "severity_bias": 0.0,
+      "pred_dist": {
+       "약간 높음": 16
+      }
+     }
+    },
+    "acc_ci95": [
+     0.537,
+     0.643
+    ],
+    "diff_vs_ref_ci95": [
+     -0.128,
+     -0.006
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.555,
+    "accuracy_mean_psf": 0.555,
+    "macro_f1_mean_psf": 0.271,
+    "qwk_mean_psf": 0.0,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.075,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.65,
+      "macro_f1": 0.263,
+      "qwk": 0.0,
+      "severity_bias": -0.433,
+      "pred_dist": {
+       "보통": 120
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.55,
+      "macro_f1": 0.237,
+      "qwk": 0.0,
+      "severity_bias": 0.067,
+      "pred_dist": {
+       "보통": 120
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.475,
+      "macro_f1": 0.215,
+      "qwk": 0.0,
+      "severity_bias": 0.025,
+      "pred_dist": {
+       "보통": 120
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.475,
+      "macro_f1": 0.215,
+      "qwk": 0.0,
+      "severity_bias": -0.025,
+      "pred_dist": {
+       "보통": 120
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.708,
+      "macro_f1": 0.415,
+      "qwk": 0.0,
+      "severity_bias": -0.292,
+      "pred_dist": {
+       "보통": 120
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.742,
+      "macro_f1": 0.426,
+      "qwk": 0.0,
+      "severity_bias": 0.258,
+      "pred_dist": {
+       "나쁨": 120
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.417,
+      "macro_f1": 0.196,
+      "qwk": 0.0,
+      "severity_bias": 0.892,
+      "pred_dist": {
+       "나쁨": 120
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.425,
+      "macro_f1": 0.199,
+      "qwk": 0.0,
+      "severity_bias": 0.108,
+      "pred_dist": {
+       "약간 높음": 120
+      }
+     }
+    },
+    "acc_ci95": [
+     0.525,
+     0.585
+    ],
+    "diff_vs_ref_ci95": [
+     -0.052,
+     0.011
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.13,
+     "within_x10": 0.477,
+     "median_abs_log10": 1.057
+    }
+   },
+   "full": {
+    "n": 5036,
+    "accuracy": 0.537,
+    "accuracy_mean_psf": 0.539,
+    "macro_f1_mean_psf": 0.266,
+    "qwk_mean_psf": 0.0,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.064,
+    "per_psf": {
+     "1": {
+      "n": 582,
+      "accuracy": 0.6,
+      "macro_f1": 0.25,
+      "qwk": 0.0,
+      "severity_bias": -0.485,
+      "pred_dist": {
+       "보통": 582
+      }
+     },
+     "2": {
+      "n": 582,
+      "accuracy": 0.512,
+      "macro_f1": 0.226,
+      "qwk": 0.0,
+      "severity_bias": 0.055,
+      "pred_dist": {
+       "보통": 582
+      }
+     },
+     "3": {
+      "n": 637,
+      "accuracy": 0.498,
+      "macro_f1": 0.222,
+      "qwk": 0.0,
+      "severity_bias": 0.031,
+      "pred_dist": {
+       "보통": 637
+      }
+     },
+     "4": {
+      "n": 637,
+      "accuracy": 0.485,
+      "macro_f1": 0.218,
+      "qwk": 0.0,
+      "severity_bias": 0.035,
+      "pred_dist": {
+       "보통": 637
+      }
+     },
+     "5": {
+      "n": 624,
+      "accuracy": 0.663,
+      "macro_f1": 0.399,
+      "qwk": 0.0,
+      "severity_bias": -0.337,
+      "pred_dist": {
+       "보통": 624
+      }
+     },
+     "6": {
+      "n": 624,
+      "accuracy": 0.704,
+      "macro_f1": 0.413,
+      "qwk": 0.0,
+      "severity_bias": 0.296,
+      "pred_dist": {
+       "나쁨": 624
+      }
+     },
+     "7": {
+      "n": 675,
+      "accuracy": 0.431,
+      "macro_f1": 0.201,
+      "qwk": 0.0,
+      "severity_bias": 0.801,
+      "pred_dist": {
+       "나쁨": 675
+      }
+     },
+     "8": {
+      "n": 675,
+      "accuracy": 0.422,
+      "macro_f1": 0.198,
+      "qwk": 0.0,
+      "severity_bias": 0.116,
+      "pred_dist": {
+       "약간 높음": 675
+      }
+     }
+    },
+    "acc_ci95": [
+     0.523,
+     0.55
+    ],
+    "diff_vs_ref_ci95": [
+     -0.046,
+     -0.019
+    ]
+   }
+  },
+  "catboost-fixed-app": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.659,
+    "accuracy_mean_psf": 0.646,
+    "macro_f1_mean_psf": 0.579,
+    "qwk_mean_psf": 0.503,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.096,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.609,
+      "macro_f1": 0.587,
+      "qwk": 0.415,
+      "severity_bias": 0.218,
+      "pred_dist": {
+       "보통": 40,
+       "나쁨": 39,
+       "매우나쁨": 8
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.417,
+      "macro_f1": 0.436,
+      "qwk": 0.432,
+      "severity_bias": 0.25,
+      "pred_dist": {
+       "좋음": 2,
+       "보통": 9,
+       "나쁨": 1
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.695,
+      "macro_f1": 0.625,
+      "qwk": 0.567,
+      "severity_bias": 0.068,
+      "pred_dist": {
+       "보통": 41,
+       "좋음": 6,
+       "나쁨": 12
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.714,
+      "macro_f1": 0.489,
+      "qwk": 0.462,
+      "severity_bias": 0.0,
+      "pred_dist": {
+       "좋음": 1,
+       "보통": 6
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.882,
+      "macro_f1": 0.858,
+      "qwk": 0.718,
+      "severity_bias": -0.059,
+      "pred_dist": {
+       "보통": 25,
+       "나쁨": 9
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.646,
+      "macro_f1": 0.543,
+      "qwk": 0.468,
+      "severity_bias": 0.133,
+      "pred_dist": {
+       "좋음": 7,
+       "보통": 37,
+       "나쁨": 69
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.562,
+      "macro_f1": 0.512,
+      "qwk": 0.462,
+      "severity_bias": 0.062,
+      "pred_dist": {
+       "약간 높음": 9,
+       "보통": 3,
+       "매우 높음": 4
+      }
+     }
+    },
+    "acc_ci95": [
+     0.61,
+     0.71
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.576,
+    "accuracy_mean_psf": 0.576,
+    "macro_f1_mean_psf": 0.476,
+    "qwk_mean_psf": 0.255,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.155,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.558,
+      "macro_f1": 0.488,
+      "qwk": 0.308,
+      "severity_bias": 0.083,
+      "pred_dist": {
+       "보통": 67,
+       "나쁨": 44,
+       "매우나쁨": 9
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.533,
+      "macro_f1": 0.439,
+      "qwk": 0.361,
+      "severity_bias": 0.167,
+      "pred_dist": {
+       "보통": 88,
+       "좋음": 10,
+       "나쁨": 22
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.617,
+      "macro_f1": 0.59,
+      "qwk": 0.464,
+      "severity_bias": 0.158,
+      "pred_dist": {
+       "나쁨": 33,
+       "보통": 70,
+       "좋음": 17
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.492,
+      "macro_f1": 0.275,
+      "qwk": 0.09,
+      "severity_bias": -0.025,
+      "pred_dist": {
+       "보통": 116,
+       "나쁨": 2,
+       "좋음": 2
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.783,
+      "macro_f1": 0.742,
+      "qwk": 0.484,
+      "severity_bias": 0.017,
+      "pred_dist": {
+       "보통": 83,
+       "나쁨": 37
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.708,
+      "macro_f1": 0.464,
+      "qwk": -0.004,
+      "severity_bias": 0.192,
+      "pred_dist": {
+       "나쁨": 112,
+       "보통": 8
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.492,
+      "macro_f1": 0.421,
+      "qwk": 0.213,
+      "severity_bias": 0.433,
+      "pred_dist": {
+       "보통": 43,
+       "나쁨": 71,
+       "좋음": 6
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.425,
+      "macro_f1": 0.389,
+      "qwk": 0.121,
+      "severity_bias": 0.217,
+      "pred_dist": {
+       "약간 높음": 69,
+       "매우 높음": 32,
+       "보통": 19
+      }
+     }
+    },
+    "acc_ci95": [
+     0.544,
+     0.607
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.097,
+     "within_x10": 0.417,
+     "median_abs_log10": 1.193
+    }
+   },
+   "full": {
+    "n": 5036,
+    "accuracy": 0.569,
+    "accuracy_mean_psf": 0.571,
+    "macro_f1_mean_psf": 0.474,
+    "qwk_mean_psf": 0.258,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.136,
+    "per_psf": {
+     "1": {
+      "n": 582,
+      "accuracy": 0.567,
+      "macro_f1": 0.511,
+      "qwk": 0.367,
+      "severity_bias": 0.134,
+      "pred_dist": {
+       "보통": 273,
+       "매우나쁨": 51,
+       "나쁨": 258
+      }
+     },
+     "2": {
+      "n": 582,
+      "accuracy": 0.522,
+      "macro_f1": 0.429,
+      "qwk": 0.276,
+      "severity_bias": 0.144,
+      "pred_dist": {
+       "보통": 430,
+       "좋음": 50,
+       "나쁨": 102
+      }
+     },
+     "3": {
+      "n": 637,
+      "accuracy": 0.59,
+      "macro_f1": 0.557,
+      "qwk": 0.461,
+      "severity_bias": 0.129,
+      "pred_dist": {
+       "보통": 393,
+       "좋음": 91,
+       "나쁨": 153
+      }
+     },
+     "4": {
+      "n": 637,
+      "accuracy": 0.502,
+      "macro_f1": 0.293,
+      "qwk": 0.089,
+      "severity_bias": 0.036,
+      "pred_dist": {
+       "보통": 604,
+       "좋음": 16,
+       "나쁨": 17
+      }
+     },
+     "5": {
+      "n": 624,
+      "accuracy": 0.744,
+      "macro_f1": 0.691,
+      "qwk": 0.387,
+      "severity_bias": -0.087,
+      "pred_dist": {
+       "보통": 468,
+       "나쁨": 156
+      }
+     },
+     "6": {
+      "n": 624,
+      "accuracy": 0.702,
+      "macro_f1": 0.504,
+      "qwk": 0.085,
+      "severity_bias": 0.224,
+      "pred_dist": {
+       "보통": 45,
+       "나쁨": 579
+      }
+     },
+     "7": {
+      "n": 675,
+      "accuracy": 0.52,
+      "macro_f1": 0.434,
+      "qwk": 0.258,
+      "severity_bias": 0.342,
+      "pred_dist": {
+       "나쁨": 401,
+       "보통": 238,
+       "좋음": 36
+      }
+     },
+     "8": {
+      "n": 675,
+      "accuracy": 0.418,
+      "macro_f1": 0.37,
+      "qwk": 0.144,
+      "severity_bias": 0.164,
+      "pred_dist": {
+       "약간 높음": 438,
+       "매우 높음": 135,
+       "보통": 102
+      }
+     }
+    },
+    "acc_ci95": [
+     0.554,
+     0.582
+    ]
+   }
+  },
+  "catboost-original-as-trained": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.689,
+    "accuracy_mean_psf": 0.649,
+    "macro_f1_mean_psf": 0.551,
+    "qwk_mean_psf": 0.436,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.141,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.655,
+      "macro_f1": 0.687,
+      "qwk": 0.536,
+      "severity_bias": 0.161,
+      "pred_dist": {
+       "보통": 41,
+       "나쁨": 42,
+       "매우나쁨": 4
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.417,
+      "macro_f1": 0.436,
+      "qwk": 0.432,
+      "severity_bias": 0.25,
+      "pred_dist": {
+       "좋음": 2,
+       "보통": 9,
+       "나쁨": 1
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.729,
+      "macro_f1": 0.669,
+      "qwk": 0.647,
+      "severity_bias": 0.136,
+      "pred_dist": {
+       "보통": 37,
+       "좋음": 6,
+       "나쁨": 16
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.571,
+      "macro_f1": 0.242,
+      "qwk": 0.0,
+      "severity_bias": 0.143,
+      "pred_dist": {
+       "보통": 7
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.853,
+      "macro_f1": 0.836,
+      "qwk": 0.672,
+      "severity_bias": 0.029,
+      "pred_dist": {
+       "보통": 22,
+       "나쁨": 12
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.69,
+      "macro_f1": 0.601,
+      "qwk": 0.517,
+      "severity_bias": 0.142,
+      "pred_dist": {
+       "좋음": 7,
+       "보통": 36,
+       "나쁨": 70
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.625,
+      "macro_f1": 0.383,
+      "qwk": 0.25,
+      "severity_bias": 0.125,
+      "pred_dist": {
+       "약간 높음": 14,
+       "매우 높음": 2
+      }
+     }
+    },
+    "acc_ci95": [
+     0.64,
+     0.738
+    ],
+    "diff_vs_ref_ci95": [
+     -0.006,
+     0.067
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.588,
+    "accuracy_mean_psf": 0.588,
+    "macro_f1_mean_psf": 0.471,
+    "qwk_mean_psf": 0.259,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.168,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.633,
+      "macro_f1": 0.563,
+      "qwk": 0.404,
+      "severity_bias": 0.067,
+      "pred_dist": {
+       "보통": 67,
+       "나쁨": 46,
+       "매우나쁨": 7
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.492,
+      "macro_f1": 0.322,
+      "qwk": 0.089,
+      "severity_bias": 0.117,
+      "pred_dist": {
+       "보통": 98,
+       "좋음": 8,
+       "나쁨": 14
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.642,
+      "macro_f1": 0.629,
+      "qwk": 0.536,
+      "severity_bias": 0.2,
+      "pred_dist": {
+       "나쁨": 41,
+       "좋음": 20,
+       "보통": 59
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.5,
+      "macro_f1": 0.319,
+      "qwk": 0.183,
+      "severity_bias": 0.067,
+      "pred_dist": {
+       "보통": 109,
+       "나쁨": 11
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.733,
+      "macro_f1": 0.696,
+      "qwk": 0.395,
+      "severity_bias": 0.067,
+      "pred_dist": {
+       "보통": 77,
+       "나쁨": 43
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.742,
+      "macro_f1": 0.426,
+      "qwk": 0.0,
+      "severity_bias": 0.258,
+      "pred_dist": {
+       "나쁨": 120
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.517,
+      "macro_f1": 0.451,
+      "qwk": 0.241,
+      "severity_bias": 0.408,
+      "pred_dist": {
+       "보통": 42,
+       "나쁨": 70,
+       "좋음": 8
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.442,
+      "macro_f1": 0.359,
+      "qwk": 0.226,
+      "severity_bias": 0.158,
+      "pred_dist": {
+       "약간 높음": 96,
+       "매우 높음": 15,
+       "보통": 9
+      }
+     }
+    },
+    "acc_ci95": [
+     0.556,
+     0.62
+    ],
+    "diff_vs_ref_ci95": [
+     -0.011,
+     0.035
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.117,
+     "within_x10": 0.403,
+     "median_abs_log10": 1.201
+    }
+   },
+   "full": {
+    "n": 5036,
+    "accuracy": 0.579,
+    "accuracy_mean_psf": 0.58,
+    "macro_f1_mean_psf": 0.465,
+    "qwk_mean_psf": 0.254,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.161,
+    "per_psf": {
+     "1": {
+      "n": 582,
+      "accuracy": 0.598,
+      "macro_f1": 0.518,
+      "qwk": 0.41,
+      "severity_bias": 0.091,
+      "pred_dist": {
+       "보통": 278,
+       "나쁨": 273,
+       "매우나쁨": 31
+      }
+     },
+     "2": {
+      "n": 582,
+      "accuracy": 0.5,
+      "macro_f1": 0.374,
+      "qwk": 0.192,
+      "severity_bias": 0.115,
+      "pred_dist": {
+       "보통": 465,
+       "좋음": 41,
+       "나쁨": 76
+      }
+     },
+     "3": {
+      "n": 637,
+      "accuracy": 0.598,
+      "macro_f1": 0.569,
+      "qwk": 0.463,
+      "severity_bias": 0.193,
+      "pred_dist": {
+       "보통": 358,
+       "나쁨": 191,
+       "좋음": 88
+      }
+     },
+     "4": {
+      "n": 637,
+      "accuracy": 0.515,
+      "macro_f1": 0.325,
+      "qwk": 0.14,
+      "severity_bias": 0.116,
+      "pred_dist": {
+       "보통": 585,
+       "나쁨": 52
+      }
+     },
+     "5": {
+      "n": 624,
+      "accuracy": 0.737,
+      "macro_f1": 0.707,
+      "qwk": 0.414,
+      "severity_bias": 0.006,
+      "pred_dist": {
+       "나쁨": 214,
+       "보통": 410
+      }
+     },
+     "6": {
+      "n": 624,
+      "accuracy": 0.704,
+      "macro_f1": 0.413,
+      "qwk": 0.0,
+      "severity_bias": 0.296,
+      "pred_dist": {
+       "나쁨": 624
+      }
+     },
+     "7": {
+      "n": 675,
+      "accuracy": 0.551,
+      "macro_f1": 0.474,
+      "qwk": 0.289,
+      "severity_bias": 0.341,
+      "pred_dist": {
+       "나쁨": 406,
+       "보통": 227,
+       "좋음": 42
+      }
+     },
+     "8": {
+      "n": 675,
+      "accuracy": 0.439,
+      "macro_f1": 0.338,
+      "qwk": 0.122,
+      "severity_bias": 0.126,
+      "pred_dist": {
+       "보통": 61,
+       "약간 높음": 546,
+       "매우 높음": 68
+      }
+     }
+    },
+    "acc_ci95": [
+     0.565,
+     0.593
+    ],
+    "diff_vs_ref_ci95": [
+     0.001,
+     0.021
+    ]
+   }
+  },
+  "catboost-original-deployed": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.646,
+    "accuracy_mean_psf": 0.619,
+    "macro_f1_mean_psf": 0.494,
+    "qwk_mean_psf": 0.39,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.079,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.586,
+      "macro_f1": 0.508,
+      "qwk": 0.437,
+      "severity_bias": 0.115,
+      "pred_dist": {
+       "보통": 45,
+       "나쁨": 38,
+       "매우나쁨": 4
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.417,
+      "macro_f1": 0.321,
+      "qwk": 0.364,
+      "severity_bias": 0.083,
+      "pred_dist": {
+       "좋음": 3,
+       "보통": 9
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.593,
+      "macro_f1": 0.569,
+      "qwk": 0.493,
+      "severity_bias": -0.085,
+      "pred_dist": {
+       "보통": 30,
+       "나쁨": 13,
+       "좋음": 16
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.571,
+      "macro_f1": 0.242,
+      "qwk": 0.0,
+      "severity_bias": 0.143,
+      "pred_dist": {
+       "보통": 7
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.853,
+      "macro_f1": 0.836,
+      "qwk": 0.672,
+      "severity_bias": 0.029,
+      "pred_dist": {
+       "보통": 22,
+       "나쁨": 12
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.69,
+      "macro_f1": 0.601,
+      "qwk": 0.517,
+      "severity_bias": 0.142,
+      "pred_dist": {
+       "좋음": 7,
+       "보통": 36,
+       "나쁨": 70
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.625,
+      "macro_f1": 0.383,
+      "qwk": 0.25,
+      "severity_bias": 0.125,
+      "pred_dist": {
+       "약간 높음": 14,
+       "매우 높음": 2
+      }
+     }
+    },
+    "acc_ci95": [
+     0.598,
+     0.695
+    ],
+    "diff_vs_ref_ci95": [
+     -0.064,
+     0.043
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.565,
+    "accuracy_mean_psf": 0.565,
+    "macro_f1_mean_psf": 0.446,
+    "qwk_mean_psf": 0.242,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.135,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.508,
+      "macro_f1": 0.479,
+      "qwk": 0.33,
+      "severity_bias": 0.1,
+      "pred_dist": {
+       "나쁨": 52,
+       "보통": 62,
+       "매우나쁨": 6
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.492,
+      "macro_f1": 0.274,
+      "qwk": 0.093,
+      "severity_bias": -0.042,
+      "pred_dist": {
+       "보통": 105,
+       "좋음": 14,
+       "나쁨": 1
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.583,
+      "macro_f1": 0.565,
+      "qwk": 0.467,
+      "severity_bias": 0.067,
+      "pred_dist": {
+       "나쁨": 29,
+       "보통": 67,
+       "좋음": 24
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.5,
+      "macro_f1": 0.319,
+      "qwk": 0.183,
+      "severity_bias": 0.067,
+      "pred_dist": {
+       "보통": 109,
+       "나쁨": 11
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.733,
+      "macro_f1": 0.696,
+      "qwk": 0.395,
+      "severity_bias": 0.067,
+      "pred_dist": {
+       "보통": 77,
+       "나쁨": 43
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.742,
+      "macro_f1": 0.426,
+      "qwk": 0.0,
+      "severity_bias": 0.258,
+      "pred_dist": {
+       "나쁨": 120
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.517,
+      "macro_f1": 0.451,
+      "qwk": 0.241,
+      "severity_bias": 0.408,
+      "pred_dist": {
+       "보통": 42,
+       "나쁨": 70,
+       "좋음": 8
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.442,
+      "macro_f1": 0.359,
+      "qwk": 0.226,
+      "severity_bias": 0.158,
+      "pred_dist": {
+       "약간 높음": 96,
+       "매우 높음": 15,
+       "보통": 9
+      }
+     }
+    },
+    "acc_ci95": [
+     0.533,
+     0.596
+    ],
+    "diff_vs_ref_ci95": [
+     -0.04,
+     0.017
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.123,
+     "within_x10": 0.41,
+     "median_abs_log10": 1.204
+    }
+   },
+   "full": {
+    "n": 5036,
+    "accuracy": 0.564,
+    "accuracy_mean_psf": 0.565,
+    "macro_f1_mean_psf": 0.444,
+    "qwk_mean_psf": 0.233,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.113,
+    "per_psf": {
+     "1": {
+      "n": 582,
+      "accuracy": 0.55,
+      "macro_f1": 0.446,
+      "qwk": 0.349,
+      "severity_bias": 0.06,
+      "pred_dist": {
+       "보통": 292,
+       "나쁨": 263,
+       "매우나쁨": 27
+      }
+     },
+     "2": {
+      "n": 582,
+      "accuracy": 0.493,
+      "macro_f1": 0.339,
+      "qwk": 0.163,
+      "severity_bias": -0.026,
+      "pred_dist": {
+       "보통": 487,
+       "좋음": 71,
+       "나쁨": 24
+      }
+     },
+     "3": {
+      "n": 637,
+      "accuracy": 0.529,
+      "macro_f1": 0.511,
+      "qwk": 0.388,
+      "severity_bias": -0.016,
+      "pred_dist": {
+       "보통": 337,
+       "좋음": 165,
+       "나쁨": 135
+      }
+     },
+     "4": {
+      "n": 637,
+      "accuracy": 0.515,
+      "macro_f1": 0.325,
+      "qwk": 0.14,
+      "severity_bias": 0.116,
+      "pred_dist": {
+       "보통": 585,
+       "나쁨": 52
+      }
+     },
+     "5": {
+      "n": 624,
+      "accuracy": 0.737,
+      "macro_f1": 0.707,
+      "qwk": 0.414,
+      "severity_bias": 0.006,
+      "pred_dist": {
+       "나쁨": 214,
+       "보통": 410
+      }
+     },
+     "6": {
+      "n": 624,
+      "accuracy": 0.704,
+      "macro_f1": 0.413,
+      "qwk": 0.0,
+      "severity_bias": 0.296,
+      "pred_dist": {
+       "나쁨": 624
+      }
+     },
+     "7": {
+      "n": 675,
+      "accuracy": 0.551,
+      "macro_f1": 0.474,
+      "qwk": 0.289,
+      "severity_bias": 0.341,
+      "pred_dist": {
+       "나쁨": 406,
+       "보통": 227,
+       "좋음": 42
+      }
+     },
+     "8": {
+      "n": 675,
+      "accuracy": 0.439,
+      "macro_f1": 0.338,
+      "qwk": 0.122,
+      "severity_bias": 0.126,
+      "pred_dist": {
+       "보통": 61,
+       "약간 높음": 546,
+       "매우 높음": 68
+      }
+     }
+    },
+    "acc_ci95": [
+     0.55,
+     0.579
+    ],
+    "diff_vs_ref_ci95": [
+     -0.016,
+     0.007
+    ]
+   }
+  },
+  "catboost-original-inputfix": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.701,
+    "accuracy_mean_psf": 0.658,
+    "macro_f1_mean_psf": 0.55,
+    "qwk_mean_psf": 0.443,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.098,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.655,
+      "macro_f1": 0.687,
+      "qwk": 0.536,
+      "severity_bias": 0.161,
+      "pred_dist": {
+       "보통": 41,
+       "나쁨": 42,
+       "매우나쁨": 4
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.417,
+      "macro_f1": 0.321,
+      "qwk": 0.364,
+      "severity_bias": 0.083,
+      "pred_dist": {
+       "좋음": 3,
+       "보통": 9
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.797,
+      "macro_f1": 0.778,
+      "qwk": 0.759,
+      "severity_bias": 0.0,
+      "pred_dist": {
+       "보통": 33,
+       "좋음": 12,
+       "나쁨": 14
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.571,
+      "macro_f1": 0.242,
+      "qwk": 0.0,
+      "severity_bias": 0.143,
+      "pred_dist": {
+       "보통": 7
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.853,
+      "macro_f1": 0.836,
+      "qwk": 0.672,
+      "severity_bias": 0.029,
+      "pred_dist": {
+       "보통": 22,
+       "나쁨": 12
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.69,
+      "macro_f1": 0.601,
+      "qwk": 0.517,
+      "severity_bias": 0.142,
+      "pred_dist": {
+       "좋음": 7,
+       "보통": 36,
+       "나쁨": 70
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.625,
+      "macro_f1": 0.383,
+      "qwk": 0.25,
+      "severity_bias": 0.125,
+      "pred_dist": {
+       "약간 높음": 14,
+       "매우 높음": 2
+      }
+     }
+    },
+    "acc_ci95": [
+     0.652,
+     0.75
+    ],
+    "diff_vs_ref_ci95": [
+     0.003,
+     0.085
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.588,
+    "accuracy_mean_psf": 0.588,
+    "macro_f1_mean_psf": 0.465,
+    "qwk_mean_psf": 0.261,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.136,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.633,
+      "macro_f1": 0.563,
+      "qwk": 0.404,
+      "severity_bias": 0.067,
+      "pred_dist": {
+       "보통": 67,
+       "나쁨": 46,
+       "매우나쁨": 7
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.492,
+      "macro_f1": 0.274,
+      "qwk": 0.093,
+      "severity_bias": -0.042,
+      "pred_dist": {
+       "보통": 105,
+       "좋음": 14,
+       "나쁨": 1
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.642,
+      "macro_f1": 0.63,
+      "qwk": 0.547,
+      "severity_bias": 0.108,
+      "pred_dist": {
+       "나쁨": 34,
+       "좋음": 24,
+       "보통": 62
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.5,
+      "macro_f1": 0.319,
+      "qwk": 0.183,
+      "severity_bias": 0.067,
+      "pred_dist": {
+       "보통": 109,
+       "나쁨": 11
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.733,
+      "macro_f1": 0.696,
+      "qwk": 0.395,
+      "severity_bias": 0.067,
+      "pred_dist": {
+       "보통": 77,
+       "나쁨": 43
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.742,
+      "macro_f1": 0.426,
+      "qwk": 0.0,
+      "severity_bias": 0.258,
+      "pred_dist": {
+       "나쁨": 120
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.517,
+      "macro_f1": 0.451,
+      "qwk": 0.241,
+      "severity_bias": 0.408,
+      "pred_dist": {
+       "보통": 42,
+       "나쁨": 70,
+       "좋음": 8
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.442,
+      "macro_f1": 0.359,
+      "qwk": 0.226,
+      "severity_bias": 0.158,
+      "pred_dist": {
+       "약간 높음": 96,
+       "매우 높음": 15,
+       "보통": 9
+      }
+     }
+    },
+    "acc_ci95": [
+     0.556,
+     0.619
+    ],
+    "diff_vs_ref_ci95": [
+     -0.013,
+     0.037
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.127,
+     "within_x10": 0.443,
+     "median_abs_log10": 1.129
+    }
+   },
+   "full": {
+    "n": 5036,
+    "accuracy": 0.577,
+    "accuracy_mean_psf": 0.578,
+    "macro_f1_mean_psf": 0.461,
+    "qwk_mean_psf": 0.252,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.122,
+    "per_psf": {
+     "1": {
+      "n": 582,
+      "accuracy": 0.598,
+      "macro_f1": 0.518,
+      "qwk": 0.41,
+      "severity_bias": 0.091,
+      "pred_dist": {
+       "보통": 278,
+       "나쁨": 273,
+       "매우나쁨": 31
+      }
+     },
+     "2": {
+      "n": 582,
+      "accuracy": 0.493,
+      "macro_f1": 0.339,
+      "qwk": 0.163,
+      "severity_bias": -0.026,
+      "pred_dist": {
+       "보통": 487,
+       "좋음": 71,
+       "나쁨": 24
+      }
+     },
+     "3": {
+      "n": 637,
+      "accuracy": 0.587,
+      "macro_f1": 0.57,
+      "qwk": 0.482,
+      "severity_bias": 0.028,
+      "pred_dist": {
+       "보통": 351,
+       "좋음": 144,
+       "나쁨": 142
+      }
+     },
+     "4": {
+      "n": 637,
+      "accuracy": 0.515,
+      "macro_f1": 0.325,
+      "qwk": 0.14,
+      "severity_bias": 0.116,
+      "pred_dist": {
+       "보통": 585,
+       "나쁨": 52
+      }
+     },
+     "5": {
+      "n": 624,
+      "accuracy": 0.737,
+      "macro_f1": 0.707,
+      "qwk": 0.414,
+      "severity_bias": 0.006,
+      "pred_dist": {
+       "나쁨": 214,
+       "보통": 410
+      }
+     },
+     "6": {
+      "n": 624,
+      "accuracy": 0.704,
+      "macro_f1": 0.413,
+      "qwk": 0.0,
+      "severity_bias": 0.296,
+      "pred_dist": {
+       "나쁨": 624
+      }
+     },
+     "7": {
+      "n": 675,
+      "accuracy": 0.551,
+      "macro_f1": 0.474,
+      "qwk": 0.289,
+      "severity_bias": 0.341,
+      "pred_dist": {
+       "나쁨": 406,
+       "보통": 227,
+       "좋음": 42
+      }
+     },
+     "8": {
+      "n": 675,
+      "accuracy": 0.439,
+      "macro_f1": 0.338,
+      "qwk": 0.122,
+      "severity_bias": 0.126,
+      "pred_dist": {
+       "보통": 61,
+       "약간 높음": 546,
+       "매우 높음": 68
+      }
+     }
+    },
+    "acc_ci95": [
+     0.563,
+     0.591
+    ],
+    "diff_vs_ref_ci95": [
+     -0.002,
+     0.02
+    ]
+   }
+  },
+  "catboost-retrained-raw": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.634,
+    "accuracy_mean_psf": 0.626,
+    "macro_f1_mean_psf": 0.564,
+    "qwk_mean_psf": 0.479,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.086,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.586,
+      "macro_f1": 0.622,
+      "qwk": 0.452,
+      "severity_bias": 0.195,
+      "pred_dist": {
+       "보통": 41,
+       "나쁨": 39,
+       "매우나쁨": 7
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.417,
+      "macro_f1": 0.436,
+      "qwk": 0.432,
+      "severity_bias": 0.25,
+      "pred_dist": {
+       "좋음": 2,
+       "보통": 9,
+       "나쁨": 1
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.644,
+      "macro_f1": 0.583,
+      "qwk": 0.53,
+      "severity_bias": 0.051,
+      "pred_dist": {
+       "보통": 38,
+       "좋음": 8,
+       "나쁨": 13
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.714,
+      "macro_f1": 0.489,
+      "qwk": 0.462,
+      "severity_bias": 0.0,
+      "pred_dist": {
+       "좋음": 1,
+       "보통": 6
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.824,
+      "macro_f1": 0.773,
+      "qwk": 0.555,
+      "severity_bias": -0.118,
+      "pred_dist": {
+       "보통": 27,
+       "나쁨": 7
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.637,
+      "macro_f1": 0.53,
+      "qwk": 0.461,
+      "severity_bias": 0.159,
+      "pred_dist": {
+       "좋음": 7,
+       "보통": 34,
+       "나쁨": 72
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.562,
+      "macro_f1": 0.512,
+      "qwk": 0.462,
+      "severity_bias": 0.062,
+      "pred_dist": {
+       "약간 높음": 9,
+       "보통": 3,
+       "매우 높음": 4
+      }
+     }
+    },
+    "acc_ci95": [
+     0.582,
+     0.686
+    ],
+    "diff_vs_ref_ci95": [
+     -0.049,
+     -0.003
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.571,
+    "accuracy_mean_psf": 0.571,
+    "macro_f1_mean_psf": 0.469,
+    "qwk_mean_psf": 0.251,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.149,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.55,
+      "macro_f1": 0.486,
+      "qwk": 0.312,
+      "severity_bias": 0.067,
+      "pred_dist": {
+       "보통": 68,
+       "나쁨": 44,
+       "매우나쁨": 8
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.533,
+      "macro_f1": 0.439,
+      "qwk": 0.361,
+      "severity_bias": 0.167,
+      "pred_dist": {
+       "보통": 88,
+       "좋음": 10,
+       "나쁨": 22
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.6,
+      "macro_f1": 0.575,
+      "qwk": 0.435,
+      "severity_bias": 0.167,
+      "pred_dist": {
+       "나쁨": 35,
+       "보통": 67,
+       "좋음": 18
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.492,
+      "macro_f1": 0.275,
+      "qwk": 0.09,
+      "severity_bias": -0.025,
+      "pred_dist": {
+       "보통": 116,
+       "나쁨": 2,
+       "좋음": 2
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.783,
+      "macro_f1": 0.733,
+      "qwk": 0.467,
+      "severity_bias": -0.017,
+      "pred_dist": {
+       "보통": 87,
+       "나쁨": 33
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.708,
+      "macro_f1": 0.464,
+      "qwk": -0.004,
+      "severity_bias": 0.192,
+      "pred_dist": {
+       "나쁨": 112,
+       "보통": 8
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.475,
+      "macro_f1": 0.394,
+      "qwk": 0.226,
+      "severity_bias": 0.425,
+      "pred_dist": {
+       "나쁨": 71,
+       "보통": 42,
+       "좋음": 7
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.425,
+      "macro_f1": 0.389,
+      "qwk": 0.121,
+      "severity_bias": 0.217,
+      "pred_dist": {
+       "약간 높음": 69,
+       "매우 높음": 32,
+       "보통": 19
+      }
+     }
+    },
+    "acc_ci95": [
+     0.54,
+     0.601
+    ],
+    "diff_vs_ref_ci95": [
+     -0.015,
+     0.004
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.093,
+     "within_x10": 0.42,
+     "median_abs_log10": 1.193
+    }
+   },
+   "full": {
+    "n": 5036,
+    "accuracy": 0.562,
+    "accuracy_mean_psf": 0.564,
+    "macro_f1_mean_psf": 0.469,
+    "qwk_mean_psf": 0.249,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.135,
+    "per_psf": {
+     "1": {
+      "n": 582,
+      "accuracy": 0.557,
+      "macro_f1": 0.515,
+      "qwk": 0.364,
+      "severity_bias": 0.124,
+      "pred_dist": {
+       "보통": 278,
+       "매우나쁨": 50,
+       "나쁨": 254
+      }
+     },
+     "2": {
+      "n": 582,
+      "accuracy": 0.522,
+      "macro_f1": 0.429,
+      "qwk": 0.276,
+      "severity_bias": 0.144,
+      "pred_dist": {
+       "보통": 430,
+       "좋음": 50,
+       "나쁨": 102
+      }
+     },
+     "3": {
+      "n": 637,
+      "accuracy": 0.564,
+      "macro_f1": 0.531,
+      "qwk": 0.415,
+      "severity_bias": 0.133,
+      "pred_dist": {
+       "보통": 378,
+       "좋음": 97,
+       "나쁨": 162
+      }
+     },
+     "4": {
+      "n": 637,
+      "accuracy": 0.502,
+      "macro_f1": 0.293,
+      "qwk": 0.089,
+      "severity_bias": 0.036,
+      "pred_dist": {
+       "보통": 604,
+       "좋음": 16,
+       "나쁨": 17
+      }
+     },
+     "5": {
+      "n": 624,
+      "accuracy": 0.731,
+      "macro_f1": 0.672,
+      "qwk": 0.351,
+      "severity_bias": -0.096,
+      "pred_dist": {
+       "보통": 474,
+       "나쁨": 150
+      }
+     },
+     "6": {
+      "n": 624,
+      "accuracy": 0.702,
+      "macro_f1": 0.504,
+      "qwk": 0.085,
+      "severity_bias": 0.224,
+      "pred_dist": {
+       "보통": 45,
+       "나쁨": 579
+      }
+     },
+     "7": {
+      "n": 675,
+      "accuracy": 0.517,
+      "macro_f1": 0.435,
+      "qwk": 0.268,
+      "severity_bias": 0.354,
+      "pred_dist": {
+       "나쁨": 413,
+       "보통": 222,
+       "좋음": 40
+      }
+     },
+     "8": {
+      "n": 675,
+      "accuracy": 0.418,
+      "macro_f1": 0.37,
+      "qwk": 0.144,
+      "severity_bias": 0.164,
+      "pred_dist": {
+       "약간 높음": 438,
+       "매우 높음": 135,
+       "보통": 102
+      }
+     }
+    },
+    "acc_ci95": [
+     0.548,
+     0.575
+    ],
+    "diff_vs_ref_ci95": [
+     -0.011,
+     -0.003
+    ]
+   }
+  },
+  "catboost-retrained": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.662,
+    "accuracy_mean_psf": 0.652,
+    "macro_f1_mean_psf": 0.565,
+    "qwk_mean_psf": 0.515,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.144,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.609,
+      "macro_f1": 0.587,
+      "qwk": 0.415,
+      "severity_bias": 0.218,
+      "pred_dist": {
+       "보통": 40,
+       "나쁨": 39,
+       "매우나쁨": 8
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.333,
+      "macro_f1": 0.348,
+      "qwk": 0.429,
+      "severity_bias": 0.333,
+      "pred_dist": {
+       "좋음": 2,
+       "보통": 8,
+       "나쁨": 2
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.695,
+      "macro_f1": 0.625,
+      "qwk": 0.567,
+      "severity_bias": 0.068,
+      "pred_dist": {
+       "보통": 41,
+       "좋음": 6,
+       "나쁨": 12
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.714,
+      "macro_f1": 0.489,
+      "qwk": 0.462,
+      "severity_bias": 0.0,
+      "pred_dist": {
+       "좋음": 1,
+       "보통": 6
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.882,
+      "macro_f1": 0.858,
+      "qwk": 0.718,
+      "severity_bias": -0.059,
+      "pred_dist": {
+       "보통": 25,
+       "나쁨": 9
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.646,
+      "macro_f1": 0.543,
+      "qwk": 0.468,
+      "severity_bias": 0.133,
+      "pred_dist": {
+       "좋음": 7,
+       "보통": 37,
+       "나쁨": 69
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.688,
+      "macro_f1": 0.504,
+      "qwk": 0.545,
+      "severity_bias": 0.312,
+      "pred_dist": {
+       "매우 높음": 5,
+       "약간 높음": 11
+      }
+     }
+    },
+    "acc_ci95": [
+     0.613,
+     0.713
+    ],
+    "diff_vs_ref_ci95": [
+     -0.009,
+     0.015
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.573,
+    "accuracy_mean_psf": 0.573,
+    "macro_f1_mean_psf": 0.46,
+    "qwk_mean_psf": 0.227,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.16,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.558,
+      "macro_f1": 0.488,
+      "qwk": 0.308,
+      "severity_bias": 0.083,
+      "pred_dist": {
+       "보통": 67,
+       "나쁨": 44,
+       "매우나쁨": 9
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.567,
+      "macro_f1": 0.397,
+      "qwk": 0.209,
+      "severity_bias": 0.15,
+      "pred_dist": {
+       "보통": 102,
+       "좋음": 4,
+       "나쁨": 14
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.617,
+      "macro_f1": 0.59,
+      "qwk": 0.464,
+      "severity_bias": 0.158,
+      "pred_dist": {
+       "나쁨": 33,
+       "보통": 70,
+       "좋음": 17
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.467,
+      "macro_f1": 0.249,
+      "qwk": 0.061,
+      "severity_bias": -0.05,
+      "pred_dist": {
+       "보통": 115,
+       "나쁨": 1,
+       "좋음": 4
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.783,
+      "macro_f1": 0.742,
+      "qwk": 0.484,
+      "severity_bias": 0.017,
+      "pred_dist": {
+       "보통": 83,
+       "나쁨": 37
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.675,
+      "macro_f1": 0.426,
+      "qwk": -0.088,
+      "severity_bias": 0.175,
+      "pred_dist": {
+       "나쁨": 110,
+       "보통": 10
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.492,
+      "macro_f1": 0.421,
+      "qwk": 0.213,
+      "severity_bias": 0.433,
+      "pred_dist": {
+       "보통": 43,
+       "나쁨": 71,
+       "좋음": 6
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.425,
+      "macro_f1": 0.37,
+      "qwk": 0.168,
+      "severity_bias": 0.317,
+      "pred_dist": {
+       "약간 높음": 79,
+       "매우 높음": 33,
+       "보통": 8
+      }
+     }
+    },
+    "acc_ci95": [
+     0.541,
+     0.603
+    ],
+    "diff_vs_ref_ci95": [
+     -0.02,
+     0.014
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.143,
+     "within_x10": 0.423,
+     "median_abs_log10": 1.17
+    }
+   },
+   "full": {
+    "n": 5036,
+    "accuracy": 0.561,
+    "accuracy_mean_psf": 0.563,
+    "macro_f1_mean_psf": 0.456,
+    "qwk_mean_psf": 0.24,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.155,
+    "per_psf": {
+     "1": {
+      "n": 582,
+      "accuracy": 0.567,
+      "macro_f1": 0.511,
+      "qwk": 0.367,
+      "severity_bias": 0.134,
+      "pred_dist": {
+       "보통": 273,
+       "매우나쁨": 51,
+       "나쁨": 258
+      }
+     },
+     "2": {
+      "n": 582,
+      "accuracy": 0.497,
+      "macro_f1": 0.383,
+      "qwk": 0.228,
+      "severity_bias": 0.17,
+      "pred_dist": {
+       "보통": 447,
+       "나쁨": 101,
+       "좋음": 34
+      }
+     },
+     "3": {
+      "n": 637,
+      "accuracy": 0.59,
+      "macro_f1": 0.557,
+      "qwk": 0.461,
+      "severity_bias": 0.129,
+      "pred_dist": {
+       "보통": 393,
+       "좋음": 91,
+       "나쁨": 153
+      }
+     },
+     "4": {
+      "n": 637,
+      "accuracy": 0.491,
+      "macro_f1": 0.286,
+      "qwk": 0.089,
+      "severity_bias": 0.049,
+      "pred_dist": {
+       "보통": 600,
+       "나쁨": 23,
+       "좋음": 14
+      }
+     },
+     "5": {
+      "n": 624,
+      "accuracy": 0.744,
+      "macro_f1": 0.691,
+      "qwk": 0.387,
+      "severity_bias": -0.087,
+      "pred_dist": {
+       "보통": 468,
+       "나쁨": 156
+      }
+     },
+     "6": {
+      "n": 624,
+      "accuracy": 0.691,
+      "macro_f1": 0.437,
+      "qwk": 0.001,
+      "severity_bias": 0.264,
+      "pred_dist": {
+       "나쁨": 604,
+       "보통": 20
+      }
+     },
+     "7": {
+      "n": 675,
+      "accuracy": 0.52,
+      "macro_f1": 0.434,
+      "qwk": 0.258,
+      "severity_bias": 0.342,
+      "pred_dist": {
+       "나쁨": 401,
+       "보통": 238,
+       "좋음": 36
+      }
+     },
+     "8": {
+      "n": 675,
+      "accuracy": 0.401,
+      "macro_f1": 0.346,
+      "qwk": 0.129,
+      "severity_bias": 0.24,
+      "pred_dist": {
+       "약간 높음": 455,
+       "매우 높음": 152,
+       "보통": 68
+      }
+     }
+    },
+    "acc_ci95": [
+     0.547,
+     0.574
+    ],
+    "diff_vs_ref_ci95": [
+     -0.016,
+     -0.0
+    ]
+   }
+  },
+  "ceiling-other-experts": {
+   "covered": {
+    "n": 3167,
+    "accuracy": 0.514,
+    "accuracy_mean_psf": 0.493,
+    "macro_f1_mean_psf": 0.441,
+    "qwk_mean_psf": 0.235,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.132,
+    "per_psf_accuracy": {
+     "1": 0.515,
+     "2": 0.399,
+     "3": 0.524,
+     "4": 0.434,
+     "5": 0.692,
+     "7": 0.484,
+     "8": 0.401
+    }
+   },
+   "covered_models": {
+    "baseline-item-mean": 0.494,
+    "baseline-logreg": 0.574,
+    "baseline-majority": 0.523,
+    "catboost-fixed-app": 0.567,
+    "catboost-original-as-trained": 0.586,
+    "catboost-original-deployed": 0.564,
+    "catboost-original-inputfix": 0.584,
+    "catboost-retrained-raw": 0.557,
+    "catboost-retrained": 0.566
+   }
+  },
+  "kimi-fewshot-natural": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.54,
+    "accuracy_mean_psf": 0.522,
+    "macro_f1_mean_psf": 0.497,
+    "qwk_mean_psf": 0.451,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.075,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.437,
+      "macro_f1": 0.423,
+      "qwk": 0.274,
+      "severity_bias": 0.425,
+      "pred_dist": {
+       "보통": 34,
+       "나쁨": 33,
+       "매우나쁨": 20
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.5,
+      "macro_f1": 0.517,
+      "qwk": 0.654,
+      "severity_bias": 0.5,
+      "pred_dist": {
+       "좋음": 2,
+       "보통": 6,
+       "나쁨": 4
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.695,
+      "macro_f1": 0.648,
+      "qwk": 0.554,
+      "severity_bias": -0.051,
+      "pred_dist": {
+       "보통": 36,
+       "좋음": 12,
+       "나쁨": 11
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.286,
+      "macro_f1": 0.222,
+      "qwk": 0.407,
+      "severity_bias": -0.143,
+      "pred_dist": {
+       "좋음": 4,
+       "보통": 1,
+       "나쁨": 2
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.735,
+      "macro_f1": 0.733,
+      "qwk": 0.502,
+      "severity_bias": 0.265,
+      "pred_dist": {
+       "보통": 14,
+       "나쁨": 20
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.504,
+      "macro_f1": 0.471,
+      "qwk": 0.34,
+      "severity_bias": -0.221,
+      "pred_dist": {
+       "좋음": 17,
+       "보통": 57,
+       "나쁨": 39
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.5,
+      "macro_f1": 0.467,
+      "qwk": 0.429,
+      "severity_bias": -0.25,
+      "pred_dist": {
+       "약간 높음": 8,
+       "보통": 6,
+       "매우 높음": 2
+      }
+     }
+    },
+    "acc_ci95": [
+     0.485,
+     0.588
+    ],
+    "diff_vs_ref_ci95": [
+     -0.183,
+     -0.055
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.567,
+    "accuracy_mean_psf": 0.567,
+    "macro_f1_mean_psf": 0.519,
+    "qwk_mean_psf": 0.286,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.125,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.533,
+      "macro_f1": 0.48,
+      "qwk": 0.267,
+      "severity_bias": 0.283,
+      "pred_dist": {
+       "보통": 55,
+       "나쁨": 44,
+       "매우나쁨": 21
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.575,
+      "macro_f1": 0.502,
+      "qwk": 0.372,
+      "severity_bias": 0.167,
+      "pred_dist": {
+       "보통": 80,
+       "좋음": 14,
+       "나쁨": 26
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.6,
+      "macro_f1": 0.561,
+      "qwk": 0.413,
+      "severity_bias": 0.075,
+      "pred_dist": {
+       "나쁨": 25,
+       "보통": 76,
+       "좋음": 19
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.5,
+      "macro_f1": 0.465,
+      "qwk": 0.272,
+      "severity_bias": 0.067,
+      "pred_dist": {
+       "보통": 67,
+       "좋음": 21,
+       "나쁨": 32
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.692,
+      "macro_f1": 0.684,
+      "qwk": 0.408,
+      "severity_bias": 0.258,
+      "pred_dist": {
+       "보통": 54,
+       "나쁨": 66
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.725,
+      "macro_f1": 0.62,
+      "qwk": 0.243,
+      "severity_bias": 0.042,
+      "pred_dist": {
+       "나쁨": 94,
+       "보통": 26
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.433,
+      "macro_f1": 0.421,
+      "qwk": 0.145,
+      "severity_bias": 0.133,
+      "pred_dist": {
+       "나쁨": 49,
+       "좋음": 20,
+       "보통": 51
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.475,
+      "macro_f1": 0.418,
+      "qwk": 0.166,
+      "severity_bias": -0.025,
+      "pred_dist": {
+       "약간 높음": 74,
+       "매우 높음": 15,
+       "보통": 31
+      }
+     }
+    },
+    "acc_ci95": [
+     0.535,
+     0.599
+    ],
+    "diff_vs_ref_ci95": [
+     -0.043,
+     0.025
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.093,
+     "within_x10": 0.403,
+     "median_abs_log10": 1.3
+    }
+   },
+   "meta": {
+    "run": "kimi-fewshot-natural",
+    "backend": "chat",
+    "model": "kimi-k3.1-pro",
+    "shots": true,
+    "concurrency": 10,
+    "extra": "{\"reasoning_effort\":\"low\"}",
+    "wall_s": 1835.0,
+    "n": 1288
+   },
+   "latency_p50_s": 15.031,
+   "throughput_per_s": 0.7
+  },
+  "kimi-fewshot": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.497,
+    "accuracy_mean_psf": 0.486,
+    "macro_f1_mean_psf": 0.443,
+    "qwk_mean_psf": 0.29,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.131,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.437,
+      "macro_f1": 0.428,
+      "qwk": 0.308,
+      "severity_bias": 0.46,
+      "pred_dist": {
+       "보통": 31,
+       "나쁨": 36,
+       "매우나쁨": 20
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.417,
+      "macro_f1": 0.404,
+      "qwk": 0.571,
+      "severity_bias": 0.25,
+      "pred_dist": {
+       "좋음": 4,
+       "보통": 5,
+       "나쁨": 3
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.61,
+      "macro_f1": 0.562,
+      "qwk": 0.38,
+      "severity_bias": 0.068,
+      "pred_dist": {
+       "나쁨": 17,
+       "좋음": 11,
+       "보통": 31
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.571,
+      "macro_f1": 0.444,
+      "qwk": 0.16,
+      "severity_bias": -0.286,
+      "pred_dist": {
+       "좋음": 4,
+       "보통": 2,
+       "나쁨": 1
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.559,
+      "macro_f1": 0.555,
+      "qwk": 0.257,
+      "severity_bias": 0.441,
+      "pred_dist": {
+       "나쁨": 26,
+       "보통": 8
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.496,
+      "macro_f1": 0.462,
+      "qwk": 0.353,
+      "severity_bias": -0.451,
+      "pred_dist": {
+       "좋음": 42,
+       "보통": 33,
+       "나쁨": 38
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.312,
+      "macro_f1": 0.244,
+      "qwk": 0.0,
+      "severity_bias": 0.438,
+      "pred_dist": {
+       "매우 높음": 9,
+       "보통": 2,
+       "약간 높음": 5
+      }
+     }
+    },
+    "acc_ci95": [
+     0.445,
+     0.552
+    ],
+    "diff_vs_ref_ci95": [
+     -0.226,
+     -0.095
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.519,
+    "accuracy_mean_psf": 0.519,
+    "macro_f1_mean_psf": 0.491,
+    "qwk_mean_psf": 0.272,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.15,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.542,
+      "macro_f1": 0.486,
+      "qwk": 0.302,
+      "severity_bias": 0.283,
+      "pred_dist": {
+       "보통": 51,
+       "매우나쁨": 17,
+       "나쁨": 52
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.45,
+      "macro_f1": 0.438,
+      "qwk": 0.372,
+      "severity_bias": 0.2,
+      "pred_dist": {
+       "보통": 52,
+       "좋음": 26,
+       "나쁨": 42
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.483,
+      "macro_f1": 0.481,
+      "qwk": 0.372,
+      "severity_bias": 0.225,
+      "pred_dist": {
+       "나쁨": 46,
+       "좋음": 22,
+       "보통": 52
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.5,
+      "macro_f1": 0.492,
+      "qwk": 0.293,
+      "severity_bias": 0.017,
+      "pred_dist": {
+       "보통": 47,
+       "좋음": 34,
+       "나쁨": 39
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.625,
+      "macro_f1": 0.617,
+      "qwk": 0.289,
+      "severity_bias": 0.275,
+      "pred_dist": {
+       "보통": 52,
+       "나쁨": 68
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.667,
+      "macro_f1": 0.545,
+      "qwk": 0.092,
+      "severity_bias": 0.033,
+      "pred_dist": {
+       "보통": 27,
+       "나쁨": 93
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.483,
+      "macro_f1": 0.471,
+      "qwk": 0.282,
+      "severity_bias": -0.242,
+      "pred_dist": {
+       "보통": 28,
+       "좋음": 54,
+       "나쁨": 38
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.4,
+      "macro_f1": 0.399,
+      "qwk": 0.171,
+      "severity_bias": 0.408,
+      "pred_dist": {
+       "매우 높음": 61,
+       "약간 높음": 34,
+       "보통": 25
+      }
+     }
+    },
+    "acc_ci95": [
+     0.489,
+     0.55
+    ],
+    "diff_vs_ref_ci95": [
+     -0.095,
+     -0.02
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.097,
+     "within_x10": 0.327,
+     "median_abs_log10": 1.344
+    }
+   },
+   "meta": {
+    "run": "kimi-fewshot",
+    "backend": "chat",
+    "model": "kimi-k3.1-pro",
+    "shots": true,
+    "concurrency": 12,
+    "extra": "{\"reasoning_effort\":\"low\"}",
+    "wall_s": 1822.2,
+    "n": 1288
+   },
+   "latency_p50_s": 15.983,
+   "throughput_per_s": 0.71
+  },
+  "kimi-rag20": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.576,
+    "accuracy_mean_psf": 0.567,
+    "macro_f1_mean_psf": 0.52,
+    "qwk_mean_psf": 0.418,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.055,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.552,
+      "macro_f1": 0.555,
+      "qwk": 0.401,
+      "severity_bias": 0.195,
+      "pred_dist": {
+       "보통": 38,
+       "나쁨": 45,
+       "매우나쁨": 4
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.417,
+      "macro_f1": 0.444,
+      "qwk": 0.553,
+      "severity_bias": 0.417,
+      "pred_dist": {
+       "좋음": 2,
+       "보통": 7,
+       "나쁨": 3
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.542,
+      "macro_f1": 0.494,
+      "qwk": 0.373,
+      "severity_bias": 0.0,
+      "pred_dist": {
+       "보통": 35,
+       "나쁨": 13,
+       "좋음": 11
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.571,
+      "macro_f1": 0.389,
+      "qwk": 0.323,
+      "severity_bias": -0.143,
+      "pred_dist": {
+       "좋음": 2,
+       "보통": 5
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.824,
+      "macro_f1": 0.798,
+      "qwk": 0.597,
+      "severity_bias": 0.0,
+      "pred_dist": {
+       "보통": 23,
+       "나쁨": 11
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.566,
+      "macro_f1": 0.468,
+      "qwk": 0.414,
+      "severity_bias": 0.106,
+      "pred_dist": {
+       "좋음": 5,
+       "보통": 44,
+       "나쁨": 64
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.5,
+      "macro_f1": 0.492,
+      "qwk": 0.267,
+      "severity_bias": -0.188,
+      "pred_dist": {
+       "매우 높음": 3,
+       "보통": 6,
+       "약간 높음": 7
+      }
+     }
+    },
+    "acc_ci95": [
+     0.521,
+     0.628
+    ],
+    "diff_vs_ref_ci95": [
+     -0.125,
+     -0.04
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.535,
+    "accuracy_mean_psf": 0.535,
+    "macro_f1_mean_psf": 0.472,
+    "qwk_mean_psf": 0.198,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.132,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.542,
+      "macro_f1": 0.483,
+      "qwk": 0.291,
+      "severity_bias": 0.117,
+      "pred_dist": {
+       "보통": 63,
+       "매우나쁨": 9,
+       "나쁨": 48
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.533,
+      "macro_f1": 0.465,
+      "qwk": 0.336,
+      "severity_bias": 0.217,
+      "pred_dist": {
+       "보통": 74,
+       "좋음": 14,
+       "나쁨": 32
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.558,
+      "macro_f1": 0.52,
+      "qwk": 0.374,
+      "severity_bias": 0.117,
+      "pred_dist": {
+       "보통": 75,
+       "나쁨": 28,
+       "좋음": 17
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.45,
+      "macro_f1": 0.389,
+      "qwk": 0.11,
+      "severity_bias": 0.0,
+      "pred_dist": {
+       "보통": 75,
+       "나쁨": 24,
+       "좋음": 21
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.717,
+      "macro_f1": 0.673,
+      "qwk": 0.347,
+      "severity_bias": 0.05,
+      "pred_dist": {
+       "보통": 79,
+       "나쁨": 41
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.633,
+      "macro_f1": 0.5,
+      "qwk": 0.001,
+      "severity_bias": 0.033,
+      "pred_dist": {
+       "나쁨": 93,
+       "보통": 27
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.417,
+      "macro_f1": 0.346,
+      "qwk": 0.136,
+      "severity_bias": 0.392,
+      "pred_dist": {
+       "나쁨": 63,
+       "보통": 54,
+       "좋음": 3
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.433,
+      "macro_f1": 0.401,
+      "qwk": -0.01,
+      "severity_bias": 0.133,
+      "pred_dist": {
+       "매우 높음": 33,
+       "약간 높음": 57,
+       "보통": 30
+      }
+     }
+    },
+    "acc_ci95": [
+     0.505,
+     0.566
+    ],
+    "diff_vs_ref_ci95": [
+     -0.067,
+     -0.015
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.143,
+     "within_x10": 0.42,
+     "median_abs_log10": 1.225
+    }
+   },
+   "meta": {
+    "run": "kimi-rag20",
+    "backend": "chat",
+    "model": "kimi-k3.1-pro",
+    "shots": false,
+    "concurrency": 16,
+    "extra": "{\"reasoning_effort\":\"low\"}",
+    "wall_s": 1185.2,
+    "n": 1288
+   },
+   "latency_p50_s": 11.492,
+   "throughput_per_s": 1.09
+  },
+  "kimi-zeroshot": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.518,
+    "accuracy_mean_psf": 0.496,
+    "macro_f1_mean_psf": 0.444,
+    "qwk_mean_psf": 0.362,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.458,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.345,
+      "macro_f1": 0.34,
+      "qwk": 0.248,
+      "severity_bias": 0.759,
+      "pred_dist": {
+       "보통": 16,
+       "나쁨": 40,
+       "매우나쁨": 31
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.5,
+      "macro_f1": 0.481,
+      "qwk": 0.419,
+      "severity_bias": 0.667,
+      "pred_dist": {
+       "좋음": 2,
+       "보통": 4,
+       "나쁨": 6
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.576,
+      "macro_f1": 0.498,
+      "qwk": 0.423,
+      "severity_bias": 0.339,
+      "pred_dist": {
+       "보통": 33,
+       "좋음": 2,
+       "나쁨": 24
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.429,
+      "macro_f1": 0.444,
+      "qwk": 0.517,
+      "severity_bias": 0.286,
+      "pred_dist": {
+       "좋음": 2,
+       "보통": 2,
+       "나쁨": 3
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.559,
+      "macro_f1": 0.555,
+      "qwk": 0.257,
+      "severity_bias": 0.441,
+      "pred_dist": {
+       "나쁨": 26,
+       "보통": 8
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.628,
+      "macro_f1": 0.458,
+      "qwk": 0.419,
+      "severity_bias": 0.212,
+      "pred_dist": {
+       "좋음": 1,
+       "보통": 40,
+       "나쁨": 72
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.438,
+      "macro_f1": 0.333,
+      "qwk": 0.25,
+      "severity_bias": 0.5,
+      "pred_dist": {
+       "매우 높음": 9,
+       "약간 높음": 6,
+       "보통": 1
+      }
+     }
+    },
+    "acc_ci95": [
+     0.466,
+     0.573
+    ],
+    "diff_vs_ref_ci95": [
+     -0.201,
+     -0.076
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.496,
+    "accuracy_mean_psf": 0.496,
+    "macro_f1_mean_psf": 0.419,
+    "qwk_mean_psf": 0.217,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.468,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.408,
+      "macro_f1": 0.398,
+      "qwk": 0.226,
+      "severity_bias": 0.658,
+      "pred_dist": {
+       "나쁨": 59,
+       "보통": 25,
+       "매우나쁨": 36
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.475,
+      "macro_f1": 0.392,
+      "qwk": 0.271,
+      "severity_bias": 0.458,
+      "pred_dist": {
+       "나쁨": 53,
+       "좋음": 6,
+       "보통": 61
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.55,
+      "macro_f1": 0.515,
+      "qwk": 0.41,
+      "severity_bias": 0.35,
+      "pred_dist": {
+       "나쁨": 48,
+       "보통": 63,
+       "좋음": 9
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.408,
+      "macro_f1": 0.34,
+      "qwk": 0.274,
+      "severity_bias": 0.608,
+      "pred_dist": {
+       "보통": 40,
+       "나쁨": 78,
+       "좋음": 2
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.608,
+      "macro_f1": 0.608,
+      "qwk": 0.312,
+      "severity_bias": 0.375,
+      "pred_dist": {
+       "보통": 40,
+       "나쁨": 80
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.683,
+      "macro_f1": 0.43,
+      "qwk": -0.075,
+      "severity_bias": 0.183,
+      "pred_dist": {
+       "나쁨": 111,
+       "보통": 9
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.442,
+      "macro_f1": 0.341,
+      "qwk": 0.177,
+      "severity_bias": 0.508,
+      "pred_dist": {
+       "나쁨": 75,
+       "보통": 44,
+       "좋음": 1
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.392,
+      "macro_f1": 0.326,
+      "qwk": 0.144,
+      "severity_bias": 0.6,
+      "pred_dist": {
+       "매우 높음": 61,
+       "약간 높음": 57,
+       "보통": 2
+      }
+     }
+    },
+    "acc_ci95": [
+     0.466,
+     0.527
+    ],
+    "diff_vs_ref_ci95": [
+     -0.115,
+     -0.046
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.043,
+     "within_x10": 0.14,
+     "median_abs_log10": 2.624
+    }
+   },
+   "meta": {
+    "run": "kimi-zeroshot",
+    "backend": "chat",
+    "model": "kimi-k3.1-pro",
+    "shots": false,
+    "concurrency": 12,
+    "extra": "{\"reasoning_effort\":\"low\"}",
+    "wall_s": 1573.6,
+    "n": 1288
+   },
+   "latency_p50_s": 14.6,
+   "throughput_per_s": 0.82
+  },
+  "nemotron-fewshot-natural": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.57,
+    "accuracy_mean_psf": 0.542,
+    "macro_f1_mean_psf": 0.48,
+    "qwk_mean_psf": 0.402,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.213,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.437,
+      "macro_f1": 0.411,
+      "qwk": 0.205,
+      "severity_bias": 0.46,
+      "pred_dist": {
+       "보통": 32,
+       "나쁨": 34,
+       "매우나쁨": 21
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.417,
+      "macro_f1": 0.443,
+      "qwk": 0.588,
+      "severity_bias": 0.583,
+      "pred_dist": {
+       "좋음": 1,
+       "보통": 7,
+       "나쁨": 4
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.746,
+      "macro_f1": 0.658,
+      "qwk": 0.629,
+      "severity_bias": 0.119,
+      "pred_dist": {
+       "보통": 42,
+       "좋음": 4,
+       "나쁨": 13
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.571,
+      "macro_f1": 0.524,
+      "qwk": 0.571,
+      "severity_bias": 0.143,
+      "pred_dist": {
+       "좋음": 2,
+       "보통": 3,
+       "나쁨": 2
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.647,
+      "macro_f1": 0.647,
+      "qwk": 0.372,
+      "severity_bias": 0.353,
+      "pred_dist": {
+       "나쁨": 23,
+       "보통": 11
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.602,
+      "macro_f1": 0.493,
+      "qwk": 0.446,
+      "severity_bias": -0.044,
+      "pred_dist": {
+       "좋음": 3,
+       "보통": 65,
+       "나쁨": 45
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.375,
+      "macro_f1": 0.182,
+      "qwk": 0.0,
+      "severity_bias": -0.125,
+      "pred_dist": {
+       "약간 높음": 12,
+       "보통": 3,
+       "매우 높음": 1
+      }
+     }
+    },
+    "acc_ci95": [
+     0.515,
+     0.622
+    ],
+    "diff_vs_ref_ci95": [
+     -0.152,
+     -0.024
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.541,
+    "accuracy_mean_psf": 0.541,
+    "macro_f1_mean_psf": 0.451,
+    "qwk_mean_psf": 0.232,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.257,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.492,
+      "macro_f1": 0.432,
+      "qwk": 0.219,
+      "severity_bias": 0.317,
+      "pred_dist": {
+       "보통": 52,
+       "나쁨": 46,
+       "매우나쁨": 22
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.517,
+      "macro_f1": 0.405,
+      "qwk": 0.314,
+      "severity_bias": 0.408,
+      "pred_dist": {
+       "보통": 73,
+       "나쁨": 44,
+       "좋음": 3
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.625,
+      "macro_f1": 0.568,
+      "qwk": 0.452,
+      "severity_bias": 0.208,
+      "pred_dist": {
+       "나쁨": 31,
+       "보통": 80,
+       "좋음": 9
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.467,
+      "macro_f1": 0.409,
+      "qwk": 0.224,
+      "severity_bias": 0.275,
+      "pred_dist": {
+       "보통": 64,
+       "좋음": 10,
+       "나쁨": 46
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.658,
+      "macro_f1": 0.653,
+      "qwk": 0.361,
+      "severity_bias": 0.292,
+      "pred_dist": {
+       "보통": 50,
+       "나쁨": 70
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.742,
+      "macro_f1": 0.426,
+      "qwk": 0.0,
+      "severity_bias": 0.258,
+      "pred_dist": {
+       "나쁨": 120
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.433,
+      "macro_f1": 0.383,
+      "qwk": 0.16,
+      "severity_bias": 0.35,
+      "pred_dist": {
+       "나쁨": 59,
+       "보통": 57,
+       "좋음": 4
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.392,
+      "macro_f1": 0.332,
+      "qwk": 0.129,
+      "severity_bias": -0.05,
+      "pred_dist": {
+       "약간 높음": 77,
+       "매우 높음": 12,
+       "보통": 31
+      }
+     }
+    },
+    "acc_ci95": [
+     0.509,
+     0.572
+    ],
+    "diff_vs_ref_ci95": [
+     -0.067,
+     -0.004
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.11,
+     "within_x10": 0.32,
+     "median_abs_log10": 1.648
+    }
+   },
+   "meta": {
+    "run": "nemotron-fewshot-natural",
+    "backend": "chat",
+    "model": "nemotron-3.5-super-vl",
+    "shots": true,
+    "concurrency": 32,
+    "extra": "{\"chat_template_kwargs\":{\"enable_thinking\":false}}",
+    "wall_s": 59.1,
+    "n": 1288
+   },
+   "latency_p50_s": 1.381,
+   "throughput_per_s": 21.79
+  },
+  "nemotron-fewshot": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.509,
+    "accuracy_mean_psf": 0.53,
+    "macro_f1_mean_psf": 0.505,
+    "qwk_mean_psf": 0.382,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.341,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.322,
+      "macro_f1": 0.318,
+      "qwk": 0.164,
+      "severity_bias": 0.759,
+      "pred_dist": {
+       "보통": 18,
+       "나쁨": 36,
+       "매우나쁨": 33
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.5,
+      "macro_f1": 0.486,
+      "qwk": 0.491,
+      "severity_bias": 0.417,
+      "pred_dist": {
+       "좋음": 3,
+       "보통": 5,
+       "나쁨": 4
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.576,
+      "macro_f1": 0.571,
+      "qwk": 0.521,
+      "severity_bias": 0.339,
+      "pred_dist": {
+       "보통": 23,
+       "나쁨": 29,
+       "좋음": 7
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.714,
+      "macro_f1": 0.722,
+      "qwk": 0.759,
+      "severity_bias": 0.286,
+      "pred_dist": {
+       "좋음": 2,
+       "나쁨": 3,
+       "보통": 2
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.559,
+      "macro_f1": 0.555,
+      "qwk": 0.257,
+      "severity_bias": 0.441,
+      "pred_dist": {
+       "나쁨": 26,
+       "보통": 8
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.602,
+      "macro_f1": 0.555,
+      "qwk": 0.48,
+      "severity_bias": -0.168,
+      "pred_dist": {
+       "좋음": 13,
+       "보통": 59,
+       "나쁨": 41
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.438,
+      "macro_f1": 0.329,
+      "qwk": 0.0,
+      "severity_bias": 0.312,
+      "pred_dist": {
+       "매우 높음": 7,
+       "약간 높음": 7,
+       "보통": 2
+      }
+     }
+    },
+    "acc_ci95": [
+     0.46,
+     0.561
+    ],
+    "diff_vs_ref_ci95": [
+     -0.22,
+     -0.085
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.494,
+    "accuracy_mean_psf": 0.494,
+    "macro_f1_mean_psf": 0.439,
+    "qwk_mean_psf": 0.236,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.376,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.392,
+      "macro_f1": 0.36,
+      "qwk": 0.176,
+      "severity_bias": 0.55,
+      "pred_dist": {
+       "보통": 37,
+       "매우나쁨": 35,
+       "나쁨": 48
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.433,
+      "macro_f1": 0.392,
+      "qwk": 0.245,
+      "severity_bias": 0.433,
+      "pred_dist": {
+       "보통": 50,
+       "좋음": 13,
+       "나쁨": 57
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.483,
+      "macro_f1": 0.485,
+      "qwk": 0.421,
+      "severity_bias": 0.467,
+      "pred_dist": {
+       "나쁨": 68,
+       "좋음": 15,
+       "보통": 37
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.408,
+      "macro_f1": 0.386,
+      "qwk": 0.232,
+      "severity_bias": 0.417,
+      "pred_dist": {
+       "보통": 45,
+       "나쁨": 64,
+       "좋음": 11
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.592,
+      "macro_f1": 0.591,
+      "qwk": 0.292,
+      "severity_bias": 0.392,
+      "pred_dist": {
+       "보통": 38,
+       "나쁨": 82
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.742,
+      "macro_f1": 0.426,
+      "qwk": 0.0,
+      "severity_bias": 0.258,
+      "pred_dist": {
+       "나쁨": 120
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.458,
+      "macro_f1": 0.441,
+      "qwk": 0.33,
+      "severity_bias": 0.092,
+      "pred_dist": {
+       "보통": 60,
+       "좋음": 18,
+       "나쁨": 42
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.442,
+      "macro_f1": 0.427,
+      "qwk": 0.189,
+      "severity_bias": 0.4,
+      "pred_dist": {
+       "매우 높음": 52,
+       "약간 높음": 51,
+       "보통": 17
+      }
+     }
+    },
+    "acc_ci95": [
+     0.464,
+     0.525
+    ],
+    "diff_vs_ref_ci95": [
+     -0.118,
+     -0.046
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.043,
+     "within_x10": 0.217,
+     "median_abs_log10": 2.2
+    }
+   },
+   "meta": {
+    "run": "nemotron-fewshot",
+    "backend": "chat",
+    "model": "nemotron-3.5-super-vl",
+    "shots": true,
+    "concurrency": 32,
+    "extra": "{\"chat_template_kwargs\":{\"enable_thinking\":false}}",
+    "wall_s": 60.8,
+    "n": 1288
+   },
+   "latency_p50_s": 1.43,
+   "throughput_per_s": 21.18
+  },
+  "nemotron-rag20": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.57,
+    "accuracy_mean_psf": 0.583,
+    "macro_f1_mean_psf": 0.544,
+    "qwk_mean_psf": 0.452,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.205,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.517,
+      "macro_f1": 0.559,
+      "qwk": 0.371,
+      "severity_bias": 0.356,
+      "pred_dist": {
+       "보통": 26,
+       "나쁨": 55,
+       "매우나쁨": 6
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.417,
+      "macro_f1": 0.444,
+      "qwk": 0.553,
+      "severity_bias": 0.417,
+      "pred_dist": {
+       "좋음": 2,
+       "보통": 7,
+       "나쁨": 3
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.576,
+      "macro_f1": 0.552,
+      "qwk": 0.517,
+      "severity_bias": 0.288,
+      "pred_dist": {
+       "보통": 30,
+       "나쁨": 24,
+       "좋음": 5
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.714,
+      "macro_f1": 0.583,
+      "qwk": 0.65,
+      "severity_bias": 0.0,
+      "pred_dist": {
+       "좋음": 2,
+       "보통": 4,
+       "나쁨": 1
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.647,
+      "macro_f1": 0.646,
+      "qwk": 0.348,
+      "severity_bias": 0.294,
+      "pred_dist": {
+       "나쁨": 21,
+       "보통": 13
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.584,
+      "macro_f1": 0.458,
+      "qwk": 0.414,
+      "severity_bias": 0.142,
+      "pred_dist": {
+       "좋음": 3,
+       "보통": 44,
+       "나쁨": 66
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.625,
+      "macro_f1": 0.563,
+      "qwk": 0.308,
+      "severity_bias": -0.062,
+      "pred_dist": {
+       "매우 높음": 3,
+       "약간 높음": 9,
+       "보통": 4
+      }
+     }
+    },
+    "acc_ci95": [
+     0.515,
+     0.625
+    ],
+    "diff_vs_ref_ci95": [
+     -0.137,
+     -0.04
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.517,
+    "accuracy_mean_psf": 0.517,
+    "macro_f1_mean_psf": 0.444,
+    "qwk_mean_psf": 0.192,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.279,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.508,
+      "macro_f1": 0.496,
+      "qwk": 0.308,
+      "severity_bias": 0.275,
+      "pred_dist": {
+       "보통": 49,
+       "매우나쁨": 14,
+       "나쁨": 57
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.483,
+      "macro_f1": 0.419,
+      "qwk": 0.282,
+      "severity_bias": 0.358,
+      "pred_dist": {
+       "보통": 63,
+       "나쁨": 46,
+       "좋음": 11
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.542,
+      "macro_f1": 0.501,
+      "qwk": 0.353,
+      "severity_bias": 0.283,
+      "pred_dist": {
+       "나쁨": 42,
+       "보통": 67,
+       "좋음": 11
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.417,
+      "macro_f1": 0.38,
+      "qwk": 0.159,
+      "severity_bias": 0.167,
+      "pred_dist": {
+       "보통": 63,
+       "나쁨": 40,
+       "좋음": 17
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.633,
+      "macro_f1": 0.625,
+      "qwk": 0.301,
+      "severity_bias": 0.267,
+      "pred_dist": {
+       "보통": 53,
+       "나쁨": 67
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.725,
+      "macro_f1": 0.42,
+      "qwk": -0.032,
+      "severity_bias": 0.242,
+      "pred_dist": {
+       "나쁨": 118,
+       "보통": 2
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.442,
+      "macro_f1": 0.349,
+      "qwk": 0.161,
+      "severity_bias": 0.458,
+      "pred_dist": {
+       "나쁨": 70,
+       "보통": 48,
+       "좋음": 2
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.383,
+      "macro_f1": 0.358,
+      "qwk": -0.0,
+      "severity_bias": 0.183,
+      "pred_dist": {
+       "매우 높음": 36,
+       "보통": 27,
+       "약간 높음": 57
+      }
+     }
+    },
+    "acc_ci95": [
+     0.485,
+     0.547
+    ],
+    "diff_vs_ref_ci95": [
+     -0.086,
+     -0.033
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.097,
+     "within_x10": 0.337,
+     "median_abs_log10": 1.591
+    }
+   },
+   "meta": {
+    "run": "nemotron-rag20",
+    "backend": "chat",
+    "model": "nemotron-3.5-super-vl",
+    "shots": false,
+    "concurrency": 32,
+    "extra": "{\"chat_template_kwargs\":{\"enable_thinking\":false}}",
+    "wall_s": 144.1,
+    "n": 1288
+   },
+   "latency_p50_s": 3.503,
+   "throughput_per_s": 8.94
+  },
+  "nemotron-zeroshot": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.473,
+    "accuracy_mean_psf": 0.459,
+    "macro_f1_mean_psf": 0.42,
+    "qwk_mean_psf": 0.325,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.289,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.379,
+      "macro_f1": 0.42,
+      "qwk": 0.23,
+      "severity_bias": 0.621,
+      "pred_dist": {
+       "나쁨": 60,
+       "보통": 12,
+       "매우나쁨": 15
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.333,
+      "macro_f1": 0.283,
+      "qwk": 0.364,
+      "severity_bias": 0.833,
+      "pred_dist": {
+       "좋음": 1,
+       "보통": 4,
+       "나쁨": 7
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.576,
+      "macro_f1": 0.499,
+      "qwk": 0.375,
+      "severity_bias": 0.373,
+      "pred_dist": {
+       "보통": 27,
+       "좋음": 4,
+       "나쁨": 28
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.571,
+      "macro_f1": 0.524,
+      "qwk": 0.571,
+      "severity_bias": 0.143,
+      "pred_dist": {
+       "좋음": 2,
+       "보통": 3,
+       "나쁨": 2
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.382,
+      "macro_f1": 0.336,
+      "qwk": 0.058,
+      "severity_bias": 0.618,
+      "pred_dist": {
+       "나쁨": 32,
+       "보통": 2
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.531,
+      "macro_f1": 0.446,
+      "qwk": 0.342,
+      "severity_bias": -0.062,
+      "pred_dist": {
+       "좋음": 2,
+       "보통": 69,
+       "나쁨": 42
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.438,
+      "macro_f1": 0.43,
+      "qwk": 0.333,
+      "severity_bias": -0.5,
+      "pred_dist": {
+       "보통": 10,
+       "매우 높음": 2,
+       "약간 높음": 4
+      }
+     }
+    },
+    "acc_ci95": [
+     0.418,
+     0.527
+    ],
+    "diff_vs_ref_ci95": [
+     -0.253,
+     -0.122
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.445,
+    "accuracy_mean_psf": 0.445,
+    "macro_f1_mean_psf": 0.401,
+    "qwk_mean_psf": 0.169,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.301,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.408,
+      "macro_f1": 0.41,
+      "qwk": 0.25,
+      "severity_bias": 0.483,
+      "pred_dist": {
+       "나쁨": 82,
+       "매우나쁨": 14,
+       "보통": 24
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.492,
+      "macro_f1": 0.374,
+      "qwk": 0.182,
+      "severity_bias": 0.417,
+      "pred_dist": {
+       "나쁨": 45,
+       "보통": 72,
+       "좋음": 3
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.517,
+      "macro_f1": 0.482,
+      "qwk": 0.38,
+      "severity_bias": 0.417,
+      "pred_dist": {
+       "나쁨": 57,
+       "보통": 53,
+       "좋음": 10
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.433,
+      "macro_f1": 0.363,
+      "qwk": 0.235,
+      "severity_bias": 0.442,
+      "pred_dist": {
+       "보통": 56,
+       "나쁨": 60,
+       "좋음": 4
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.442,
+      "macro_f1": 0.43,
+      "qwk": 0.135,
+      "severity_bias": 0.558,
+      "pred_dist": {
+       "보통": 18,
+       "나쁨": 102
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.45,
+      "macro_f1": 0.413,
+      "qwk": -0.109,
+      "severity_bias": -0.233,
+      "pred_dist": {
+       "보통": 59,
+       "나쁨": 61
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.408,
+      "macro_f1": 0.334,
+      "qwk": 0.118,
+      "severity_bias": 0.308,
+      "pred_dist": {
+       "나쁨": 51,
+       "보통": 68,
+       "좋음": 1
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.408,
+      "macro_f1": 0.405,
+      "qwk": 0.16,
+      "severity_bias": 0.017,
+      "pred_dist": {
+       "매우 높음": 41,
+       "보통": 52,
+       "약간 높음": 27
+      }
+     }
+    },
+    "acc_ci95": [
+     0.411,
+     0.477
+    ],
+    "diff_vs_ref_ci95": [
+     -0.172,
+     -0.093
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.083,
+     "within_x10": 0.293,
+     "median_abs_log10": 1.685
+    }
+   },
+   "meta": {
+    "run": "nemotron-zeroshot",
+    "backend": "chat",
+    "model": "nemotron-3.5-super-vl",
+    "shots": false,
+    "concurrency": 32,
+    "extra": "{\"chat_template_kwargs\":{\"enable_thinking\":false}}",
+    "wall_s": 23.7,
+    "n": 1288
+   },
+   "latency_p50_s": 0.559,
+   "throughput_per_s": 54.35
+  },
+  "openjev-base-logprob": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.527,
+    "accuracy_mean_psf": 0.49,
+    "macro_f1_mean_psf": 0.472,
+    "qwk_mean_psf": 0.4,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.397,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.368,
+      "macro_f1": 0.493,
+      "qwk": 0.292,
+      "severity_bias": 0.632,
+      "pred_dist": {
+       "나쁨": 77,
+       "보통": 3,
+       "매우나쁨": 7
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.417,
+      "macro_f1": 0.417,
+      "qwk": 0.464,
+      "severity_bias": 0.667,
+      "pred_dist": {
+       "좋음": 1,
+       "보통": 6,
+       "나쁨": 5
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.678,
+      "macro_f1": 0.585,
+      "qwk": 0.601,
+      "severity_bias": 0.322,
+      "pred_dist": {
+       "보통": 34,
+       "좋음": 2,
+       "나쁨": 23
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.571,
+      "macro_f1": 0.579,
+      "qwk": 0.604,
+      "severity_bias": 0.429,
+      "pred_dist": {
+       "좋음": 1,
+       "보통": 3,
+       "나쁨": 3
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.529,
+      "macro_f1": 0.523,
+      "qwk": 0.221,
+      "severity_bias": 0.471,
+      "pred_dist": {
+       "나쁨": 27,
+       "보통": 7
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.619,
+      "macro_f1": 0.462,
+      "qwk": 0.438,
+      "severity_bias": 0.257,
+      "pred_dist": {
+       "좋음": 3,
+       "보통": 31,
+       "나쁨": 79
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.25,
+      "macro_f1": 0.242,
+      "qwk": 0.182,
+      "severity_bias": 0.0,
+      "pred_dist": {
+       "매우 높음": 8,
+       "보통": 8
+      }
+     }
+    },
+    "acc_ci95": [
+     0.476,
+     0.579
+    ],
+    "diff_vs_ref_ci95": [
+     -0.192,
+     -0.064
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.49,
+    "accuracy_mean_psf": 0.489,
+    "macro_f1_mean_psf": 0.424,
+    "qwk_mean_psf": 0.236,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.432,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.375,
+      "macro_f1": 0.405,
+      "qwk": 0.233,
+      "severity_bias": 0.542,
+      "pred_dist": {
+       "나쁨": 99,
+       "보통": 12,
+       "매우나쁨": 9
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.533,
+      "macro_f1": 0.411,
+      "qwk": 0.329,
+      "severity_bias": 0.4,
+      "pred_dist": {
+       "나쁨": 41,
+       "보통": 78,
+       "좋음": 1
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.533,
+      "macro_f1": 0.488,
+      "qwk": 0.396,
+      "severity_bias": 0.442,
+      "pred_dist": {
+       "나쁨": 56,
+       "보통": 58,
+       "좋음": 6
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.392,
+      "macro_f1": 0.326,
+      "qwk": 0.212,
+      "severity_bias": 0.633,
+      "pred_dist": {
+       "보통": 37,
+       "나쁨": 81,
+       "좋음": 2
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.592,
+      "macro_f1": 0.591,
+      "qwk": 0.292,
+      "severity_bias": 0.392,
+      "pred_dist": {
+       "보통": 38,
+       "나쁨": 82
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.708,
+      "macro_f1": 0.537,
+      "qwk": 0.096,
+      "severity_bias": 0.125,
+      "pred_dist": {
+       "보통": 16,
+       "나쁨": 104
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.425,
+      "macro_f1": 0.328,
+      "qwk": 0.119,
+      "severity_bias": 0.517,
+      "pred_dist": {
+       "나쁨": 77,
+       "보통": 41,
+       "좋음": 2
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.358,
+      "macro_f1": 0.307,
+      "qwk": 0.212,
+      "severity_bias": 0.408,
+      "pred_dist": {
+       "매우 높음": 78,
+       "보통": 42
+      }
+     }
+    },
+    "acc_ci95": [
+     0.458,
+     0.521
+    ],
+    "diff_vs_ref_ci95": [
+     -0.125,
+     -0.049
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.043,
+     "within_x10": 0.133,
+     "median_abs_log10": 2.555
+    }
+   }
+  },
+  "openjev-chat-fewshot-natural": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.543,
+    "accuracy_mean_psf": 0.521,
+    "macro_f1_mean_psf": 0.494,
+    "qwk_mean_psf": 0.42,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.298,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.414,
+      "macro_f1": 0.426,
+      "qwk": 0.201,
+      "severity_bias": 0.46,
+      "pred_dist": {
+       "보통": 18,
+       "나쁨": 62,
+       "매우나쁨": 7
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.417,
+      "macro_f1": 0.417,
+      "qwk": 0.464,
+      "severity_bias": 0.667,
+      "pred_dist": {
+       "좋음": 1,
+       "보통": 6,
+       "나쁨": 5
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.627,
+      "macro_f1": 0.508,
+      "qwk": 0.494,
+      "severity_bias": 0.356,
+      "pred_dist": {
+       "보통": 32,
+       "좋음": 2,
+       "나쁨": 25
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.571,
+      "macro_f1": 0.6,
+      "qwk": 0.687,
+      "severity_bias": 0.429,
+      "pred_dist": {
+       "좋음": 2,
+       "나쁨": 4,
+       "보통": 1
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.559,
+      "macro_f1": 0.555,
+      "qwk": 0.257,
+      "severity_bias": 0.441,
+      "pred_dist": {
+       "나쁨": 26,
+       "보통": 8
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.619,
+      "macro_f1": 0.478,
+      "qwk": 0.438,
+      "severity_bias": 0.23,
+      "pred_dist": {
+       "좋음": 6,
+       "보통": 28,
+       "나쁨": 79
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.438,
+      "macro_f1": 0.476,
+      "qwk": 0.4,
+      "severity_bias": -0.5,
+      "pred_dist": {
+       "매우 높음": 3,
+       "보통": 11,
+       "약간 높음": 2
+      }
+     }
+    },
+    "acc_ci95": [
+     0.491,
+     0.595
+    ],
+    "diff_vs_ref_ci95": [
+     -0.177,
+     -0.058
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.521,
+    "accuracy_mean_psf": 0.521,
+    "macro_f1_mean_psf": 0.433,
+    "qwk_mean_psf": 0.241,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.305,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.45,
+      "macro_f1": 0.389,
+      "qwk": 0.183,
+      "severity_bias": 0.392,
+      "pred_dist": {
+       "보통": 28,
+       "나쁨": 85,
+       "매우나쁨": 7
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.517,
+      "macro_f1": 0.408,
+      "qwk": 0.344,
+      "severity_bias": 0.458,
+      "pred_dist": {
+       "보통": 69,
+       "나쁨": 49,
+       "좋음": 2
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.567,
+      "macro_f1": 0.532,
+      "qwk": 0.463,
+      "severity_bias": 0.4,
+      "pred_dist": {
+       "나쁨": 55,
+       "보통": 55,
+       "좋음": 10
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.425,
+      "macro_f1": 0.382,
+      "qwk": 0.295,
+      "severity_bias": 0.475,
+      "pred_dist": {
+       "보통": 48,
+       "나쁨": 66,
+       "좋음": 6
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.592,
+      "macro_f1": 0.59,
+      "qwk": 0.274,
+      "severity_bias": 0.358,
+      "pred_dist": {
+       "보통": 42,
+       "나쁨": 78
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.75,
+      "macro_f1": 0.459,
+      "qwk": 0.047,
+      "severity_bias": 0.25,
+      "pred_dist": {
+       "나쁨": 119,
+       "보통": 1
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.492,
+      "macro_f1": 0.392,
+      "qwk": 0.205,
+      "severity_bias": 0.558,
+      "pred_dist": {
+       "나쁨": 85,
+       "보통": 30,
+       "좋음": 5
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.375,
+      "macro_f1": 0.311,
+      "qwk": 0.119,
+      "severity_bias": -0.45,
+      "pred_dist": {
+       "보통": 88,
+       "매우 높음": 21,
+       "약간 높음": 11
+      }
+     }
+    },
+    "acc_ci95": [
+     0.489,
+     0.551
+    ],
+    "diff_vs_ref_ci95": [
+     -0.09,
+     -0.021
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.077,
+     "within_x10": 0.247,
+     "median_abs_log10": 2.06
+    }
+   },
+   "meta": {
+    "run": "openjev-chat-fewshot-natural",
+    "backend": "chat",
+    "model": "qwen",
+    "shots": true,
+    "concurrency": 16,
+    "extra": "{\"chat_template_kwargs\":{\"enable_thinking\":false}}",
+    "wall_s": 58.2,
+    "n": 1288
+   },
+   "latency_p50_s": 0.63,
+   "throughput_per_s": 22.13
+  },
+  "openjev-chat-fewshot": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.521,
+    "accuracy_mean_psf": 0.495,
+    "macro_f1_mean_psf": 0.471,
+    "qwk_mean_psf": 0.417,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.308,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.379,
+      "macro_f1": 0.412,
+      "qwk": 0.259,
+      "severity_bias": 0.598,
+      "pred_dist": {
+       "보통": 16,
+       "나쁨": 54,
+       "매우나쁨": 17
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.417,
+      "macro_f1": 0.367,
+      "qwk": 0.483,
+      "severity_bias": 0.5,
+      "pred_dist": {
+       "좋음": 3,
+       "보통": 4,
+       "나쁨": 5
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.542,
+      "macro_f1": 0.479,
+      "qwk": 0.467,
+      "severity_bias": 0.407,
+      "pred_dist": {
+       "나쁨": 30,
+       "좋음": 4,
+       "보통": 25
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.714,
+      "macro_f1": 0.722,
+      "qwk": 0.759,
+      "severity_bias": 0.286,
+      "pred_dist": {
+       "좋음": 2,
+       "나쁨": 3,
+       "보통": 2
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.5,
+      "macro_f1": 0.489,
+      "qwk": 0.186,
+      "severity_bias": 0.5,
+      "pred_dist": {
+       "나쁨": 28,
+       "보통": 6
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.664,
+      "macro_f1": 0.583,
+      "qwk": 0.583,
+      "severity_bias": -0.009,
+      "pred_dist": {
+       "좋음": 13,
+       "보통": 41,
+       "나쁨": 59
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.25,
+      "macro_f1": 0.244,
+      "qwk": 0.182,
+      "severity_bias": -0.125,
+      "pred_dist": {
+       "매우 높음": 7,
+       "보통": 9
+      }
+     }
+    },
+    "acc_ci95": [
+     0.47,
+     0.573
+    ],
+    "diff_vs_ref_ci95": [
+     -0.204,
+     -0.073
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.48,
+    "accuracy_mean_psf": 0.48,
+    "macro_f1_mean_psf": 0.42,
+    "qwk_mean_psf": 0.228,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.383,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.408,
+      "macro_f1": 0.44,
+      "qwk": 0.228,
+      "severity_bias": 0.417,
+      "pred_dist": {
+       "나쁨": 84,
+       "보통": 27,
+       "매우나쁨": 9
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.425,
+      "macro_f1": 0.356,
+      "qwk": 0.226,
+      "severity_bias": 0.55,
+      "pred_dist": {
+       "보통": 50,
+       "좋음": 6,
+       "나쁨": 64
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.5,
+      "macro_f1": 0.482,
+      "qwk": 0.394,
+      "severity_bias": 0.458,
+      "pred_dist": {
+       "나쁨": 65,
+       "보통": 42,
+       "좋음": 13
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.367,
+      "macro_f1": 0.343,
+      "qwk": 0.232,
+      "severity_bias": 0.525,
+      "pred_dist": {
+       "나쁨": 78,
+       "보통": 30,
+       "좋음": 12
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.558,
+      "macro_f1": 0.558,
+      "qwk": 0.252,
+      "severity_bias": 0.425,
+      "pred_dist": {
+       "보통": 34,
+       "나쁨": 86
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.733,
+      "macro_f1": 0.423,
+      "qwk": -0.016,
+      "severity_bias": 0.25,
+      "pred_dist": {
+       "나쁨": 119,
+       "보통": 1
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.483,
+      "macro_f1": 0.433,
+      "qwk": 0.336,
+      "severity_bias": 0.308,
+      "pred_dist": {
+       "보통": 44,
+       "좋음": 13,
+       "나쁨": 63
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.367,
+      "macro_f1": 0.324,
+      "qwk": 0.175,
+      "severity_bias": 0.133,
+      "pred_dist": {
+       "매우 높음": 60,
+       "보통": 57,
+       "약간 높음": 3
+      }
+     }
+    },
+    "acc_ci95": [
+     0.45,
+     0.51
+    ],
+    "diff_vs_ref_ci95": [
+     -0.132,
+     -0.058
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.07,
+     "within_x10": 0.207,
+     "median_abs_log10": 2.47
+    }
+   },
+   "meta": {
+    "run": "openjev-chat-fewshot",
+    "backend": "chat",
+    "model": "qwen",
+    "shots": true,
+    "concurrency": 16,
+    "extra": "{\"chat_template_kwargs\":{\"enable_thinking\":false}}",
+    "wall_s": 62.8,
+    "n": 1288
+   },
+   "latency_p50_s": 0.717,
+   "throughput_per_s": 20.51
+  },
+  "openjev-chat-rag20": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.564,
+    "accuracy_mean_psf": 0.53,
+    "macro_f1_mean_psf": 0.481,
+    "qwk_mean_psf": 0.394,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.093,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.529,
+      "macro_f1": 0.495,
+      "qwk": 0.351,
+      "severity_bias": 0.195,
+      "pred_dist": {
+       "보통": 37,
+       "나쁨": 47,
+       "매우나쁨": 3
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.333,
+      "macro_f1": 0.372,
+      "qwk": 0.478,
+      "severity_bias": 0.5,
+      "pred_dist": {
+       "보통": 8,
+       "좋음": 1,
+       "나쁨": 3
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.508,
+      "macro_f1": 0.46,
+      "qwk": 0.375,
+      "severity_bias": 0.119,
+      "pred_dist": {
+       "보통": 36,
+       "나쁨": 16,
+       "좋음": 7
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.571,
+      "macro_f1": 0.389,
+      "qwk": 0.323,
+      "severity_bias": -0.143,
+      "pred_dist": {
+       "좋음": 2,
+       "보통": 5
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.794,
+      "macro_f1": 0.77,
+      "qwk": 0.541,
+      "severity_bias": 0.029,
+      "pred_dist": {
+       "보통": 22,
+       "나쁨": 12
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.602,
+      "macro_f1": 0.489,
+      "qwk": 0.458,
+      "severity_bias": 0.142,
+      "pred_dist": {
+       "좋음": 5,
+       "보통": 40,
+       "나쁨": 68
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.375,
+      "macro_f1": 0.39,
+      "qwk": 0.235,
+      "severity_bias": -0.188,
+      "pred_dist": {
+       "매우 높음": 4,
+       "보통": 7,
+       "약간 높음": 5
+      }
+     }
+    },
+    "acc_ci95": [
+     0.512,
+     0.616
+    ],
+    "diff_vs_ref_ci95": [
+     -0.137,
+     -0.049
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.529,
+    "accuracy_mean_psf": 0.529,
+    "macro_f1_mean_psf": 0.453,
+    "qwk_mean_psf": 0.201,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.227,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.525,
+      "macro_f1": 0.486,
+      "qwk": 0.292,
+      "severity_bias": 0.158,
+      "pred_dist": {
+       "보통": 57,
+       "매우나쁨": 8,
+       "나쁨": 55
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.525,
+      "macro_f1": 0.46,
+      "qwk": 0.347,
+      "severity_bias": 0.333,
+      "pred_dist": {
+       "보통": 68,
+       "나쁨": 42,
+       "좋음": 10
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.508,
+      "macro_f1": 0.466,
+      "qwk": 0.313,
+      "severity_bias": 0.208,
+      "pred_dist": {
+       "보통": 72,
+       "나쁨": 35,
+       "좋음": 13
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.442,
+      "macro_f1": 0.386,
+      "qwk": 0.181,
+      "severity_bias": 0.183,
+      "pred_dist": {
+       "보통": 67,
+       "나쁨": 39,
+       "좋음": 14
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.675,
+      "macro_f1": 0.641,
+      "qwk": 0.291,
+      "severity_bias": 0.108,
+      "pred_dist": {
+       "보통": 72,
+       "나쁨": 48
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.733,
+      "macro_f1": 0.452,
+      "qwk": 0.014,
+      "severity_bias": 0.233,
+      "pred_dist": {
+       "나쁨": 117,
+       "보통": 3
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.458,
+      "macro_f1": 0.371,
+      "qwk": 0.184,
+      "severity_bias": 0.475,
+      "pred_dist": {
+       "나쁨": 72,
+       "보통": 46,
+       "좋음": 2
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.367,
+      "macro_f1": 0.358,
+      "qwk": -0.012,
+      "severity_bias": 0.117,
+      "pred_dist": {
+       "매우 높음": 42,
+       "보통": 41,
+       "약간 높음": 37
+      }
+     }
+    },
+    "acc_ci95": [
+     0.499,
+     0.558
+    ],
+    "diff_vs_ref_ci95": [
+     -0.075,
+     -0.019
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.137,
+     "within_x10": 0.367,
+     "median_abs_log10": 1.38
+    }
+   },
+   "meta": {
+    "run": "openjev-chat-rag20",
+    "backend": "chat",
+    "model": "qwen",
+    "shots": false,
+    "concurrency": 16,
+    "extra": "{\"chat_template_kwargs\":{\"enable_thinking\":false}}",
+    "wall_s": 349.7,
+    "n": 1288
+   },
+   "latency_p50_s": 4.348,
+   "throughput_per_s": 3.68
+  },
+  "openjev-chat-zeroshot": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.527,
+    "accuracy_mean_psf": 0.505,
+    "macro_f1_mean_psf": 0.477,
+    "qwk_mean_psf": 0.412,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.34,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.345,
+      "macro_f1": 0.376,
+      "qwk": 0.18,
+      "severity_bias": 0.598,
+      "pred_dist": {
+       "나쁨": 78,
+       "보통": 4,
+       "매우나쁨": 5
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.417,
+      "macro_f1": 0.471,
+      "qwk": 0.488,
+      "severity_bias": 0.417,
+      "pred_dist": {
+       "좋음": 1,
+       "보통": 9,
+       "나쁨": 2
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.678,
+      "macro_f1": 0.545,
+      "qwk": 0.565,
+      "severity_bias": 0.288,
+      "pred_dist": {
+       "보통": 38,
+       "좋음": 1,
+       "나쁨": 20
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.571,
+      "macro_f1": 0.579,
+      "qwk": 0.604,
+      "severity_bias": 0.429,
+      "pred_dist": {
+       "좋음": 1,
+       "보통": 3,
+       "나쁨": 3
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.529,
+      "macro_f1": 0.523,
+      "qwk": 0.221,
+      "severity_bias": 0.471,
+      "pred_dist": {
+       "나쁨": 27,
+       "보통": 7
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.619,
+      "macro_f1": 0.46,
+      "qwk": 0.447,
+      "severity_bias": 0.239,
+      "pred_dist": {
+       "좋음": 4,
+       "보통": 31,
+       "나쁨": 78
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.375,
+      "macro_f1": 0.382,
+      "qwk": 0.381,
+      "severity_bias": -0.062,
+      "pred_dist": {
+       "매우 높음": 7,
+       "약간 높음": 1,
+       "보통": 8
+      }
+     }
+    },
+    "acc_ci95": [
+     0.476,
+     0.579
+    ],
+    "diff_vs_ref_ci95": [
+     -0.195,
+     -0.064
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.495,
+    "accuracy_mean_psf": 0.495,
+    "macro_f1_mean_psf": 0.417,
+    "qwk_mean_psf": 0.228,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.414,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.367,
+      "macro_f1": 0.381,
+      "qwk": 0.192,
+      "severity_bias": 0.533,
+      "pred_dist": {
+       "나쁨": 102,
+       "보통": 11,
+       "매우나쁨": 7
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.592,
+      "macro_f1": 0.436,
+      "qwk": 0.311,
+      "severity_bias": 0.242,
+      "pred_dist": {
+       "나쁨": 22,
+       "보통": 97,
+       "좋음": 1
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.542,
+      "macro_f1": 0.494,
+      "qwk": 0.437,
+      "severity_bias": 0.358,
+      "pred_dist": {
+       "나쁨": 47,
+       "보통": 66,
+       "좋음": 7
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.4,
+      "macro_f1": 0.316,
+      "qwk": 0.223,
+      "severity_bias": 0.658,
+      "pred_dist": {
+       "보통": 36,
+       "나쁨": 83,
+       "좋음": 1
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.592,
+      "macro_f1": 0.591,
+      "qwk": 0.292,
+      "severity_bias": 0.392,
+      "pred_dist": {
+       "보통": 38,
+       "나쁨": 82
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.733,
+      "macro_f1": 0.52,
+      "qwk": 0.095,
+      "severity_bias": 0.183,
+      "pred_dist": {
+       "나쁨": 111,
+       "보통": 9
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.4,
+      "macro_f1": 0.31,
+      "qwk": 0.081,
+      "severity_bias": 0.5,
+      "pred_dist": {
+       "나쁨": 76,
+       "보통": 41,
+       "좋음": 3
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.333,
+      "macro_f1": 0.289,
+      "qwk": 0.189,
+      "severity_bias": 0.45,
+      "pred_dist": {
+       "매우 높음": 79,
+       "보통": 38,
+       "약간 높음": 3
+      }
+     }
+    },
+    "acc_ci95": [
+     0.464,
+     0.526
+    ],
+    "diff_vs_ref_ci95": [
+     -0.119,
+     -0.047
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.04,
+     "within_x10": 0.163,
+     "median_abs_log10": 2.347
+    }
+   },
+   "meta": {
+    "run": "openjev-chat-zeroshot",
+    "backend": "chat",
+    "model": "qwen",
+    "shots": false,
+    "concurrency": 16,
+    "extra": "{\"chat_template_kwargs\":{\"enable_thinking\":false}}",
+    "wall_s": 41.4,
+    "n": 1288
+   },
+   "latency_p50_s": 0.48,
+   "throughput_per_s": 31.11
+  },
+  "openjev-lora-ft": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.677,
+    "accuracy_mean_psf": 0.668,
+    "macro_f1_mean_psf": 0.57,
+    "qwk_mean_psf": 0.478,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.074,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.644,
+      "macro_f1": 0.633,
+      "qwk": 0.498,
+      "severity_bias": 0.103,
+      "pred_dist": {
+       "보통": 45,
+       "나쁨": 39,
+       "매우나쁨": 3
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.5,
+      "macro_f1": 0.548,
+      "qwk": 0.571,
+      "severity_bias": 0.333,
+      "pred_dist": {
+       "좋음": 2,
+       "보통": 8,
+       "나쁨": 2
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.746,
+      "macro_f1": 0.66,
+      "qwk": 0.63,
+      "severity_bias": 0.085,
+      "pred_dist": {
+       "보통": 42,
+       "좋음": 5,
+       "나쁨": 12
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.714,
+      "macro_f1": 0.489,
+      "qwk": 0.462,
+      "severity_bias": 0.0,
+      "pred_dist": {
+       "좋음": 1,
+       "보통": 6
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.794,
+      "macro_f1": 0.744,
+      "qwk": 0.494,
+      "severity_bias": -0.088,
+      "pred_dist": {
+       "보통": 26,
+       "나쁨": 8
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.655,
+      "macro_f1": 0.535,
+      "qwk": 0.443,
+      "severity_bias": 0.212,
+      "pred_dist": {
+       "좋음": 3,
+       "보통": 36,
+       "나쁨": 74
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.625,
+      "macro_f1": 0.383,
+      "qwk": 0.25,
+      "severity_bias": -0.125,
+      "pred_dist": {
+       "약간 높음": 14,
+       "보통": 2
+      }
+     }
+    },
+    "acc_ci95": [
+     0.628,
+     0.729
+    ],
+    "diff_vs_ref_ci95": [
+     -0.021,
+     0.058
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.59,
+    "accuracy_mean_psf": 0.59,
+    "macro_f1_mean_psf": 0.456,
+    "qwk_mean_psf": 0.253,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.139,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.592,
+      "macro_f1": 0.498,
+      "qwk": 0.348,
+      "severity_bias": 0.0,
+      "pred_dist": {
+       "보통": 73,
+       "나쁨": 42,
+       "매우나쁨": 5
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.55,
+      "macro_f1": 0.421,
+      "qwk": 0.343,
+      "severity_bias": 0.2,
+      "pred_dist": {
+       "보통": 94,
+       "좋음": 5,
+       "나쁨": 21
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.667,
+      "macro_f1": 0.617,
+      "qwk": 0.528,
+      "severity_bias": 0.175,
+      "pred_dist": {
+       "나쁨": 29,
+       "보통": 80,
+       "좋음": 11
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.508,
+      "macro_f1": 0.328,
+      "qwk": 0.168,
+      "severity_bias": -0.008,
+      "pred_dist": {
+       "보통": 112,
+       "나쁨": 5,
+       "좋음": 3
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.717,
+      "macro_f1": 0.63,
+      "qwk": 0.265,
+      "severity_bias": -0.067,
+      "pred_dist": {
+       "보통": 93,
+       "나쁨": 27
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.742,
+      "macro_f1": 0.426,
+      "qwk": 0.0,
+      "severity_bias": 0.258,
+      "pred_dist": {
+       "나쁨": 120
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.492,
+      "macro_f1": 0.386,
+      "qwk": 0.226,
+      "severity_bias": 0.483,
+      "pred_dist": {
+       "나쁨": 72,
+       "보통": 47,
+       "좋음": 1
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.45,
+      "macro_f1": 0.345,
+      "qwk": 0.142,
+      "severity_bias": 0.067,
+      "pred_dist": {
+       "약간 높음": 97,
+       "매우 높음": 9,
+       "보통": 14
+      }
+     }
+    },
+    "acc_ci95": [
+     0.559,
+     0.621
+    ],
+    "diff_vs_ref_ci95": [
+     -0.008,
+     0.036
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.133,
+     "within_x10": 0.47,
+     "median_abs_log10": 1.073
+    }
+   }
+  },
+  "openjev-systemone-fewshot": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.463,
+    "accuracy_mean_psf": 0.514,
+    "macro_f1_mean_psf": 0.485,
+    "qwk_mean_psf": 0.355,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.326,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.333,
+      "macro_f1": 0.345,
+      "qwk": 0.167,
+      "severity_bias": 0.713,
+      "pred_dist": {
+       "나쁨": 50,
+       "보통": 13,
+       "매우나쁨": 24
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.417,
+      "macro_f1": 0.444,
+      "qwk": 0.553,
+      "severity_bias": 0.417,
+      "pred_dist": {
+       "좋음": 2,
+       "보통": 7,
+       "나쁨": 3
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.593,
+      "macro_f1": 0.546,
+      "qwk": 0.467,
+      "severity_bias": 0.407,
+      "pred_dist": {
+       "보통": 25,
+       "좋음": 4,
+       "나쁨": 30
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.714,
+      "macro_f1": 0.722,
+      "qwk": 0.759,
+      "severity_bias": 0.286,
+      "pred_dist": {
+       "좋음": 2,
+       "나쁨": 3,
+       "보통": 2
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.529,
+      "macro_f1": 0.523,
+      "qwk": 0.221,
+      "severity_bias": 0.471,
+      "pred_dist": {
+       "나쁨": 27,
+       "보통": 7
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.451,
+      "macro_f1": 0.436,
+      "qwk": 0.316,
+      "severity_bias": -0.451,
+      "pred_dist": {
+       "좋음": 39,
+       "보통": 39,
+       "나쁨": 35
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.562,
+      "macro_f1": 0.379,
+      "qwk": 0.0,
+      "severity_bias": 0.438,
+      "pred_dist": {
+       "매우 높음": 7,
+       "약간 높음": 9
+      }
+     }
+    },
+    "acc_ci95": [
+     0.412,
+     0.518
+    ],
+    "diff_vs_ref_ci95": [
+     -0.265,
+     -0.128
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.495,
+    "accuracy_mean_psf": 0.495,
+    "macro_f1_mean_psf": 0.427,
+    "qwk_mean_psf": 0.219,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.365,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.375,
+      "macro_f1": 0.356,
+      "qwk": 0.178,
+      "severity_bias": 0.508,
+      "pred_dist": {
+       "나쁨": 65,
+       "매우나쁨": 24,
+       "보통": 31
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.458,
+      "macro_f1": 0.364,
+      "qwk": 0.28,
+      "severity_bias": 0.458,
+      "pred_dist": {
+       "보통": 65,
+       "좋음": 4,
+       "나쁨": 51
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.492,
+      "macro_f1": 0.477,
+      "qwk": 0.391,
+      "severity_bias": 0.458,
+      "pred_dist": {
+       "나쁨": 63,
+       "보통": 46,
+       "좋음": 11
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.442,
+      "macro_f1": 0.424,
+      "qwk": 0.303,
+      "severity_bias": 0.4,
+      "pred_dist": {
+       "보통": 37,
+       "나쁨": 67,
+       "좋음": 16
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.633,
+      "macro_f1": 0.631,
+      "qwk": 0.336,
+      "severity_bias": 0.333,
+      "pred_dist": {
+       "보통": 45,
+       "나쁨": 75
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.742,
+      "macro_f1": 0.426,
+      "qwk": 0.0,
+      "severity_bias": 0.258,
+      "pred_dist": {
+       "나쁨": 120
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.408,
+      "macro_f1": 0.401,
+      "qwk": 0.15,
+      "severity_bias": -0.1,
+      "pred_dist": {
+       "나쁨": 43,
+       "좋음": 42,
+       "보통": 35
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.408,
+      "macro_f1": 0.34,
+      "qwk": 0.115,
+      "severity_bias": 0.608,
+      "pred_dist": {
+       "매우 높음": 63,
+       "약간 높음": 54,
+       "보통": 3
+      }
+     }
+    },
+    "acc_ci95": [
+     0.467,
+     0.527
+    ],
+    "diff_vs_ref_ci95": [
+     -0.115,
+     -0.045
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.067,
+     "within_x10": 0.227,
+     "median_abs_log10": 2.005
+    }
+   },
+   "meta": {
+    "run": "openjev-systemone-fewshot",
+    "backend": "systemone",
+    "model": "nemotron-3.5-super-vl",
+    "shots": true,
+    "concurrency": 16,
+    "extra": "",
+    "wall_s": 307.3,
+    "n": 1288
+   },
+   "latency_p50_s": 3.835,
+   "throughput_per_s": 4.19
+  },
+  "openjev-systemone-zeroshot": {
+   "consensus": {
+    "n": 328,
+    "accuracy": 0.457,
+    "accuracy_mean_psf": 0.489,
+    "macro_f1_mean_psf": 0.468,
+    "qwk_mean_psf": 0.342,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.367,
+    "per_psf": {
+     "1": {
+      "n": 87,
+      "accuracy": 0.368,
+      "macro_f1": 0.38,
+      "qwk": 0.242,
+      "severity_bias": 0.667,
+      "pred_dist": {
+       "나쁨": 50,
+       "보통": 15,
+       "매우나쁨": 22
+      }
+     },
+     "2": {
+      "n": 12,
+      "accuracy": 0.5,
+      "macro_f1": 0.517,
+      "qwk": 0.654,
+      "severity_bias": 0.5,
+      "pred_dist": {
+       "좋음": 2,
+       "보통": 6,
+       "나쁨": 4
+      }
+     },
+     "3": {
+      "n": 59,
+      "accuracy": 0.508,
+      "macro_f1": 0.458,
+      "qwk": 0.285,
+      "severity_bias": 0.576,
+      "pred_dist": {
+       "보통": 19,
+       "좋음": 2,
+       "나쁨": 38
+      }
+     },
+     "4": {
+      "n": 7,
+      "accuracy": 0.571,
+      "macro_f1": 0.579,
+      "qwk": 0.604,
+      "severity_bias": 0.429,
+      "pred_dist": {
+       "좋음": 1,
+       "보통": 3,
+       "나쁨": 3
+      }
+     },
+     "5": {
+      "n": 34,
+      "accuracy": 0.588,
+      "macro_f1": 0.587,
+      "qwk": 0.294,
+      "severity_bias": 0.412,
+      "pred_dist": {
+       "나쁨": 25,
+       "보통": 9
+      }
+     },
+     "7": {
+      "n": 113,
+      "accuracy": 0.451,
+      "macro_f1": 0.436,
+      "qwk": 0.316,
+      "severity_bias": -0.451,
+      "pred_dist": {
+       "좋음": 39,
+       "보통": 39,
+       "나쁨": 35
+      }
+     },
+     "8": {
+      "n": 16,
+      "accuracy": 0.438,
+      "macro_f1": 0.317,
+      "qwk": 0.0,
+      "severity_bias": 0.438,
+      "pred_dist": {
+       "매우 높음": 8,
+       "약간 높음": 7,
+       "보통": 1
+      }
+     }
+    },
+    "acc_ci95": [
+     0.402,
+     0.509
+    ],
+    "diff_vs_ref_ci95": [
+     -0.271,
+     -0.131
+    ]
+   },
+   "sample": {
+    "n": 960,
+    "accuracy": 0.491,
+    "accuracy_mean_psf": 0.491,
+    "macro_f1_mean_psf": 0.427,
+    "qwk_mean_psf": 0.226,
+    "missing": 0,
+    "severity_bias_mean_psf": 0.408,
+    "per_psf": {
+     "1": {
+      "n": 120,
+      "accuracy": 0.45,
+      "macro_f1": 0.45,
+      "qwk": 0.349,
+      "severity_bias": 0.5,
+      "pred_dist": {
+       "나쁨": 70,
+       "보통": 29,
+       "매우나쁨": 21
+      }
+     },
+     "2": {
+      "n": 120,
+      "accuracy": 0.467,
+      "macro_f1": 0.373,
+      "qwk": 0.257,
+      "severity_bias": 0.467,
+      "pred_dist": {
+       "보통": 62,
+       "좋음": 5,
+       "나쁨": 53
+      }
+     },
+     "3": {
+      "n": 120,
+      "accuracy": 0.467,
+      "macro_f1": 0.441,
+      "qwk": 0.368,
+      "severity_bias": 0.525,
+      "pred_dist": {
+       "나쁨": 69,
+       "보통": 42,
+       "좋음": 9
+      }
+     },
+     "4": {
+      "n": 120,
+      "accuracy": 0.45,
+      "macro_f1": 0.41,
+      "qwk": 0.3,
+      "severity_bias": 0.558,
+      "pred_dist": {
+       "보통": 38,
+       "나쁨": 76,
+       "좋음": 6
+      }
+     },
+     "5": {
+      "n": 120,
+      "accuracy": 0.617,
+      "macro_f1": 0.616,
+      "qwk": 0.323,
+      "severity_bias": 0.367,
+      "pred_dist": {
+       "보통": 41,
+       "나쁨": 79
+      }
+     },
+     "6": {
+      "n": 120,
+      "accuracy": 0.708,
+      "macro_f1": 0.415,
+      "qwk": -0.063,
+      "severity_bias": 0.225,
+      "pred_dist": {
+       "나쁨": 116,
+       "보통": 4
+      }
+     },
+     "7": {
+      "n": 120,
+      "accuracy": 0.408,
+      "macro_f1": 0.401,
+      "qwk": 0.15,
+      "severity_bias": -0.1,
+      "pred_dist": {
+       "나쁨": 43,
+       "좋음": 42,
+       "보통": 35
+      }
+     },
+     "8": {
+      "n": 120,
+      "accuracy": 0.358,
+      "macro_f1": 0.308,
+      "qwk": 0.123,
+      "severity_bias": 0.725,
+      "pred_dist": {
+       "매우 높음": 76,
+       "약간 높음": 42,
+       "보통": 2
+      }
+     }
+    },
+    "acc_ci95": [
+     0.461,
+     0.522
+    ],
+    "diff_vs_ref_ci95": [
+     -0.12,
+     -0.049
+    ],
+    "multiplier": {
+     "profiles": 300,
+     "within_x2": 0.057,
+     "within_x10": 0.207,
+     "median_abs_log10": 2.169
+    }
+   },
+   "meta": {
+    "run": "openjev-systemone-zeroshot",
+    "backend": "systemone",
+    "model": "nemotron-3.5-super-vl",
+    "shots": false,
+    "concurrency": 16,
+    "extra": "",
+    "wall_s": 35.6,
+    "n": 1288
+   },
+   "latency_p50_s": 0.434,
+   "throughput_per_s": 36.18
+  }
+ },
+ "consensus": {
+  "covered_test_rows": 3167,
+  "pairwise_agreement_same_scenario": {
+   "1": 0.489,
+   "2": 0.455,
+   "3": 0.461,
+   "4": 0.431,
+   "5": 0.624,
+   "6": 0.606,
+   "7": 0.453,
+   "8": 0.383
+  }
+ }
+}
