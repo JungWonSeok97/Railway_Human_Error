@@ -1,6 +1,6 @@
 # Railway Human Error
 
-철도 인적 오류 연구의 **설문 수집, PSF·HEP 예측, 연구 문서**를 함께 관리하는 상위 저장소입니다. 세 프로젝트를 Git 서브모듈로 연결하고, 함께 사용할 각 저장소의 커밋을 기록합니다.
+철도 인적 오류 연구의 **설문 수집, PSF 평가·배수 제공, 연구 문서**를 함께 관리하는 상위 저장소입니다. 세 프로젝트를 Git 서브모듈로 연결하고, 함께 사용할 각 저장소의 커밋을 기록합니다.
 
 이 저장소 자체에는 실행 서버나 통합 빌드가 없습니다. 필요한 하위 프로젝트의 README를 따라 해당 디렉터리에서 설치·실행합니다.
 
@@ -18,13 +18,13 @@
 
 ## 저장소 구성
 
-![상위 저장소가 설문, PSF·HEP 예측 앱, 연구 메모의 커밋을 독립 서브모듈로 연결하는 구성](docs/images/project-map.svg)
+![상위 저장소가 설문, PSF 평가 앱, 연구 메모의 커밋을 독립 서브모듈로 연결하는 구성](docs/images/project-map.svg)
 
 *그림 1. 세 프로젝트의 역할과 실행 결과. 데이터 추출·학습·집필은 별도 작업입니다.*
 
 | 경로 / 사용 안내 | 원본 저장소 | 담당 역할 | 실행 결과 |
 | --- | --- | --- | --- |
-| [Railway_hep/](https://github.com/JungWonSeok97/Railway_hep#readme) | [JungWonSeok97/Railway_hep](https://github.com/JungWonSeok97/Railway_hep) | PSF 수준 예측, 직종별 HEP 계산, 시간·월별 변화 시각화 | Flask 웹앱, 기본 포트 8000 |
+| [Railway_hep/](https://github.com/JungWonSeok97/Railway_hep#readme) | [JungWonSeok97/Railway_hep](https://github.com/JungWonSeok97/Railway_hep) | PSF 수준·배수 평가, 배수의 곱 제공, 시간·월별 변화 시각화 | Flask 웹앱, 기본 포트 8000 |
 | [survey/](https://github.com/JungWonSeok97/survey#readme) | [JungWonSeok97/survey](https://github.com/JungWonSeok97/survey) | 무작위 시나리오 설문, 회차별 응답 저장, 관리자 조회 | Next.js 웹앱, 기본 포트 3000 |
 | [rail-psf-accuracy-memo/](https://github.com/abitocodes/rail-psf-accuracy-memo#readme) | [abitocodes/rail-psf-accuracy-memo](https://github.com/abitocodes/rail-psf-accuracy-memo) | 전문가 일치 기반 PSF 정확도 정의와 연구 방법 정리 | LaTeX 보고서, `build/main.pdf` |
 
@@ -44,7 +44,7 @@ Railway_Human_Error/
 ```mermaid
 flowchart LR
     S["survey<br/>시나리오 제시·응답 수집"] --> DB[("Supabase<br/>회차별 응답")]
-    DB -. "별도 추출·전처리·학습" .-> H["Railway_hep<br/>PSF 예측·HEP 계산"]
+    DB -. "별도 추출·전처리·학습" .-> H["Railway_hep<br/>PSF 평가·배수 제공"]
     DB -. "분석·집필" .-> M["rail-psf-accuracy-memo<br/>정확도 정의·연구 보고서"]
     H -. "모델·계산 방법 대조" .-> M
 ```
@@ -54,7 +54,8 @@ flowchart LR
 | 용어 | 이 프로젝트에서의 의미 |
 | --- | --- |
 | PSF | Performance Shaping Factor. 작업부하·환경·교육 등 수행에 영향을 주는 요인 |
-| HEP | Human Error Probability. 예측된 PSF 배수와 직종별 계수를 이용해 웹앱에서 계산하는 값 |
+| PSF 배수의 곱 | 8개 PSF 배수를 곱한 값. 예측 앱이 제공하며 확률이나 종합 안전 등급이 아님 |
+| HEP | Human Error Probability. PSF 배수와 직무별 규칙을 사용하는 외부 시스템의 계산 대상. 현재 웹앱에서는 계산하지 않음 |
 | 분류 확률 | 모델이 각 PSF 수준에 부여한 확률. 최종 HEP와 별도 값 |
 | EA / TheoAcc | 연구 보고서에서 정의하는 전문가 합의율과 전문가 일치 기반 상대 정확도 |
 
@@ -116,7 +117,7 @@ git ls-tree HEAD Railway_hep survey rail-psf-accuracy-memo
 
 | 목적 | 필요한 환경 | 실행 위치 및 시작 명령 | 먼저 준비할 것 |
 | --- | --- | --- | --- |
-| PSF·HEP 웹앱 | Python, pip | `Railway_hep/`에서 의존성 설치 후 `python app.py` | Python 가상환경, CatBoost·GMM 모델 파일 |
+| PSF 평가·배수 웹앱 | Python, pip | `Railway_hep/`에서 의존성 설치 후 `python app.py` | Python 가상환경, CatBoost·GMM 모델 파일 |
 | 설문 웹앱 | Node.js 20.9.0 이상, npm | `survey/`에서 `npm ci`, `npm run dev` | Supabase 테이블과 세 환경 변수 |
 | 연구 보고서 | XeLaTeX, xdvipdfmx | `rail-psf-accuracy-memo/`에서 Windows 기준 `.uild.ps1 all` | MiKTeX 및 필요한 TeX 패키지 |
 
