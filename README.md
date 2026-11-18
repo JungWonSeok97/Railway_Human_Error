@@ -17,6 +17,10 @@
 
 ## 저장소 구성
 
+![상위 저장소가 설문, PSF·HEP 예측 앱, 연구 메모의 커밋을 독립 서브모듈로 연결하는 구성](docs/images/project-map.svg)
+
+*그림 1. 세 프로젝트의 역할과 실행 결과. 데이터 추출·학습·집필은 별도 작업입니다.*
+
 | 경로 / 사용 안내 | 원본 저장소 | 담당 역할 | 실행 결과 |
 | --- | --- | --- | --- |
 | [Railway_hep/](https://github.com/JungWonSeok97/Railway_hep#readme) | [JungWonSeok97/Railway_hep](https://github.com/JungWonSeok97/Railway_hep) | PSF 수준 예측, 직종별 HEP 계산, 시간·월별 변화 시각화 | Flask 웹앱, 기본 포트 8000 |
@@ -149,6 +153,10 @@ git push origin main
 `branch = main`은 `update --remote`의 추적 대상을 지정합니다. 원본에 새 커밋이 생겨도 상위 저장소의 참조는 자동 변경되지 않습니다.
 
 ## 수정하고 공유하기
+
+![하위 저장소 커밋과 푸시, 상위 참조 갱신, 다른 환경에서 내려받기의 순서](docs/images/submodule-workflow.svg)
+
+*그림 2. 하위 저장소의 변경을 먼저 공유한 뒤 상위 저장소에 새 커밋 참조를 기록합니다.*
 
 서브모듈 안의 파일은 **그 하위 저장소에서 먼저 커밋·푸시**하고, 상위 저장소에서 새 커밋 참조를 기록합니다. 상위에서 `git add Railway_hep`를 실행하는 것만으로 내부 파일이 원본 저장소에 업로드되지는 않습니다.
 
