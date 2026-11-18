@@ -1,0 +1,188 @@
+{
+  "date": "2026-11-18",
+  "quality": "original quality_95 == 성실",
+  "split": "GroupKFold(5, shuffle=False), original text scenario, shared folds",
+  "weighting": "each survey response has weight 1; no class weights",
+  "prediction": "argmax; no threshold tuning or probability calibration",
+  "catboost_params": {
+    "iterations": 500,
+    "depth": 6,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 20,
+    "grow_policy": "Lossguide",
+    "max_leaves": 32,
+    "min_data_in_leaf": 2,
+    "random_strength": 10,
+    "bagging_temperature": 2,
+    "loss_function": "MultiClass",
+    "eval_metric": "TotalF1",
+    "random_seed": 42,
+    "verbose": false,
+    "thread_count": 2,
+    "allow_writing_files": false
+  },
+  "gmm_params": {
+    "n_components": 3,
+    "covariance_type": "full",
+    "random_state": 42,
+    "n_init": 20
+  },
+  "groups": {
+    "2": {
+      "Equipment_Accessibility": [
+        "장비 가용성(접근성)"
+      ],
+      "Equipment_Quality": [
+        "작업 도구의 적절성",
+        "장비의 사용성"
+      ],
+      "System_Support": [
+        "컴퓨터 지원 시스템의 적절성",
+        "타 기기와의 연계성"
+      ],
+      "Documentation_Quality": [
+        "장비 사용 매뉴얼의 질"
+      ],
+      "Maintenance_Support": [
+        "유지보수의 적절성"
+      ]
+    },
+    "4": {
+      "Training_Program": [
+        "교육/훈련 프로그램 적절성"
+      ],
+      "Training_Frequency": [
+        "교육 주기(빈도)",
+        "직무능력 평가 빈도"
+      ],
+      "Experience_Level": [
+        "상황에 대한 경험 정도(자주 또는 드물게 겪는지)"
+      ],
+      "Technical_Knowledge": [
+        "시스템 지식(원리적 지식)의 숙련도",
+        "장비 사용 지식의 숙련도"
+      ],
+      "Procedural_Knowledge": [
+        "절차적 지식의 숙련도"
+      ]
+    },
+    "6": {
+      "Thermal_Comfort": [
+        "실내 온도",
+        "실내 습도",
+        "통풍"
+      ],
+      "Visual_Environment": [
+        "업무공간 가시성",
+        "안개",
+        "황사"
+      ],
+      "Surface_Safety": [
+        "마찰계수",
+        "비"
+      ],
+      "Workspace": [
+        "작업공간 크기"
+      ],
+      "Acoustic_Environment": [
+        "소음"
+      ],
+      "Outdoor_Climate": [
+        "실외 온도",
+        "실외 습도",
+        "풍속",
+        "낙뢰",
+        "비"
+      ]
+    },
+    "8": {
+      "Goal_Clarity": [
+        "의사결정 목표의 명확성"
+      ],
+      "Decision_Complexity": [
+        "의사결정 대안의 수",
+        "의사결정 판단 기준의 수"
+      ],
+      "Concurrent_Decision_Load": [
+        "(동시에 처리 되어야 하는)의사결정 수"
+      ],
+      "Information_Complexity": [
+        "관측되는 정보의 양",
+        "(관측이 불가능하여)추론해야하는 정보의 양"
+      ],
+      "Information_Uncertainty": [
+        "정보의 불확실성"
+      ]
+    }
+  },
+  "variants": [
+    "gmm",
+    "raw_numeric",
+    "raw_text",
+    "raw_text_plus_gmm"
+  ],
+  "preprocessing_cells": [
+    4,
+    5,
+    11,
+    13,
+    16,
+    18,
+    23,
+    30,
+    35,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56
+  ],
+  "versions": {
+    "python": "3.13.3",
+    "numpy": "2.3.2",
+    "pandas": "2.3.1",
+    "sklearn": "1.7.2",
+    "catboost": "1.2.10"
+  },
+  "protected_before": {
+    "철도_코레일 종사자 설문조사 결과.txt": "74a4f212a7839b59841ee90f5f9868a307d8a209facb893e7cb48e80f663e15b",
+    "processed_data/subpsf_level_mapping.xlsx": "40274ddde0ae9b14e7da3f21ee6604664b2427ebcd1c272722197f3a9b1ede98",
+    "CatBoost_Result/preprocess_v1.4.ipynb": "e4b8fd330b1cc193656e535e0fc2146763d831256e11fe39f04d0cd545461d48",
+    "CatBoost_Result/analysis_v1.5.ipynb": "2203a1dbe944cb8e8cb4553ee2462b0a3019837256e902d6da2fc3f50a543b5a",
+    "models/교육_및_훈련_catboost.cbm": "f97508e3544cc313398b4da908722d4241aed6368a4a3f8316a558389b050d52",
+    "models/복잡성_catboost.cbm": "9f4e4f71c01852dddc4f37e687b5d0972d2ef2aaa7ddd87b99d6664074daa1d3",
+    "models/의사소통_catboost.cbm": "30f8d5a99c4a47253405395d33d5e41960625d2dbee78e5ffc125d2da8599ac7",
+    "models/작업부하_catboost.cbm": "fbb6bfb06710be052a1271060267c8edd1947bc33c0ed24656df17691a40bd98",
+    "models/작업절차_catboost.cbm": "59141462a6011c4c69290ce7ca01a3e4cd66f6ae1b7555262c5c5edd06e35a63",
+    "models/장비_및_기기_catboost.cbm": "190f9ff0af5df0588b9a9df41c8aa9f7c5204f7da91138a4787c9aafb0ac90e8",
+    "models/절차_및_지침_catboost.cbm": "c02a082d908ff7e1ed5e64a554203582620b0034ffe50dc42566007432d21597",
+    "models/환경_catboost.cbm": "79a23119b9be167d62e64eafc3ed22018cac5cdf8b7debb3febe066767f35ea0",
+    "models/gmm/psf2_gmm.joblib": "3e7f2fdb1cd58ee313a206f8a5b63be33241d6dd062f928cc26cc8ff1ebdef79",
+    "models/gmm/psf4_gmm.joblib": "57e2d5c1c5987882d88aaaea8a4313dbe943cc803529761d7e551872e9e2a238",
+    "models/gmm/psf6_gmm.joblib": "7e07c4952d1f78b6c3d98f731ffb3ff665331bd02cb8925a4fd58748237851ba",
+    "models/gmm/psf8_gmm.joblib": "002e3abbae7412296cece3443edf704d30b514a71c60fc0b5382f5a6cde2cd9e"
+  },
+  "runner_sha256": "ab7ad9f26e9d203a2088cf6b0890c2511e5b543c7bf3e9107208daa4bac53f1e",
+  "signature": "cafe08f08e5da147992a47b956481ce089ae0b0859a8e127b778038cfd40748b",
+  "protected_after": {
+    "철도_코레일 종사자 설문조사 결과.txt": "74a4f212a7839b59841ee90f5f9868a307d8a209facb893e7cb48e80f663e15b",
+    "processed_data/subpsf_level_mapping.xlsx": "40274ddde0ae9b14e7da3f21ee6604664b2427ebcd1c272722197f3a9b1ede98",
+    "CatBoost_Result/preprocess_v1.4.ipynb": "e4b8fd330b1cc193656e535e0fc2146763d831256e11fe39f04d0cd545461d48",
+    "CatBoost_Result/analysis_v1.5.ipynb": "2203a1dbe944cb8e8cb4553ee2462b0a3019837256e902d6da2fc3f50a543b5a",
+    "models/교육_및_훈련_catboost.cbm": "f97508e3544cc313398b4da908722d4241aed6368a4a3f8316a558389b050d52",
+    "models/복잡성_catboost.cbm": "9f4e4f71c01852dddc4f37e687b5d0972d2ef2aaa7ddd87b99d6664074daa1d3",
+    "models/의사소통_catboost.cbm": "30f8d5a99c4a47253405395d33d5e41960625d2dbee78e5ffc125d2da8599ac7",
+    "models/작업부하_catboost.cbm": "fbb6bfb06710be052a1271060267c8edd1947bc33c0ed24656df17691a40bd98",
+    "models/작업절차_catboost.cbm": "59141462a6011c4c69290ce7ca01a3e4cd66f6ae1b7555262c5c5edd06e35a63",
+    "models/장비_및_기기_catboost.cbm": "190f9ff0af5df0588b9a9df41c8aa9f7c5204f7da91138a4787c9aafb0ac90e8",
+    "models/절차_및_지침_catboost.cbm": "c02a082d908ff7e1ed5e64a554203582620b0034ffe50dc42566007432d21597",
+    "models/환경_catboost.cbm": "79a23119b9be167d62e64eafc3ed22018cac5cdf8b7debb3febe066767f35ea0",
+    "models/gmm/psf2_gmm.joblib": "3e7f2fdb1cd58ee313a206f8a5b63be33241d6dd062f928cc26cc8ff1ebdef79",
+    "models/gmm/psf4_gmm.joblib": "57e2d5c1c5987882d88aaaea8a4313dbe943cc803529761d7e551872e9e2a238",
+    "models/gmm/psf6_gmm.joblib": "7e07c4952d1f78b6c3d98f731ffb3ff665331bd02cb8925a4fd58748237851ba",
+    "models/gmm/psf8_gmm.joblib": "002e3abbae7412296cece3443edf704d30b514a71c60fc0b5382f5a6cde2cd9e"
+  },
+  "protected_files_unchanged": true
+}

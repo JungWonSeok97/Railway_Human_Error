@@ -1,0 +1,4 @@
+# Preserve the exact experiment runner bytes used by SHA-256 verification.
+research/gmm_comparison_20261118/*.py text eol=lf
+# Evidence files are hashed byte-for-byte; keep their recorded line endings.
+research/gmm_comparison_20261118/results/*.json -text whitespace=cr-at-eol

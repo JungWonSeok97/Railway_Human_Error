@@ -1,0 +1,1356 @@
+{
+  "scope": "CURRENT stored GMM; Cartesian products of observed mapped levels; not OOF performance",
+  "protected_files_unchanged": true,
+  "results": [
+    {
+      "psf": 2,
+      "composites": {
+        "Equipment_Quality": {
+          "columns": [
+            "작업 도구의 적절성",
+            "장비의 사용성"
+          ],
+          "n_input_combinations": 9,
+          "n_output_states": 3,
+          "effects": {
+            "작업 도구의 적절성": {
+              "changed_output_pairs": 4,
+              "all_pairs": 9,
+              "status": "some_effect"
+            },
+            "장비의 사용성": {
+              "changed_output_pairs": 6,
+              "all_pairs": 9,
+              "status": "some_effect"
+            }
+          },
+          "mapping": [
+            {
+              "작업 도구의 적절성": 0,
+              "장비의 사용성": 0,
+              "output_state": 0
+            },
+            {
+              "작업 도구의 적절성": 0,
+              "장비의 사용성": 1,
+              "output_state": 0
+            },
+            {
+              "작업 도구의 적절성": 0,
+              "장비의 사용성": 2,
+              "output_state": 2
+            },
+            {
+              "작업 도구의 적절성": 1,
+              "장비의 사용성": 0,
+              "output_state": 1
+            },
+            {
+              "작업 도구의 적절성": 1,
+              "장비의 사용성": 1,
+              "output_state": 1
+            },
+            {
+              "작업 도구의 적절성": 1,
+              "장비의 사용성": 2,
+              "output_state": 2
+            },
+            {
+              "작업 도구의 적절성": 2,
+              "장비의 사용성": 0,
+              "output_state": 1
+            },
+            {
+              "작업 도구의 적절성": 2,
+              "장비의 사용성": 1,
+              "output_state": 1
+            },
+            {
+              "작업 도구의 적절성": 2,
+              "장비의 사용성": 2,
+              "output_state": 2
+            }
+          ]
+        },
+        "System_Support": {
+          "columns": [
+            "컴퓨터 지원 시스템의 적절성",
+            "타 기기와의 연계성"
+          ],
+          "n_input_combinations": 9,
+          "n_output_states": 3,
+          "effects": {
+            "컴퓨터 지원 시스템의 적절성": {
+              "changed_output_pairs": 0,
+              "all_pairs": 9,
+              "status": "no_effect_on_this_composite"
+            },
+            "타 기기와의 연계성": {
+              "changed_output_pairs": 9,
+              "all_pairs": 9,
+              "status": "some_effect"
+            }
+          },
+          "mapping": [
+            {
+              "컴퓨터 지원 시스템의 적절성": 0,
+              "타 기기와의 연계성": 0,
+              "output_state": 0
+            },
+            {
+              "컴퓨터 지원 시스템의 적절성": 0,
+              "타 기기와의 연계성": 1,
+              "output_state": 1
+            },
+            {
+              "컴퓨터 지원 시스템의 적절성": 0,
+              "타 기기와의 연계성": 2,
+              "output_state": 2
+            },
+            {
+              "컴퓨터 지원 시스템의 적절성": 1,
+              "타 기기와의 연계성": 0,
+              "output_state": 0
+            },
+            {
+              "컴퓨터 지원 시스템의 적절성": 1,
+              "타 기기와의 연계성": 1,
+              "output_state": 1
+            },
+            {
+              "컴퓨터 지원 시스템의 적절성": 1,
+              "타 기기와의 연계성": 2,
+              "output_state": 2
+            },
+            {
+              "컴퓨터 지원 시스템의 적절성": 2,
+              "타 기기와의 연계성": 0,
+              "output_state": 0
+            },
+            {
+              "컴퓨터 지원 시스템의 적절성": 2,
+              "타 기기와의 연계성": 1,
+              "output_state": 1
+            },
+            {
+              "컴퓨터 지원 시스템의 적절성": 2,
+              "타 기기와의 연계성": 2,
+              "output_state": 2
+            }
+          ]
+        }
+      },
+      "raw_to_numeric": {
+        "유지보수의 적절성": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "사용하는 장비가 매우 적절하게 유지보수 되는 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "사용하는 장비가 미흡하게 유지보수 되는 경우",
+              "numeric": 2
+            },
+            {
+              "raw": "사용하는 장비가 일반적으로 유지보수 되는 경우",
+              "numeric": 1
+            }
+          ]
+        },
+        "작업 도구의 적절성": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "사용하는 작업도구의 적절성이 우수한 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "사용하는 작업도구의 적절성이 보통한 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "사용하는 작업도구의 적절성이 미흡한 경우",
+              "numeric": 2
+            }
+          ]
+        },
+        "장비 가용성(접근성)": {
+          "n_raw_levels": 2,
+          "n_numeric_levels": 2,
+          "mapping": [
+            {
+              "raw": "업무에 필요한 장비의 가용성이 높은 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "업무에 필요한 장비의 가용성이 낮은 경우",
+              "numeric": 1
+            }
+          ]
+        },
+        "장비 사용 매뉴얼의 질": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "장비 사용 매뉴얼의 질이 미흡한 경우",
+              "numeric": 2
+            },
+            {
+              "raw": "장비 사용 매뉴얼의 질이 우수한 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "장비 사용 매뉴얼의 질이 보통인 경우",
+              "numeric": 1
+            }
+          ]
+        },
+        "장비의 사용성": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "업무에 필요한 장비의 사용성이 우수한 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "업무에 필요한 장비의 사용성이 보통인 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "업무에 필요한 장비의 사용성이 미흡한 경우",
+              "numeric": 2
+            }
+          ]
+        },
+        "컴퓨터 지원 시스템의 적절성": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "업무에 사용되는 컴퓨터지원시스템(운행정보시스템, 운행관리시스템, 업무용 소프트웨어 등)이 우수한 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "업무에 사용되는 컴퓨터지원시스템(운행정보시스템, 운행관리시스템, 업무용 소프트웨어 등)이 보통인 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "업무에 사용되는 컴퓨터지원시스템(운행정보시스템, 운행관리시스템, 업무용 소프트웨어 등)이 미흡한 경우",
+              "numeric": 2
+            }
+          ]
+        },
+        "타 기기와의 연계성": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "사용하는 장비가 타 기기와의 연계성이 미흡한 경우",
+              "numeric": 2
+            },
+            {
+              "raw": "사용하는 장비가 타 기기와의 연계성이 보통인 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "사용하는 장비가 타 기기와의 연계성이 우수한 경우",
+              "numeric": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "psf": 4,
+      "composites": {
+        "Training_Frequency": {
+          "columns": [
+            "교육 주기(빈도)",
+            "직무능력 평가 빈도"
+          ],
+          "n_input_combinations": 9,
+          "n_output_states": 3,
+          "effects": {
+            "교육 주기(빈도)": {
+              "changed_output_pairs": 9,
+              "all_pairs": 9,
+              "status": "some_effect"
+            },
+            "직무능력 평가 빈도": {
+              "changed_output_pairs": 0,
+              "all_pairs": 9,
+              "status": "no_effect_on_this_composite"
+            }
+          },
+          "mapping": [
+            {
+              "교육 주기(빈도)": 0,
+              "직무능력 평가 빈도": 0,
+              "output_state": 0
+            },
+            {
+              "교육 주기(빈도)": 0,
+              "직무능력 평가 빈도": 1,
+              "output_state": 0
+            },
+            {
+              "교육 주기(빈도)": 0,
+              "직무능력 평가 빈도": 2,
+              "output_state": 0
+            },
+            {
+              "교육 주기(빈도)": 1,
+              "직무능력 평가 빈도": 0,
+              "output_state": 1
+            },
+            {
+              "교육 주기(빈도)": 1,
+              "직무능력 평가 빈도": 1,
+              "output_state": 1
+            },
+            {
+              "교육 주기(빈도)": 1,
+              "직무능력 평가 빈도": 2,
+              "output_state": 1
+            },
+            {
+              "교육 주기(빈도)": 2,
+              "직무능력 평가 빈도": 0,
+              "output_state": 2
+            },
+            {
+              "교육 주기(빈도)": 2,
+              "직무능력 평가 빈도": 1,
+              "output_state": 2
+            },
+            {
+              "교육 주기(빈도)": 2,
+              "직무능력 평가 빈도": 2,
+              "output_state": 2
+            }
+          ]
+        },
+        "Technical_Knowledge": {
+          "columns": [
+            "시스템 지식(원리적 지식)의 숙련도",
+            "장비 사용 지식의 숙련도"
+          ],
+          "n_input_combinations": 9,
+          "n_output_states": 3,
+          "effects": {
+            "시스템 지식(원리적 지식)의 숙련도": {
+              "changed_output_pairs": 9,
+              "all_pairs": 9,
+              "status": "some_effect"
+            },
+            "장비 사용 지식의 숙련도": {
+              "changed_output_pairs": 0,
+              "all_pairs": 9,
+              "status": "no_effect_on_this_composite"
+            }
+          },
+          "mapping": [
+            {
+              "시스템 지식(원리적 지식)의 숙련도": 0,
+              "장비 사용 지식의 숙련도": 0,
+              "output_state": 0
+            },
+            {
+              "시스템 지식(원리적 지식)의 숙련도": 0,
+              "장비 사용 지식의 숙련도": 1,
+              "output_state": 0
+            },
+            {
+              "시스템 지식(원리적 지식)의 숙련도": 0,
+              "장비 사용 지식의 숙련도": 2,
+              "output_state": 0
+            },
+            {
+              "시스템 지식(원리적 지식)의 숙련도": 1,
+              "장비 사용 지식의 숙련도": 0,
+              "output_state": 1
+            },
+            {
+              "시스템 지식(원리적 지식)의 숙련도": 1,
+              "장비 사용 지식의 숙련도": 1,
+              "output_state": 1
+            },
+            {
+              "시스템 지식(원리적 지식)의 숙련도": 1,
+              "장비 사용 지식의 숙련도": 2,
+              "output_state": 1
+            },
+            {
+              "시스템 지식(원리적 지식)의 숙련도": 2,
+              "장비 사용 지식의 숙련도": 0,
+              "output_state": 2
+            },
+            {
+              "시스템 지식(원리적 지식)의 숙련도": 2,
+              "장비 사용 지식의 숙련도": 1,
+              "output_state": 2
+            },
+            {
+              "시스템 지식(원리적 지식)의 숙련도": 2,
+              "장비 사용 지식의 숙련도": 2,
+              "output_state": 2
+            }
+          ]
+        }
+      },
+      "raw_to_numeric": {
+        "교육 주기(빈도)": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "교육/훈련 주기(빈도)가 1년 미만일 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "교육/훈련 주기(빈도)가 3년 이상일 경우",
+              "numeric": 2
+            },
+            {
+              "raw": "교육/훈련 주기(빈도)가 1~3년 사이일 경우",
+              "numeric": 1
+            }
+          ]
+        },
+        "교육/훈련 프로그램 적절성": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "교육/훈련 프로그램에 개선할 필요가 있을 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "교육/훈련 프로그램이 적절하지 않을 경우",
+              "numeric": 2
+            },
+            {
+              "raw": "교육/훈련 프로그램이 적절할 경우",
+              "numeric": 0
+            }
+          ]
+        },
+        "상황에 대한 경험 정도(자주 또는 드물게 겪는지)": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "해야 하는 일의 90% 이상을 경험한 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "해야 하는 일의 70~90%를 경험한 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "해야 하는 일의 30% 이상을 경험하지 못한 경우",
+              "numeric": 2
+            }
+          ]
+        },
+        "시스템 지식(원리적 지식)의 숙련도": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "시스템 지식(원리적 지식)의 숙련도가 높은 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "시스템 지식(원리적 지식)의 숙련도가 보통인 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "시스템 지식(원리적 지식)의 숙련도가 낮은 경우",
+              "numeric": 2
+            }
+          ]
+        },
+        "장비 사용 지식의 숙련도": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "장비 사용 지식의 숙련도가 높을 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "장비 사용 지식의 숙련도가 보통인 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "장비 사용 지식의 숙련도가 낮은 경우",
+              "numeric": 2
+            }
+          ]
+        },
+        "절차적 지식의 숙련도": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "절차적 지식의 숙련도가 보통인 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "절차적 지식의 숙련도가 낮은 경우",
+              "numeric": 2
+            },
+            {
+              "raw": "절차적 지식의 숙련도가 높을 경우",
+              "numeric": 0
+            }
+          ]
+        },
+        "직무능력 평가 빈도": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "직무능력 평가 빈도가 3년일 경우",
+              "numeric": 2
+            },
+            {
+              "raw": "직무능력 평가 빈도가 1년일 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "직무능력 평가 빈도가 6개월일 경우",
+              "numeric": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "psf": 6,
+      "composites": {
+        "Thermal_Comfort": {
+          "columns": [
+            "실내 온도",
+            "실내 습도",
+            "통풍"
+          ],
+          "n_input_combinations": 8,
+          "n_output_states": 3,
+          "effects": {
+            "실내 온도": {
+              "changed_output_pairs": 0,
+              "all_pairs": 4,
+              "status": "no_effect_on_this_composite"
+            },
+            "실내 습도": {
+              "changed_output_pairs": 4,
+              "all_pairs": 4,
+              "status": "some_effect"
+            },
+            "통풍": {
+              "changed_output_pairs": 2,
+              "all_pairs": 4,
+              "status": "some_effect"
+            }
+          },
+          "mapping": [
+            {
+              "실내 온도": 0,
+              "실내 습도": 0,
+              "통풍": 0,
+              "output_state": 0
+            },
+            {
+              "실내 온도": 0,
+              "실내 습도": 0,
+              "통풍": 1,
+              "output_state": 0
+            },
+            {
+              "실내 온도": 0,
+              "실내 습도": 1,
+              "통풍": 0,
+              "output_state": 1
+            },
+            {
+              "실내 온도": 0,
+              "실내 습도": 1,
+              "통풍": 1,
+              "output_state": 2
+            },
+            {
+              "실내 온도": 1,
+              "실내 습도": 0,
+              "통풍": 0,
+              "output_state": 0
+            },
+            {
+              "실내 온도": 1,
+              "실내 습도": 0,
+              "통풍": 1,
+              "output_state": 0
+            },
+            {
+              "실내 온도": 1,
+              "실내 습도": 1,
+              "통풍": 0,
+              "output_state": 1
+            },
+            {
+              "실내 온도": 1,
+              "실내 습도": 1,
+              "통풍": 1,
+              "output_state": 2
+            }
+          ]
+        },
+        "Visual_Environment": {
+          "columns": [
+            "업무공간 가시성",
+            "안개",
+            "황사"
+          ],
+          "n_input_combinations": 6,
+          "n_output_states": 3,
+          "effects": {
+            "업무공간 가시성": {
+              "changed_output_pairs": 2,
+              "all_pairs": 6,
+              "status": "some_effect"
+            },
+            "안개": {
+              "changed_output_pairs": 0,
+              "all_pairs": 0,
+              "status": "constant_input"
+            },
+            "황사": {
+              "changed_output_pairs": 3,
+              "all_pairs": 3,
+              "status": "some_effect"
+            }
+          },
+          "mapping": [
+            {
+              "업무공간 가시성": 0,
+              "안개": 1,
+              "황사": 0,
+              "output_state": 0
+            },
+            {
+              "업무공간 가시성": 0,
+              "안개": 1,
+              "황사": 1,
+              "output_state": 1
+            },
+            {
+              "업무공간 가시성": 1,
+              "안개": 1,
+              "황사": 0,
+              "output_state": 0
+            },
+            {
+              "업무공간 가시성": 1,
+              "안개": 1,
+              "황사": 1,
+              "output_state": 1
+            },
+            {
+              "업무공간 가시성": 2,
+              "안개": 1,
+              "황사": 0,
+              "output_state": 0
+            },
+            {
+              "업무공간 가시성": 2,
+              "안개": 1,
+              "황사": 1,
+              "output_state": 2
+            }
+          ]
+        },
+        "Surface_Safety": {
+          "columns": [
+            "마찰계수",
+            "비"
+          ],
+          "n_input_combinations": 4,
+          "n_output_states": 3,
+          "effects": {
+            "마찰계수": {
+              "changed_output_pairs": 1,
+              "all_pairs": 2,
+              "status": "some_effect"
+            },
+            "비": {
+              "changed_output_pairs": 2,
+              "all_pairs": 2,
+              "status": "some_effect"
+            }
+          },
+          "mapping": [
+            {
+              "마찰계수": 0,
+              "비": 0,
+              "output_state": 0
+            },
+            {
+              "마찰계수": 0,
+              "비": 1,
+              "output_state": 1
+            },
+            {
+              "마찰계수": 1,
+              "비": 0,
+              "output_state": 0
+            },
+            {
+              "마찰계수": 1,
+              "비": 1,
+              "output_state": 2
+            }
+          ]
+        },
+        "Outdoor_Climate": {
+          "columns": [
+            "실외 온도",
+            "실외 습도",
+            "풍속",
+            "낙뢰",
+            "비"
+          ],
+          "n_input_combinations": 16,
+          "n_output_states": 3,
+          "effects": {
+            "실외 온도": {
+              "changed_output_pairs": 4,
+              "all_pairs": 8,
+              "status": "some_effect"
+            },
+            "실외 습도": {
+              "changed_output_pairs": 8,
+              "all_pairs": 8,
+              "status": "some_effect"
+            },
+            "풍속": {
+              "changed_output_pairs": 0,
+              "all_pairs": 8,
+              "status": "no_effect_on_this_composite"
+            },
+            "낙뢰": {
+              "changed_output_pairs": 0,
+              "all_pairs": 0,
+              "status": "constant_input"
+            },
+            "비": {
+              "changed_output_pairs": 0,
+              "all_pairs": 8,
+              "status": "no_effect_on_this_composite"
+            }
+          },
+          "mapping": [
+            {
+              "실외 온도": 0,
+              "실외 습도": 0,
+              "풍속": 0,
+              "낙뢰": 1,
+              "비": 0,
+              "output_state": 0
+            },
+            {
+              "실외 온도": 0,
+              "실외 습도": 0,
+              "풍속": 0,
+              "낙뢰": 1,
+              "비": 1,
+              "output_state": 0
+            },
+            {
+              "실외 온도": 0,
+              "실외 습도": 0,
+              "풍속": 1,
+              "낙뢰": 1,
+              "비": 0,
+              "output_state": 0
+            },
+            {
+              "실외 온도": 0,
+              "실외 습도": 0,
+              "풍속": 1,
+              "낙뢰": 1,
+              "비": 1,
+              "output_state": 0
+            },
+            {
+              "실외 온도": 0,
+              "실외 습도": 1,
+              "풍속": 0,
+              "낙뢰": 1,
+              "비": 0,
+              "output_state": 2
+            },
+            {
+              "실외 온도": 0,
+              "실외 습도": 1,
+              "풍속": 0,
+              "낙뢰": 1,
+              "비": 1,
+              "output_state": 2
+            },
+            {
+              "실외 온도": 0,
+              "실외 습도": 1,
+              "풍속": 1,
+              "낙뢰": 1,
+              "비": 0,
+              "output_state": 2
+            },
+            {
+              "실외 온도": 0,
+              "실외 습도": 1,
+              "풍속": 1,
+              "낙뢰": 1,
+              "비": 1,
+              "output_state": 2
+            },
+            {
+              "실외 온도": 1,
+              "실외 습도": 0,
+              "풍속": 0,
+              "낙뢰": 1,
+              "비": 0,
+              "output_state": 1
+            },
+            {
+              "실외 온도": 1,
+              "실외 습도": 0,
+              "풍속": 0,
+              "낙뢰": 1,
+              "비": 1,
+              "output_state": 1
+            },
+            {
+              "실외 온도": 1,
+              "실외 습도": 0,
+              "풍속": 1,
+              "낙뢰": 1,
+              "비": 0,
+              "output_state": 1
+            },
+            {
+              "실외 온도": 1,
+              "실외 습도": 0,
+              "풍속": 1,
+              "낙뢰": 1,
+              "비": 1,
+              "output_state": 1
+            },
+            {
+              "실외 온도": 1,
+              "실외 습도": 1,
+              "풍속": 0,
+              "낙뢰": 1,
+              "비": 0,
+              "output_state": 2
+            },
+            {
+              "실외 온도": 1,
+              "실외 습도": 1,
+              "풍속": 0,
+              "낙뢰": 1,
+              "비": 1,
+              "output_state": 2
+            },
+            {
+              "실외 온도": 1,
+              "실외 습도": 1,
+              "풍속": 1,
+              "낙뢰": 1,
+              "비": 0,
+              "output_state": 2
+            },
+            {
+              "실외 온도": 1,
+              "실외 습도": 1,
+              "풍속": 1,
+              "낙뢰": 1,
+              "비": 1,
+              "output_state": 2
+            }
+          ]
+        }
+      },
+      "raw_to_numeric": {
+        "낙뢰": {
+          "n_raw_levels": 1,
+          "n_numeric_levels": 1,
+          "mapping": [
+            {
+              "raw": "낙뢰가 발생할 경우",
+              "numeric": 1
+            }
+          ]
+        },
+        "마찰계수": {
+          "n_raw_levels": 2,
+          "n_numeric_levels": 2,
+          "mapping": [
+            {
+              "raw": "바닥 (정지)마찰계수(SCOF)가 ≥ 0.63인 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "바닥 (정지)마찰계수(SCOF)가 < 0.63인 경우",
+              "numeric": 1
+            }
+          ]
+        },
+        "비": {
+          "n_raw_levels": 2,
+          "n_numeric_levels": 2,
+          "mapping": [
+            {
+              "raw": "비가 10mm/s(눈의 경우 1cm/s) 이상",
+              "numeric": 1
+            },
+            {
+              "raw": "비가 10mm/h(눈의 경우 1cm/h) 미만",
+              "numeric": 0
+            }
+          ]
+        },
+        "소음": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "소음이 85dB 이하인 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "소음이 115dB 이상인 경우",
+              "numeric": 2
+            },
+            {
+              "raw": "소음이 85~115dB인 경우",
+              "numeric": 1
+            }
+          ]
+        },
+        "실내 습도": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 2,
+          "mapping": [
+            {
+              "raw": "실내 습도가 40~75%인 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "실내 습도가 75% 이상인 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "실내 습도가 40% 이하인 경우",
+              "numeric": 1
+            }
+          ]
+        },
+        "실내 온도": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 2,
+          "mapping": [
+            {
+              "raw": "실내 온도가 28℃ 이상인 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "실내 온도가 17℃ 이하인 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "실내 온도가 17~28℃인 경우",
+              "numeric": 0
+            }
+          ]
+        },
+        "실외 습도": {
+          "n_raw_levels": 2,
+          "n_numeric_levels": 2,
+          "mapping": [
+            {
+              "raw": "실외 습도가 90% 이하인 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "실외 습도가 90% 이상인 경우",
+              "numeric": 1
+            }
+          ]
+        },
+        "실외 온도": {
+          "n_raw_levels": 2,
+          "n_numeric_levels": 2,
+          "mapping": [
+            {
+              "raw": "실외 온도가 35℃(체감 온도) 이상인 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "실외 온도가 35℃(체감 온도) 이하인 경우",
+              "numeric": 0
+            }
+          ]
+        },
+        "안개": {
+          "n_raw_levels": 1,
+          "n_numeric_levels": 1,
+          "mapping": [
+            {
+              "raw": "안개가 발생할 경우",
+              "numeric": 1
+            }
+          ]
+        },
+        "업무공간 가시성": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "보통작업을 수행할 정도의 조도가 형성된 경우",
+              "numeric": 2
+            },
+            {
+              "raw": "정밀작업을 수행할 정도의 조도가 형성된 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "초정밀작업을 수행할 정도의 조도가 형성된 경우",
+              "numeric": 0
+            }
+          ]
+        },
+        "작업공간 크기": {
+          "n_raw_levels": 2,
+          "n_numeric_levels": 2,
+          "mapping": [
+            {
+              "raw": "작업공간의 크기가 10m^3 이상인 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "작업공간의 크기가 10m^3 이하인 경우",
+              "numeric": 1
+            }
+          ]
+        },
+        "통풍": {
+          "n_raw_levels": 2,
+          "n_numeric_levels": 2,
+          "mapping": [
+            {
+              "raw": "통풍이 잘 될 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "통풍이 잘 되지 않을 경우",
+              "numeric": 1
+            }
+          ]
+        },
+        "풍속": {
+          "n_raw_levels": 2,
+          "n_numeric_levels": 2,
+          "mapping": [
+            {
+              "raw": "풍속이 10m/s 미만인 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "풍속 10m/s 이상인 경우",
+              "numeric": 1
+            }
+          ]
+        },
+        "황사": {
+          "n_raw_levels": 2,
+          "n_numeric_levels": 2,
+          "mapping": [
+            {
+              "raw": "황사로 인해 작업자가 숨 쉬기가 불편할 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "황사로 인해 작업자가 확실히 사물을 볼 수 없는 경우",
+              "numeric": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "psf": 8,
+      "composites": {
+        "Decision_Complexity": {
+          "columns": [
+            "의사결정 대안의 수",
+            "의사결정 판단 기준의 수"
+          ],
+          "n_input_combinations": 9,
+          "n_output_states": 3,
+          "effects": {
+            "의사결정 대안의 수": {
+              "changed_output_pairs": 0,
+              "all_pairs": 9,
+              "status": "no_effect_on_this_composite"
+            },
+            "의사결정 판단 기준의 수": {
+              "changed_output_pairs": 9,
+              "all_pairs": 9,
+              "status": "some_effect"
+            }
+          },
+          "mapping": [
+            {
+              "의사결정 대안의 수": 0,
+              "의사결정 판단 기준의 수": 0,
+              "output_state": 0
+            },
+            {
+              "의사결정 대안의 수": 0,
+              "의사결정 판단 기준의 수": 1,
+              "output_state": 1
+            },
+            {
+              "의사결정 대안의 수": 0,
+              "의사결정 판단 기준의 수": 2,
+              "output_state": 2
+            },
+            {
+              "의사결정 대안의 수": 1,
+              "의사결정 판단 기준의 수": 0,
+              "output_state": 0
+            },
+            {
+              "의사결정 대안의 수": 1,
+              "의사결정 판단 기준의 수": 1,
+              "output_state": 1
+            },
+            {
+              "의사결정 대안의 수": 1,
+              "의사결정 판단 기준의 수": 2,
+              "output_state": 2
+            },
+            {
+              "의사결정 대안의 수": 2,
+              "의사결정 판단 기준의 수": 0,
+              "output_state": 0
+            },
+            {
+              "의사결정 대안의 수": 2,
+              "의사결정 판단 기준의 수": 1,
+              "output_state": 1
+            },
+            {
+              "의사결정 대안의 수": 2,
+              "의사결정 판단 기준의 수": 2,
+              "output_state": 2
+            }
+          ]
+        },
+        "Information_Complexity": {
+          "columns": [
+            "관측되는 정보의 양",
+            "(관측이 불가능하여)추론해야하는 정보의 양"
+          ],
+          "n_input_combinations": 9,
+          "n_output_states": 3,
+          "effects": {
+            "관측되는 정보의 양": {
+              "changed_output_pairs": 9,
+              "all_pairs": 9,
+              "status": "some_effect"
+            },
+            "(관측이 불가능하여)추론해야하는 정보의 양": {
+              "changed_output_pairs": 0,
+              "all_pairs": 9,
+              "status": "no_effect_on_this_composite"
+            }
+          },
+          "mapping": [
+            {
+              "관측되는 정보의 양": 0,
+              "(관측이 불가능하여)추론해야하는 정보의 양": 0,
+              "output_state": 0
+            },
+            {
+              "관측되는 정보의 양": 0,
+              "(관측이 불가능하여)추론해야하는 정보의 양": 1,
+              "output_state": 0
+            },
+            {
+              "관측되는 정보의 양": 0,
+              "(관측이 불가능하여)추론해야하는 정보의 양": 2,
+              "output_state": 0
+            },
+            {
+              "관측되는 정보의 양": 1,
+              "(관측이 불가능하여)추론해야하는 정보의 양": 0,
+              "output_state": 1
+            },
+            {
+              "관측되는 정보의 양": 1,
+              "(관측이 불가능하여)추론해야하는 정보의 양": 1,
+              "output_state": 1
+            },
+            {
+              "관측되는 정보의 양": 1,
+              "(관측이 불가능하여)추론해야하는 정보의 양": 2,
+              "output_state": 1
+            },
+            {
+              "관측되는 정보의 양": 2,
+              "(관측이 불가능하여)추론해야하는 정보의 양": 0,
+              "output_state": 2
+            },
+            {
+              "관측되는 정보의 양": 2,
+              "(관측이 불가능하여)추론해야하는 정보의 양": 1,
+              "output_state": 2
+            },
+            {
+              "관측되는 정보의 양": 2,
+              "(관측이 불가능하여)추론해야하는 정보의 양": 2,
+              "output_state": 2
+            }
+          ]
+        }
+      },
+      "raw_to_numeric": {
+        "(관측이 불가능하여)추론해야하는 정보의 양": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "업무수행 및 의사결정을 위해 파악하고 있어야 하나 직접적으로 관측되지 않아 관측된 정보를 이용해 추론해야 하는 정보의 양이 1개인 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "업무수행 및 의사결정을 위해 파악하고 있어야 하나 직접적으로 관측되지 않아 관측된 정보를 이용해 추론해야 하는 정보의 양이 2~4개인 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "업무수행 및 의사결정을 위해 파악하고 있어야 하나 직접적으로 관측되지 않아 관측된 정보를 이용해 추론해야 하는 정보의 양이 5개 이상인 경우",
+              "numeric": 2
+            }
+          ]
+        },
+        "(동시에 처리 되어야 하는)의사결정 수": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "동시에 처리되어야 하는 의사결정의 수가 2개일 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "동시에 처리되어야 하는 의사결정의 수가 1개일 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "동시에 처리되어야 하는 의사결정의 수가 3개 이상일 경우",
+              "numeric": 2
+            }
+          ]
+        },
+        "관측되는 정보의 양": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "업무수행 및 의사결정을 위해 관측 되어야 하는 정보의 양이 3개 이하일 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "업무수행 및 의사결정을 위해 관측 되어야 하는 정보의 양이 7개 이상일 경우",
+              "numeric": 2
+            },
+            {
+              "raw": "업무수행 및 의사결정을 위해 관측 되어야 하는 정보의 양이 4~6개일 경우",
+              "numeric": 1
+            }
+          ]
+        },
+        "의사결정 대안의 수": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "의사결정 과정에서 선택할 수 있는 대안의 수가 2건 이하인 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "의사결정 과정에서 선택할 수 있는 대안의 수가 3~4건인 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "의사결정 과정에서 선택할 수 있는 대안의 수가 5건 이상인 경우",
+              "numeric": 2
+            }
+          ]
+        },
+        "의사결정 목표의 명확성": {
+          "n_raw_levels": 2,
+          "n_numeric_levels": 2,
+          "mapping": [
+            {
+              "raw": "의사결정이 필요한 상황에서 의사결정 목표가 명확할 경우",
+              "numeric": 0
+            },
+            {
+              "raw": "의사결정이 필요한 상황에서 의사결정 목표가 명확하지 않을 경우",
+              "numeric": 1
+            }
+          ]
+        },
+        "의사결정 판단 기준의 수": {
+          "n_raw_levels": 3,
+          "n_numeric_levels": 3,
+          "mapping": [
+            {
+              "raw": "올바른 의사결정을 위해 고려해야 하는 판단기준(예: 시간, 비용, 인력 등)의 수가 4개 이상일 경우",
+              "numeric": 2
+            },
+            {
+              "raw": "올바른 의사결정을 위해 고려해야 하는 판단기준(예: 시간, 비용, 인력 등)의 수가 2~3개일 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "올바른 의사결정을 위해 고려해야 하는 판단기준(예: 시간, 비용, 인력 등)의 수가 1개일 경우",
+              "numeric": 0
+            }
+          ]
+        },
+        "정보의 불확실성": {
+          "n_raw_levels": 2,
+          "n_numeric_levels": 2,
+          "mapping": [
+            {
+              "raw": "업무수행 및 의사결정을 위해 필요한 정보의 불확실성이 높은 경우",
+              "numeric": 1
+            },
+            {
+              "raw": "업무수행 및 의사결정을 위해 필요한 정보의 불확실성이 높지 않은 경우",
+              "numeric": 0
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

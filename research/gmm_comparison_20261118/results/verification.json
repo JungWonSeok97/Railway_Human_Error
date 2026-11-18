@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "psfs": [
+    {
+      "psf": 2,
+      "n": 2867,
+      "status": "passed"
+    },
+    {
+      "psf": 4,
+      "n": 2747,
+      "status": "passed"
+    },
+    {
+      "psf": 6,
+      "n": 2950,
+      "status": "passed"
+    },
+    {
+      "psf": 8,
+      "n": 3105,
+      "status": "passed"
+    }
+  ],
+  "protected_files_checked": 16,
+  "protected_files_unchanged": true
+}
