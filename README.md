@@ -26,6 +26,7 @@
 | [Railway_hep/](https://github.com/JungWonSeok97/Railway_hep#readme) | [JungWonSeok97/Railway_hep](https://github.com/JungWonSeok97/Railway_hep) | PSF 수준 예측, 직종별 HEP 계산, 시간·월별 변화 시각화 | Flask 웹앱, 기본 포트 8000 |
 | [survey/](https://github.com/JungWonSeok97/survey#readme) | [JungWonSeok97/survey](https://github.com/JungWonSeok97/survey) | 무작위 시나리오 설문, 회차별 응답 저장, 관리자 조회 | Next.js 웹앱, 기본 포트 3000 |
 | [rail-psf-accuracy-memo/](https://github.com/abitocodes/rail-psf-accuracy-memo#readme) | [abitocodes/rail-psf-accuracy-memo](https://github.com/abitocodes/rail-psf-accuracy-memo) | 전문가 일치 기반 PSF 정확도 정의와 연구 방법 정리 | LaTeX 보고서, `build/main.pdf` |
+| [benchmark/](benchmark/README.md) | 이 저장소의 일반 폴더 | CatBoost와 로컬 LLM(OpenJev, Nemotron, Kimi)의 PSF 판정 비교 | 보고서 `benchmark/docs/report.md` |
 
 `.gitmodules`에는 각 경로, 원본 URL, 추적 브랜치 `main`이 정의되어 있습니다. 실제 재현에 사용하는 버전은 상위 저장소의 Git 커밋에 기록된 서브모듈 커밋입니다.
 
@@ -35,7 +36,8 @@ Railway_Human_Error/
 ├── README.md
 ├── Railway_hep/              # 독립 Git 저장소
 ├── survey/                   # 독립 Git 저장소
-└── rail-psf-accuracy-memo/    # 독립 Git 저장소
+├── rail-psf-accuracy-memo/    # 독립 Git 저장소
+└── benchmark/                # 일반 폴더: 모델 비교 코드와 보고서
 ```
 
 ## 연구 흐름과 용어
