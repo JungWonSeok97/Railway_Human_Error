@@ -1,0 +1,1578 @@
+{
+  "cell_numbering": "zero-based notebook cell index",
+  "psfs": {
+    "1": {
+      "name": "작업부하",
+      "n": 2971,
+      "raw_features": [
+        "근무시간",
+        "수면시간",
+        "작업시간",
+        "근무시간대",
+        "작업 허용 시간"
+      ],
+      "model_features": [
+        "근무시간",
+        "수면시간",
+        "작업시간",
+        "근무시간대",
+        "작업 허용 시간"
+      ],
+      "n_original_scenarios": 243,
+      "n_model_scenarios": 243,
+      "actual_label_counts": {
+        "보통": 1473,
+        "나쁨": 1128,
+        "매우나쁨": 370
+      },
+      "majority_accuracy": 0.4957926624032312,
+      "scenario_label_split_on_original_scenarios": [
+        {
+          "fold": 1,
+          "n_train": 2097,
+          "n_test": 874,
+          "scenario_overlap": 243,
+          "test_rows_with_seen_scenario": 874,
+          "person_overlap": 95
+        },
+        {
+          "fold": 2,
+          "n_train": 2273,
+          "n_test": 698,
+          "scenario_overlap": 243,
+          "test_rows_with_seen_scenario": 698,
+          "person_overlap": 95
+        },
+        {
+          "fold": 3,
+          "n_train": 2393,
+          "n_test": 578,
+          "scenario_overlap": 241,
+          "test_rows_with_seen_scenario": 578,
+          "person_overlap": 95
+        },
+        {
+          "fold": 4,
+          "n_train": 2510,
+          "n_test": 461,
+          "scenario_overlap": 234,
+          "test_rows_with_seen_scenario": 461,
+          "person_overlap": 94
+        },
+        {
+          "fold": 5,
+          "n_train": 2611,
+          "n_test": 360,
+          "scenario_overlap": 219,
+          "test_rows_with_seen_scenario": 360,
+          "person_overlap": 91
+        }
+      ],
+      "proper_groupkfold_on_model_scenarios": [
+        {
+          "fold": 1,
+          "n_train": 2375,
+          "n_test": 596,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 95
+        },
+        {
+          "fold": 2,
+          "n_train": 2379,
+          "n_test": 592,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 94
+        },
+        {
+          "fold": 3,
+          "n_train": 2379,
+          "n_test": 592,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 95
+        },
+        {
+          "fold": 4,
+          "n_train": 2375,
+          "n_test": 596,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 95
+        },
+        {
+          "fold": 5,
+          "n_train": 2376,
+          "n_test": 595,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 95
+        }
+      ],
+      "multi_response_not_multi_person": {
+        "scenarios_two_or_more_responses": 243,
+        "scenarios_two_or_more_people": 243,
+        "repeated_responses_from_same_person": 185
+      },
+      "replayed_main_cv_fixed_saved_gmm": {
+        "scope": "Replays notebook section 2 with the saved GMM transformation; GMM is not refitted within folds. Historical PSF6 uses six GMM features.",
+        "raw_fold_mean": 0.5820022955672383,
+        "relative_accuracy": 0.9226254002134472,
+        "numerator": 1729,
+        "denominator": 1874,
+        "classes": [
+          "나쁨",
+          "매우나쁨",
+          "보통"
+        ],
+        "prediction_counts": {
+          "나쁨": 1121,
+          "매우나쁨": 155,
+          "보통": 1695
+        },
+        "accuracy": 0.5819589363850556,
+        "balanced_accuracy": 0.47453055386712273,
+        "recall": {
+          "나쁨": 0.4875886524822695,
+          "매우나쁨": 0.1810810810810811,
+          "보통": 0.7549219280380176
+        },
+        "confusion_matrix": [
+          [
+            550,
+            74,
+            504
+          ],
+          [
+            224,
+            67,
+            79
+          ],
+          [
+            347,
+            14,
+            1112
+          ]
+        ]
+      },
+      "in_memory_final_refit_comparison": {
+        "max_probability_difference": 0.0,
+        "different_prediction_rows": 0,
+        "scope": "Fresh fit with section-2 parameters, no artifact save; not a held-out evaluation"
+      },
+      "empirical_majority_ceiling": {
+        "original_scenarios_numerator": 1874,
+        "original_scenarios_ceiling": 0.6307640525075732,
+        "model_scenarios_numerator": 1874,
+        "model_scenarios_ceiling": 0.6307640525075732
+      }
+    },
+    "2": {
+      "name": "장비 및 기기",
+      "n": 2867,
+      "raw_features": [
+        "장비의 사용성",
+        "유지보수의 적절성",
+        "작업 도구의 적절성",
+        "타 기기와의 연계성",
+        "장비 가용성(접근성)",
+        "장비 사용 매뉴얼의 질",
+        "컴퓨터 지원 시스템의 적절성"
+      ],
+      "model_features": [
+        "Equipment_Accessibility",
+        "Equipment_Quality",
+        "System_Support",
+        "Documentation_Quality",
+        "Maintenance_Support"
+      ],
+      "n_original_scenarios": 1255,
+      "n_model_scenarios": 162,
+      "actual_label_counts": {
+        "보통": 1511,
+        "나쁨": 794,
+        "좋음": 562
+      },
+      "majority_accuracy": 0.5270317404952912,
+      "scenario_label_split_on_original_scenarios": [
+        {
+          "fold": 1,
+          "n_train": 962,
+          "n_test": 1905,
+          "scenario_overlap": 628,
+          "test_rows_with_seen_scenario": 1036,
+          "person_overlap": 92
+        },
+        {
+          "fold": 2,
+          "n_train": 2167,
+          "n_test": 700,
+          "scenario_overlap": 628,
+          "test_rows_with_seen_scenario": 700,
+          "person_overlap": 92
+        },
+        {
+          "fold": 3,
+          "n_train": 2660,
+          "n_test": 207,
+          "scenario_overlap": 202,
+          "test_rows_with_seen_scenario": 207,
+          "person_overlap": 84
+        },
+        {
+          "fold": 4,
+          "n_train": 2823,
+          "n_test": 44,
+          "scenario_overlap": 44,
+          "test_rows_with_seen_scenario": 44,
+          "person_overlap": 37
+        },
+        {
+          "fold": 5,
+          "n_train": 2856,
+          "n_test": 11,
+          "scenario_overlap": 11,
+          "test_rows_with_seen_scenario": 11,
+          "person_overlap": 10
+        }
+      ],
+      "proper_groupkfold_on_model_scenarios": [
+        {
+          "fold": 1,
+          "n_train": 2295,
+          "n_test": 572,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 92
+        },
+        {
+          "fold": 2,
+          "n_train": 2290,
+          "n_test": 577,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 92
+        },
+        {
+          "fold": 3,
+          "n_train": 2291,
+          "n_test": 576,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 92
+        },
+        {
+          "fold": 4,
+          "n_train": 2296,
+          "n_test": 571,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 92
+        },
+        {
+          "fold": 5,
+          "n_train": 2296,
+          "n_test": 571,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 91
+        }
+      ],
+      "multi_response_not_multi_person": {
+        "scenarios_two_or_more_responses": 846,
+        "scenarios_two_or_more_people": 840,
+        "repeated_responses_from_same_person": 32
+      },
+      "replayed_main_cv_fixed_saved_gmm": {
+        "scope": "Replays notebook section 2 with the saved GMM transformation; GMM is not refitted within folds. Historical PSF6 uses six GMM features.",
+        "raw_fold_mean": 0.5482536861209933,
+        "relative_accuracy": 0.9498489425981873,
+        "numerator": 1572,
+        "denominator": 1655,
+        "classes": [
+          "나쁨",
+          "보통",
+          "좋음"
+        ],
+        "prediction_counts": {
+          "나쁨": 426,
+          "보통": 2281,
+          "좋음": 160
+        },
+        "accuracy": 0.5483083362399721,
+        "balanced_accuracy": 0.4249576785883069,
+        "recall": {
+          "나쁨": 0.26574307304785894,
+          "보통": 0.8365320979483786,
+          "좋음": 0.17259786476868327
+        },
+        "confusion_matrix": [
+          [
+            211,
+            579,
+            4
+          ],
+          [
+            188,
+            1264,
+            59
+          ],
+          [
+            27,
+            438,
+            97
+          ]
+        ]
+      },
+      "in_memory_final_refit_comparison": {
+        "max_probability_difference": 0.0,
+        "different_prediction_rows": 0,
+        "scope": "Fresh fit with section-2 parameters, no artifact save; not a held-out evaluation"
+      },
+      "empirical_majority_ceiling": {
+        "original_scenarios_numerator": 2142,
+        "original_scenarios_ceiling": 0.7471224276246948,
+        "model_scenarios_numerator": 1655,
+        "model_scenarios_ceiling": 0.5772584583188002
+      }
+    },
+    "3": {
+      "name": "절차 및 지침",
+      "n": 2705,
+      "raw_features": [
+        "(직무)절차의 일관성",
+        "(직무)절차의 추적성",
+        "(직무)절차의 유무(가용성)",
+        "(직무)절차의 명료성(구체성)",
+        "(직무)절차의 적절성(완전성 포함)",
+        "(직무)절차 기술(description)의 복잡성"
+      ],
+      "model_features": [
+        "(직무)절차의 일관성",
+        "(직무)절차의 추적성",
+        "(직무)절차의 유무(가용성)",
+        "(직무)절차의 명료성(구체성)",
+        "(직무)절차의 적절성(완전성 포함)",
+        "(직무)절차 기술(description)의 복잡성"
+      ],
+      "n_original_scenarios": 484,
+      "n_model_scenarios": 484,
+      "actual_label_counts": {
+        "보통": 1215,
+        "좋음": 747,
+        "나쁨": 743
+      },
+      "majority_accuracy": 0.4491682070240296,
+      "scenario_label_split_on_original_scenarios": [
+        {
+          "fold": 1,
+          "n_train": 1618,
+          "n_test": 1087,
+          "scenario_overlap": 453,
+          "test_rows_with_seen_scenario": 1039,
+          "person_overlap": 86
+        },
+        {
+          "fold": 2,
+          "n_train": 1963,
+          "n_test": 742,
+          "scenario_overlap": 453,
+          "test_rows_with_seen_scenario": 742,
+          "person_overlap": 86
+        },
+        {
+          "fold": 3,
+          "n_train": 2233,
+          "n_test": 472,
+          "scenario_overlap": 362,
+          "test_rows_with_seen_scenario": 472,
+          "person_overlap": 86
+        },
+        {
+          "fold": 4,
+          "n_train": 2434,
+          "n_test": 271,
+          "scenario_overlap": 242,
+          "test_rows_with_seen_scenario": 271,
+          "person_overlap": 81
+        },
+        {
+          "fold": 5,
+          "n_train": 2572,
+          "n_test": 133,
+          "scenario_overlap": 128,
+          "test_rows_with_seen_scenario": 133,
+          "person_overlap": 62
+        }
+      ],
+      "proper_groupkfold_on_model_scenarios": [
+        {
+          "fold": 1,
+          "n_train": 2164,
+          "n_test": 541,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 86
+        },
+        {
+          "fold": 2,
+          "n_train": 2164,
+          "n_test": 541,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 86
+        },
+        {
+          "fold": 3,
+          "n_train": 2164,
+          "n_test": 541,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 86
+        },
+        {
+          "fold": 4,
+          "n_train": 2164,
+          "n_test": 541,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 86
+        },
+        {
+          "fold": 5,
+          "n_train": 2164,
+          "n_test": 541,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 86
+        }
+      ],
+      "multi_response_not_multi_person": {
+        "scenarios_two_or_more_responses": 469,
+        "scenarios_two_or_more_people": 469,
+        "repeated_responses_from_same_person": 79
+      },
+      "replayed_main_cv_fixed_saved_gmm": {
+        "scope": "Replays notebook section 2 with the saved GMM transformation; GMM is not refitted within folds. Historical PSF6 uses six GMM features.",
+        "raw_fold_mean": 0.5752310536044363,
+        "relative_accuracy": 0.8736664795058956,
+        "numerator": 1556,
+        "denominator": 1781,
+        "classes": [
+          "나쁨",
+          "보통",
+          "좋음"
+        ],
+        "prediction_counts": {
+          "나쁨": 603,
+          "보통": 1527,
+          "좋음": 575
+        },
+        "accuracy": 0.5752310536044363,
+        "balanced_accuracy": 0.5525653672852907,
+        "recall": {
+          "나쁨": 0.5006729475100942,
+          "보통": 0.6831275720164609,
+          "좋음": 0.4738955823293173
+        },
+        "confusion_matrix": [
+          [
+            372,
+            357,
+            14
+          ],
+          [
+            178,
+            830,
+            207
+          ],
+          [
+            53,
+            340,
+            354
+          ]
+        ]
+      },
+      "in_memory_final_refit_comparison": {
+        "max_probability_difference": 0.0,
+        "different_prediction_rows": 0,
+        "scope": "Fresh fit with section-2 parameters, no artifact save; not a held-out evaluation"
+      },
+      "empirical_majority_ceiling": {
+        "original_scenarios_numerator": 1781,
+        "original_scenarios_ceiling": 0.6584103512014787,
+        "model_scenarios_numerator": 1781,
+        "model_scenarios_ceiling": 0.6584103512014787
+      }
+    },
+    "4": {
+      "name": "교육 및 훈련",
+      "n": 2747,
+      "raw_features": [
+        "교육 주기(빈도)",
+        "직무능력 평가 빈도",
+        "절차적 지식의 숙련도",
+        "장비 사용 지식의 숙련도",
+        "교육/훈련 프로그램 적절성",
+        "시스템 지식(원리적 지식)의 숙련도",
+        "상황에 대한 경험 정도(자주 또는 드물게 겪는지)"
+      ],
+      "model_features": [
+        "Training_Program",
+        "Training_Frequency",
+        "Experience_Level",
+        "Technical_Knowledge",
+        "Procedural_Knowledge"
+      ],
+      "n_original_scenarios": 1562,
+      "n_model_scenarios": 243,
+      "actual_label_counts": {
+        "보통": 1462,
+        "나쁨": 715,
+        "좋음": 570
+      },
+      "majority_accuracy": 0.5322169639606844,
+      "scenario_label_split_on_original_scenarios": [
+        {
+          "fold": 1,
+          "n_train": 631,
+          "n_test": 2116,
+          "scenario_overlap": 498,
+          "test_rows_with_seen_scenario": 727,
+          "person_overlap": 86
+        },
+        {
+          "fold": 2,
+          "n_train": 2215,
+          "n_test": 532,
+          "scenario_overlap": 498,
+          "test_rows_with_seen_scenario": 532,
+          "person_overlap": 86
+        },
+        {
+          "fold": 3,
+          "n_train": 2669,
+          "n_test": 78,
+          "scenario_overlap": 78,
+          "test_rows_with_seen_scenario": 78,
+          "person_overlap": 50
+        },
+        {
+          "fold": 4,
+          "n_train": 2730,
+          "n_test": 17,
+          "scenario_overlap": 17,
+          "test_rows_with_seen_scenario": 17,
+          "person_overlap": 14
+        },
+        {
+          "fold": 5,
+          "n_train": 2743,
+          "n_test": 4,
+          "scenario_overlap": 4,
+          "test_rows_with_seen_scenario": 4,
+          "person_overlap": 4
+        }
+      ],
+      "proper_groupkfold_on_model_scenarios": [
+        {
+          "fold": 1,
+          "n_train": 2196,
+          "n_test": 551,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 85
+        },
+        {
+          "fold": 2,
+          "n_train": 2196,
+          "n_test": 551,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 86
+        },
+        {
+          "fold": 3,
+          "n_train": 2200,
+          "n_test": 547,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 86
+        },
+        {
+          "fold": 4,
+          "n_train": 2200,
+          "n_test": 547,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 86
+        },
+        {
+          "fold": 5,
+          "n_train": 2196,
+          "n_test": 551,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 86
+        }
+      ],
+      "multi_response_not_multi_person": {
+        "scenarios_two_or_more_responses": 795,
+        "scenarios_two_or_more_people": 786,
+        "repeated_responses_from_same_person": 32
+      },
+      "replayed_main_cv_fixed_saved_gmm": {
+        "scope": "Replays notebook section 2 with the saved GMM transformation; GMM is not refitted within folds. Historical PSF6 uses six GMM features.",
+        "raw_fold_mean": 0.5308228018195271,
+        "relative_accuracy": 0.9141065830721004,
+        "numerator": 1458,
+        "denominator": 1595,
+        "classes": [
+          "나쁨",
+          "보통",
+          "좋음"
+        ],
+        "prediction_counts": {
+          "나쁨": 207,
+          "보통": 2412,
+          "좋음": 128
+        },
+        "accuracy": 0.5307608299963597,
+        "balanced_accuracy": 0.37610462752661616,
+        "recall": {
+          "나쁨": 0.14545454545454545,
+          "보통": 0.8898768809849521,
+          "좋음": 0.09298245614035087
+        },
+        "confusion_matrix": [
+          [
+            104,
+            605,
+            6
+          ],
+          [
+            92,
+            1301,
+            69
+          ],
+          [
+            11,
+            506,
+            53
+          ]
+        ]
+      },
+      "in_memory_final_refit_comparison": {
+        "max_probability_difference": 0.0,
+        "different_prediction_rows": 0,
+        "scope": "Fresh fit with section-2 parameters, no artifact save; not a held-out evaluation"
+      },
+      "empirical_majority_ceiling": {
+        "original_scenarios_numerator": 2159,
+        "original_scenarios_ceiling": 0.7859483072442665,
+        "model_scenarios_numerator": 1595,
+        "model_scenarios_ceiling": 0.5806334182744812
+      }
+    },
+    "5": {
+      "name": "의사소통",
+      "n": 2980,
+      "raw_features": [
+        "의사소통 메시지의 길이",
+        "팀/조직 의사소통 자율성",
+        "의사소통 프로토콜의 구체성",
+        "의사소통자 간 상황인식 공유 정도",
+        "의사소통을 위한 장비/기기의 적절성",
+        "의사소통을 위한 전문용어 숙지 필요성"
+      ],
+      "model_features": [
+        "의사소통 메시지의 길이",
+        "팀/조직 의사소통 자율성",
+        "의사소통 프로토콜의 구체성",
+        "의사소통자 간 상황인식 공유 정도",
+        "의사소통을 위한 장비/기기의 적절성",
+        "의사소통을 위한 전문용어 숙지 필요성"
+      ],
+      "n_original_scenarios": 710,
+      "n_model_scenarios": 710,
+      "actual_label_counts": {
+        "보통": 1829,
+        "나쁨": 1151
+      },
+      "majority_accuracy": 0.613758389261745,
+      "scenario_label_split_on_original_scenarios": [
+        {
+          "fold": 1,
+          "n_train": 1785,
+          "n_test": 1195,
+          "scenario_overlap": 630,
+          "test_rows_with_seen_scenario": 1082,
+          "person_overlap": 92
+        },
+        {
+          "fold": 2,
+          "n_train": 2143,
+          "n_test": 837,
+          "scenario_overlap": 630,
+          "test_rows_with_seen_scenario": 837,
+          "person_overlap": 92
+        },
+        {
+          "fold": 3,
+          "n_train": 2470,
+          "n_test": 510,
+          "scenario_overlap": 455,
+          "test_rows_with_seen_scenario": 510,
+          "person_overlap": 91
+        },
+        {
+          "fold": 4,
+          "n_train": 2693,
+          "n_test": 287,
+          "scenario_overlap": 274,
+          "test_rows_with_seen_scenario": 287,
+          "person_overlap": 91
+        },
+        {
+          "fold": 5,
+          "n_train": 2829,
+          "n_test": 151,
+          "scenario_overlap": 150,
+          "test_rows_with_seen_scenario": 151,
+          "person_overlap": 72
+        }
+      ],
+      "proper_groupkfold_on_model_scenarios": [
+        {
+          "fold": 1,
+          "n_train": 2384,
+          "n_test": 596,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 92
+        },
+        {
+          "fold": 2,
+          "n_train": 2384,
+          "n_test": 596,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 92
+        },
+        {
+          "fold": 3,
+          "n_train": 2384,
+          "n_test": 596,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 92
+        },
+        {
+          "fold": 4,
+          "n_train": 2384,
+          "n_test": 596,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 92
+        },
+        {
+          "fold": 5,
+          "n_train": 2384,
+          "n_test": 596,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 92
+        }
+      ],
+      "multi_response_not_multi_person": {
+        "scenarios_two_or_more_responses": 663,
+        "scenarios_two_or_more_people": 660,
+        "repeated_responses_from_same_person": 71
+      },
+      "replayed_main_cv_fixed_saved_gmm": {
+        "scope": "Replays notebook section 2 with the saved GMM transformation; GMM is not refitted within folds. Historical PSF6 uses six GMM features.",
+        "raw_fold_mean": 0.7043624161073825,
+        "relative_accuracy": 0.9090515374621048,
+        "numerator": 2099,
+        "denominator": 2309,
+        "classes": [
+          "나쁨",
+          "보통"
+        ],
+        "prediction_counts": {
+          "나쁨": 910,
+          "보통": 2070
+        },
+        "accuracy": 0.7043624161073826,
+        "balanced_accuracy": 0.6688193735544579,
+        "recall": {
+          "나쁨": 0.5125977410947002,
+          "보통": 0.8250410060142154
+        },
+        "confusion_matrix": [
+          [
+            590,
+            561
+          ],
+          [
+            320,
+            1509
+          ]
+        ]
+      },
+      "in_memory_final_refit_comparison": {
+        "max_probability_difference": 0.0,
+        "different_prediction_rows": 0,
+        "scope": "Fresh fit with section-2 parameters, no artifact save; not a held-out evaluation"
+      },
+      "empirical_majority_ceiling": {
+        "original_scenarios_numerator": 2309,
+        "original_scenarios_ceiling": 0.7748322147651007,
+        "model_scenarios_numerator": 2309,
+        "model_scenarios_ceiling": 0.7748322147651007
+      }
+    },
+    "6": {
+      "name": "환경",
+      "n": 2950,
+      "raw_features": [
+        "비",
+        "낙뢰",
+        "소음",
+        "안개",
+        "통풍",
+        "풍속",
+        "황사",
+        "마찰계수",
+        "실내 습도",
+        "실내 온도",
+        "실외 습도",
+        "실외 온도",
+        "작업공간 크기",
+        "업무공간 가시성"
+      ],
+      "model_features": [
+        "Thermal_Comfort",
+        "Visual_Environment",
+        "Surface_Safety",
+        "Workspace",
+        "Acoustic_Environment",
+        "Outdoor_Climate"
+      ],
+      "n_original_scenarios": 2762,
+      "n_model_scenarios": 474,
+      "actual_label_counts": {
+        "나쁨": 2145,
+        "보통": 805
+      },
+      "majority_accuracy": 0.7271186440677966,
+      "scenario_label_split_on_original_scenarios": [
+        {
+          "fold": 1,
+          "n_train": 124,
+          "n_test": 2826,
+          "scenario_overlap": 121,
+          "test_rows_with_seen_scenario": 123,
+          "person_overlap": 67
+        },
+        {
+          "fold": 2,
+          "n_train": 2829,
+          "n_test": 121,
+          "scenario_overlap": 121,
+          "test_rows_with_seen_scenario": 121,
+          "person_overlap": 67
+        },
+        {
+          "fold": 3,
+          "n_train": 2947,
+          "n_test": 3,
+          "scenario_overlap": 3,
+          "test_rows_with_seen_scenario": 3,
+          "person_overlap": 3
+        }
+      ],
+      "proper_groupkfold_on_model_scenarios": [
+        {
+          "fold": 1,
+          "n_train": 2360,
+          "n_test": 590,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 91
+        },
+        {
+          "fold": 2,
+          "n_train": 2360,
+          "n_test": 590,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 90
+        },
+        {
+          "fold": 3,
+          "n_train": 2360,
+          "n_test": 590,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 91
+        },
+        {
+          "fold": 4,
+          "n_train": 2360,
+          "n_test": 590,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 91
+        },
+        {
+          "fold": 5,
+          "n_train": 2360,
+          "n_test": 590,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 91
+        }
+      ],
+      "multi_response_not_multi_person": {
+        "scenarios_two_or_more_responses": 183,
+        "scenarios_two_or_more_people": 180,
+        "repeated_responses_from_same_person": 3
+      },
+      "replayed_main_cv_fixed_saved_gmm": {
+        "scope": "Replays notebook section 2 with the saved GMM transformation; GMM is not refitted within folds. Historical PSF6 uses six GMM features.",
+        "raw_fold_mean": 0.7220338983050848,
+        "relative_accuracy": 0.9530201342281879,
+        "numerator": 2130,
+        "denominator": 2235,
+        "classes": [
+          "나쁨",
+          "보통"
+        ],
+        "prediction_counts": {
+          "나쁨": 2923,
+          "보통": 27
+        },
+        "accuracy": 0.7220338983050848,
+        "balanced_accuracy": 0.49883160317942926,
+        "recall": {
+          "나쁨": 0.9902097902097902,
+          "보통": 0.007453416149068323
+        },
+        "confusion_matrix": [
+          [
+            2124,
+            21
+          ],
+          [
+            799,
+            6
+          ]
+        ]
+      },
+      "in_memory_final_refit_comparison": {
+        "max_probability_difference": 0.0,
+        "different_prediction_rows": 0,
+        "scope": "Fresh fit with section-2 parameters, no artifact save; not a held-out evaluation"
+      },
+      "empirical_majority_ceiling": {
+        "original_scenarios_numerator": 2886,
+        "original_scenarios_ceiling": 0.9783050847457627,
+        "model_scenarios_numerator": 2235,
+        "model_scenarios_ceiling": 0.7576271186440678
+      }
+    },
+    "7": {
+      "name": "작업절차",
+      "n": 3137,
+      "raw_features": [
+        "역할 분담 명료화",
+        "작업 계획 적절성",
+        "작업절차 및 규정",
+        "작업자간 협업 정도",
+        "작업 관리 및 감독 적절성"
+      ],
+      "model_features": [
+        "역할 분담 명료화",
+        "작업 계획 적절성",
+        "작업절차 및 규정",
+        "작업자간 협업 정도",
+        "작업 관리 및 감독 적절성"
+      ],
+      "n_original_scenarios": 243,
+      "n_model_scenarios": 243,
+      "actual_label_counts": {
+        "나쁨": 1601,
+        "보통": 1083,
+        "좋음": 453
+      },
+      "majority_accuracy": 0.5103602167676123,
+      "scenario_label_split_on_original_scenarios": [
+        {
+          "fold": 1,
+          "n_train": 2194,
+          "n_test": 943,
+          "scenario_overlap": 243,
+          "test_rows_with_seen_scenario": 943,
+          "person_overlap": 97
+        },
+        {
+          "fold": 2,
+          "n_train": 2374,
+          "n_test": 763,
+          "scenario_overlap": 243,
+          "test_rows_with_seen_scenario": 763,
+          "person_overlap": 97
+        },
+        {
+          "fold": 3,
+          "n_train": 2546,
+          "n_test": 591,
+          "scenario_overlap": 242,
+          "test_rows_with_seen_scenario": 591,
+          "person_overlap": 97
+        },
+        {
+          "fold": 4,
+          "n_train": 2667,
+          "n_test": 470,
+          "scenario_overlap": 238,
+          "test_rows_with_seen_scenario": 470,
+          "person_overlap": 96
+        },
+        {
+          "fold": 5,
+          "n_train": 2767,
+          "n_test": 370,
+          "scenario_overlap": 221,
+          "test_rows_with_seen_scenario": 370,
+          "person_overlap": 95
+        }
+      ],
+      "proper_groupkfold_on_model_scenarios": [
+        {
+          "fold": 1,
+          "n_train": 2512,
+          "n_test": 625,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 97
+        },
+        {
+          "fold": 2,
+          "n_train": 2508,
+          "n_test": 629,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 96
+        },
+        {
+          "fold": 3,
+          "n_train": 2512,
+          "n_test": 625,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 97
+        },
+        {
+          "fold": 4,
+          "n_train": 2508,
+          "n_test": 629,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 97
+        },
+        {
+          "fold": 5,
+          "n_train": 2508,
+          "n_test": 629,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 97
+        }
+      ],
+      "multi_response_not_multi_person": {
+        "scenarios_two_or_more_responses": 243,
+        "scenarios_two_or_more_people": 243,
+        "repeated_responses_from_same_person": 196
+      },
+      "replayed_main_cv_fixed_saved_gmm": {
+        "scope": "Replays notebook section 2 with the saved GMM transformation; GMM is not refitted within folds. Historical PSF6 uses six GMM features.",
+        "raw_fold_mean": 0.5903628616852146,
+        "relative_accuracy": 0.9311211664152841,
+        "numerator": 1852,
+        "denominator": 1989,
+        "classes": [
+          "나쁨",
+          "보통",
+          "좋음"
+        ],
+        "prediction_counts": {
+          "나쁨": 2003,
+          "보통": 1052,
+          "좋음": 82
+        },
+        "accuracy": 0.590372967803634,
+        "balanced_accuracy": 0.46184615482589725,
+        "recall": {
+          "나쁨": 0.801998750780762,
+          "보통": 0.481994459833795,
+          "좋음": 0.10154525386313466
+        },
+        "confusion_matrix": [
+          [
+            1284,
+            314,
+            3
+          ],
+          [
+            528,
+            522,
+            33
+          ],
+          [
+            191,
+            216,
+            46
+          ]
+        ]
+      },
+      "in_memory_final_refit_comparison": {
+        "max_probability_difference": 0.0,
+        "different_prediction_rows": 0,
+        "scope": "Fresh fit with section-2 parameters, no artifact save; not a held-out evaluation"
+      },
+      "empirical_majority_ceiling": {
+        "original_scenarios_numerator": 1989,
+        "original_scenarios_ceiling": 0.6340452661778769,
+        "model_scenarios_numerator": 1989,
+        "model_scenarios_ceiling": 0.6340452661778769
+      }
+    },
+    "8": {
+      "name": "복잡성",
+      "n": 3105,
+      "raw_features": [
+        "정보의 불확실성",
+        "관측되는 정보의 양",
+        "의사결정 대안의 수",
+        "의사결정 목표의 명확성",
+        "의사결정 판단 기준의 수",
+        "(동시에 처리 되어야 하는)의사결정 수",
+        "(관측이 불가능하여)추론해야하는 정보의 양"
+      ],
+      "model_features": [
+        "Goal_Clarity",
+        "Decision_Complexity",
+        "Concurrent_Decision_Load",
+        "Information_Complexity",
+        "Information_Uncertainty"
+      ],
+      "n_original_scenarios": 928,
+      "n_model_scenarios": 108,
+      "actual_label_counts": {
+        "약간 높음": 1344,
+        "보통": 962,
+        "매우 높음": 799
+      },
+      "majority_accuracy": 0.43285024154589374,
+      "scenario_label_split_on_original_scenarios": [
+        {
+          "fold": 1,
+          "n_train": 1286,
+          "n_test": 1819,
+          "scenario_overlap": 647,
+          "test_rows_with_seen_scenario": 1347,
+          "person_overlap": 97
+        },
+        {
+          "fold": 2,
+          "n_train": 2267,
+          "n_test": 838,
+          "scenario_overlap": 647,
+          "test_rows_with_seen_scenario": 838,
+          "person_overlap": 97
+        },
+        {
+          "fold": 3,
+          "n_train": 2780,
+          "n_test": 325,
+          "scenario_overlap": 297,
+          "test_rows_with_seen_scenario": 325,
+          "person_overlap": 94
+        },
+        {
+          "fold": 4,
+          "n_train": 3009,
+          "n_test": 96,
+          "scenario_overlap": 95,
+          "test_rows_with_seen_scenario": 96,
+          "person_overlap": 54
+        },
+        {
+          "fold": 5,
+          "n_train": 3078,
+          "n_test": 27,
+          "scenario_overlap": 27,
+          "test_rows_with_seen_scenario": 27,
+          "person_overlap": 22
+        }
+      ],
+      "proper_groupkfold_on_model_scenarios": [
+        {
+          "fold": 1,
+          "n_train": 2493,
+          "n_test": 612,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 97
+        },
+        {
+          "fold": 2,
+          "n_train": 2480,
+          "n_test": 625,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 97
+        },
+        {
+          "fold": 3,
+          "n_train": 2494,
+          "n_test": 611,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 97
+        },
+        {
+          "fold": 4,
+          "n_train": 2476,
+          "n_test": 629,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 97
+        },
+        {
+          "fold": 5,
+          "n_train": 2477,
+          "n_test": 628,
+          "scenario_overlap": 0,
+          "test_rows_with_seen_scenario": 0,
+          "person_overlap": 97
+        }
+      ],
+      "multi_response_not_multi_person": {
+        "scenarios_two_or_more_responses": 806,
+        "scenarios_two_or_more_people": 806,
+        "repeated_responses_from_same_person": 42
+      },
+      "replayed_main_cv_fixed_saved_gmm": {
+        "scope": "Replays notebook section 2 with the saved GMM transformation; GMM is not refitted within folds. Historical PSF6 uses six GMM features.",
+        "raw_fold_mean": 0.4474201318180942,
+        "relative_accuracy": 0.9102228047182176,
+        "numerator": 1389,
+        "denominator": 1526,
+        "classes": [
+          "매우 높음",
+          "보통",
+          "약간 높음"
+        ],
+        "prediction_counts": {
+          "매우 높음": 485,
+          "보통": 607,
+          "약간 높음": 2013
+        },
+        "accuracy": 0.4473429951690821,
+        "balanced_accuracy": 0.4068080029633534,
+        "recall": {
+          "매우 높음": 0.26282853566958697,
+          "보통": 0.28274428274428276,
+          "약간 높음": 0.6748511904761905
+        },
+        "confusion_matrix": [
+          [
+            210,
+            76,
+            513
+          ],
+          [
+            97,
+            272,
+            593
+          ],
+          [
+            178,
+            259,
+            907
+          ]
+        ]
+      },
+      "in_memory_final_refit_comparison": {
+        "max_probability_difference": 0.0,
+        "different_prediction_rows": 0,
+        "scope": "Fresh fit with section-2 parameters, no artifact save; not a held-out evaluation"
+      },
+      "empirical_majority_ceiling": {
+        "original_scenarios_numerator": 2001,
+        "original_scenarios_ceiling": 0.6444444444444445,
+        "model_scenarios_numerator": 1526,
+        "model_scenarios_ceiling": 0.49146537842190013
+      }
+    }
+  },
+  "notebooks": {
+    "analysis_v1.5.ipynb": {
+      "sha256": "2203a1dbe944cb8e8cb4553ee2462b0a3019837256e902d6da2fc3f50a543b5a",
+      "cells": 104,
+      "errors": [
+        {
+          "cell": 50,
+          "execution": 54,
+          "type": "KeyboardInterrupt",
+          "message": ""
+        },
+        {
+          "cell": 55,
+          "execution": 57,
+          "type": "KeyboardInterrupt",
+          "message": ""
+        }
+      ]
+    },
+    "env_preprocess_v1.ipynb": {
+      "sha256": "0606502dc37f3d03c03c5851ffebaf8c98212f1f0a4056560d7199944496a55a",
+      "cells": 12,
+      "errors": []
+    },
+    "preprocess_v1.4.ipynb": {
+      "sha256": "e4b8fd330b1cc193656e535e0fc2146763d831256e11fe39f04d0cd545461d48",
+      "cells": 262,
+      "errors": [
+        {
+          "cell": 217,
+          "execution": 8,
+          "type": "NameError",
+          "message": "name 'thermal_gmm' is not defined"
+        },
+        {
+          "cell": 232,
+          "execution": null,
+          "type": "",
+          "message": ""
+        }
+      ]
+    }
+  },
+  "stored_outputs": {
+    "22": "\n==============================\n[교육_및_훈련] 모델 학습 시작\n==============================\n데이터 수: 2747\n시나리오 수: 243\n변수 수: 5\n일반 Accuracy 평균: 0.5333\n이론적 최대 정확도 보정 Accuracy: 0.9185\n분자/분모: 1465 / 1595\n\n==============================\n[복잡성] 모델 학습 시작\n==============================\n데이터 수: 3105\n시나리오 수: 108\n변수 수: 5\n일반 Accuracy 평균: 0.4645\n이론적 최대 정확도 보정 Accuracy: 0.9450\n분자/분모: 1442 / 1526\n\n==============================\n[의사소통] 모델 학습 시작\n==============================\n데이터 수: 2980\n시나리오 수: 710\n변수 수: 6\n일반 Accuracy 평균: 0.7060\n이론적 최대 정확도 보정 Accuracy: 0.9112\n분자/분모: 2104 / 2309\n\n==============================\n[작업부하] 모델 학습 시작\n==============================\n데이터 수: 2971\n시나리오 수: 243\n변수 수: 5\n일반 Accuracy 평균: 0.5850\n이론적 최대 정확도 보정 Accuracy: 0.9274\n분자/분모: 1738 / 1874\n\n==============================\n[작업절차] 모델 학습 시작\n==============================\n데이터 수: 3137\n시나리오 수: 243\n변수 수: 5\n일반 Accuracy 평균: 0.5980\n이론적 최대 정확도 보정 Accuracy: 0.9432\n분자/분모: 1876 / 1989\n\n==============================\n[장비_및_기기] 모델 학습 시작\n==============================\n데이터 수: 2867\n시나리오 수: 162\n변수 수: 5\n일반 Accuracy 평균: 0.5455\n이론적 최대 정확도 보정 Accuracy: 0.9450\n분자/분모: 1564 / 1655\n\n==============================\n[절차_및_지침] 모델 학습 시작\n==============================\n데이터 수: 2705\n시나리오 수: 484\n변수 수: 6\n일반 Accuracy 평균: 0.5712\n이론적 최대 정확도 보정 Accuracy: 0.8675\n분자/분모: 1545 / 1781\n\n==============================\n[환경] 모델 학습 시작\n==============================\n데이터 수: 2950\n시나리오 수: 474\n변수 수: 6\n일반 Accuracy 평균: 0.7271\n이론적 최대 정확도 보정 Accuracy: 0.9597\n분자/분모: 2145 / 2235\n",
+    "23": "       PSF  n_data  n_scenario  n_features  raw_accuracy_mean  \\\n7       환경    2950         474           6           0.727119   \n5  장비_및_기기    2867         162           5           0.545508   \n1      복잡성    3105         108           5           0.464472   \n4     작업절차    3137         243           5           0.597984   \n3     작업부하    2971         243           5           0.584975   \n0  교육_및_훈련    2747         243           5           0.533289   \n2     의사소통    2980         710           6           0.706040   \n6  절차_및_지침    2705         484           6           0.571165   \n\n   theoretical_accuracy  theoretical_numerator  theoretical_denominator  \n7              0.959732                   2145                     2235  \n5              0.945015                   1564                     1655  \n1              0.944954                   1442                     1526  \n4              0.943188                   1876                     1989  \n3              0.927428                   1738                     1874  \n0              0.918495                   1465                     1595  \n2              0.911217                   2104                     2309  \n6              0.867490                   1545                     1781  ",
+    "25": "[교육_및_훈련] 최종 모델 학습\n저장 완료: models\\교육_및_훈련_catboost.cbm\n[복잡성] 최종 모델 학습\n저장 완료: models\\복잡성_catboost.cbm\n[의사소통] 최종 모델 학습\n저장 완료: models\\의사소통_catboost.cbm\n[작업부하] 최종 모델 학습\n저장 완료: models\\작업부하_catboost.cbm\n[작업절차] 최종 모델 학습\n저장 완료: models\\작업절차_catboost.cbm\n[장비_및_기기] 최종 모델 학습\n저장 완료: models\\장비_및_기기_catboost.cbm\n[절차_및_지침] 최종 모델 학습\n저장 완료: models\\절차_및_지침_catboost.cbm\n[환경] 최종 모델 학습\n저장 완료: models\\환경_catboost.cbm\n",
+    "26": "  psf_name  fold  n_train  n_test  n_train_scenario  n_test_scenario  \\\n0      복잡성     1     2484     621               743              185   \n1      복잡성     2     2484     621               743              185   \n2      복잡성     3     2484     621               742              186   \n3      복잡성     4     2484     621               742              186   \n4      복잡성     5     2484     621               742              186   \n\n   raw_accuracy  theoretical_accuracy  numerator  denominator  \n0      0.462158              0.701711        287          409  \n1      0.442834              0.697970        275          394  \n2      0.423510              0.669211        263          393  \n3      0.452496              0.700748        281          401  \n4      0.441224              0.678218        274          404  ",
+    "27": "              precision    recall  f1-score   support\n\n       매우 높음       0.45      0.24      0.32       799\n          보통       0.43      0.26      0.32       962\n       약간 높음       0.45      0.70      0.54      1344\n\n    accuracy                           0.44      3105\n   macro avg       0.44      0.40      0.39      3105\nweighted avg       0.44      0.44      0.42      3105\n\n",
+    "28": "            pred_매우 높음  pred_보통  pred_약간 높음\ntrue_매우 높음         195       70         534\ntrue_보통             80      247         635\ntrue_약간 높음         154      252         938",
+    "40": "       PSF  min_response_per_scenario   status reason  n_data  n_scenario  \\\n3  교육_및_훈련                          1  success   None    2747        1562   \n4  교육_및_훈련                          2  success   None    1980         795   \n5  교육_및_훈련                          3  success   None     944         277   \n6      복잡성                          1  success   None    3105         928   \n7      복잡성                          2  success   None    2983         806   \n8      복잡성                          3  success   None    2581         605   \n0  장비_및_기기                          1  success   None    2867        1255   \n1  장비_및_기기                          2  success   None    2458         846   \n2  장비_및_기기                          3  success   None    1706         470   \n\n   n_features  raw_accuracy_mean  theoretical_accuracy  theoretical_numerator  \\\n3           7           0.532917              0.678092                   1464   \n4           7           0.525253              0.747126                   1040   \n5           7           0.484143              0.731200                    457   \n6           7           0.444444              0.689655                   1380   \n7           7           0.441507              0.700905                   1317   \n8           7           0.435097              0.700125                   1123   \n0           7           0.572368              0.766106                   1641   \n1           7           0.588678              0.834968                   1447   \n2           7           0.568582              0.825532                    970   \n\n   theoretical_denominator  \n3                     2159  \n4                     1392  \n5                      625  \n6                     2001  \n7                     1879  \n8                     1604  \n0                     2142  \n1                     1733  \n2                     1175  ",
+    "56": "       PSF  min_response_per_scenario   status reason  n_data_eval  \\\n0  교육_및_훈련                          1  success   None         2747   \n2  교육_및_훈련                          1  success   None         2747   \n3  교육_및_훈련                          1  success   None         2747   \n4  교육_및_훈련                          1  success   None         2747   \n8  교육_및_훈련                          1  success   None         2747   \n1  교육_및_훈련                          1  success   None         2747   \n5  교육_및_훈련                          1  success   None         2747   \n7  교육_및_훈련                          1  success   None         2747   \n6  교육_및_훈련                          1  success   None         2747   \n\n   n_scenario_eval  n_data_train_candidate  n_scenario_train_candidate  \\\n0             1562                    2747                        1562   \n2             1562                    2747                        1562   \n3             1562                    2747                        1562   \n4             1562                    2747                        1562   \n8             1562                    2747                        1562   \n1             1562                    2747                        1562   \n5             1562                    2747                        1562   \n7             1562                    2747                        1562   \n6             1562                    2747                        1562   \n\n   n_features  raw_accuracy_mean  theoretical_accuracy  theoretical_numerator  \\\n0           7           0.547849              0.697082                   1505   \n2           7           0.547483              0.696619                   1504   \n3           7           0.546390              0.695229                   1501   \n4           7           0.546026              0.694766                   1500   \n8           7           0.546023              0.694766                   1500   \n1           7           0.545664              0.694303                   1499   \n5           7           0.545663              0.694303                   1499   \n7           7           0.544934              0.693377                   1497   \n6           7           0.538741              0.685503                   1480   \n\n   theoretical_denominator  depth  iterations  learning_rate  l2_leaf_reg  \\\n0                     2159      4         300           0.05           20   \n2                     2159      4         300           0.05          100   \n3                     2159      5         300           0.05           20   \n4                     2159      5         300           0.05           50   \n8                     2159      6         300           0.05          100   \n1                     2159      4         300           0.05           50   \n5                     2159      5         300           0.05          100   \n7                     2159      6         300           0.05           50   \n6                     2159      6         300           0.05           20   \n\n   random_strength  \n0                0  \n2                0  \n3                0  \n4                0  \n8                0  \n1                0  \n5                0  \n7                0  \n6                0  ",
+    "62": "3.3 병렬 튜닝 완료: 100.0% (162/162)\nCSV 저장: result\\psf_parallel_tuning_summary_q95_20260706_150944.csv\n최신 CSV 저장: result\\psf_parallel_tuning_summary_latest.csv\n",
+    "67": "3.3 병렬 튜닝 완료: 100.0% (72/72)\nCSV 저장: result\\psf_parallel_tuning_summary_q95_20260706_174732.csv\n최신 CSV 저장: result\\psf_parallel_tuning_summary_latest.csv\n",
+    "75": "3.3 병렬 튜닝 완료: 100.0% (3/3)\nCSV 저장: result\\psf_parallel_tuning_summary_q95_20260706_181112.csv\n최신 CSV 저장: result\\psf_parallel_tuning_summary_latest.csv\n",
+    "88": "X shape: (3029, 5)\ny shape: (3029,)\nempid 수: 97\ny 분포:\nanswer\n보통      1532\n나쁨      1127\n매우나쁨     370\nName: count, dtype: int64\n",
+    "90": "train/test rows: 2365 664\ntrain/test empid: 77 20\noverlap empid: 0\n",
+    "94": "              precision    recall  f1-score   support\n\n          나쁨       0.45      0.44      0.45       243\n        매우나쁨       0.32      0.20      0.24        76\n          보통       0.65      0.71      0.68       345\n\n    accuracy                           0.56       664\n   macro avg       0.47      0.45      0.46       664\nweighted avg       0.54      0.56      0.55       664\n\n",
+    "96": "       나쁨  매우나쁨   보통\n나쁨    108    26  109\n매우나쁨   38    15   23\n보통     93     6  246",
+    "98": "                     metric     value\n0                  Accuracy  0.555723\n1    Adjacent Accuracy (±1)  0.956325\n2   Severe Error Rate (>=2)  0.043675\n3     Linear Weighted Kappa  0.267697\n4  Quadratic Weighted Kappa  0.338883\n5               Ordinal MAE  0.487952\n6              Ordinal RMSE  0.758486",
+    "99": "         예측_매우나쁨  예측_나쁨  예측_보통\n실제_매우나쁨       15     38     23\n실제_나쁨         26    108    109\n실제_보통          6     93    246",
+    "100": "np.float64(0.8870481927710844)",
+    "101": "0.6521084337349398",
+    "102": "              precision    recall  f1-score   support\n\n         비위험       0.65      0.71      0.68       345\n          위험       0.65      0.59      0.62       319\n\n    accuracy                           0.65       664\n   macro avg       0.65      0.65      0.65       664\nweighted avg       0.65      0.65      0.65       664\n\n"
+  },
+  "stored_main_summary": [
+    {
+      "name": "교육_및_훈련",
+      "n": 2747,
+      "scenarios": 243,
+      "features": 5,
+      "raw_rounded": 0.5333,
+      "relative_rounded": 0.9185,
+      "numerator": 1465,
+      "denominator": 1595
+    },
+    {
+      "name": "복잡성",
+      "n": 3105,
+      "scenarios": 108,
+      "features": 5,
+      "raw_rounded": 0.4645,
+      "relative_rounded": 0.945,
+      "numerator": 1442,
+      "denominator": 1526
+    },
+    {
+      "name": "의사소통",
+      "n": 2980,
+      "scenarios": 710,
+      "features": 6,
+      "raw_rounded": 0.706,
+      "relative_rounded": 0.9112,
+      "numerator": 2104,
+      "denominator": 2309
+    },
+    {
+      "name": "작업부하",
+      "n": 2971,
+      "scenarios": 243,
+      "features": 5,
+      "raw_rounded": 0.585,
+      "relative_rounded": 0.9274,
+      "numerator": 1738,
+      "denominator": 1874
+    },
+    {
+      "name": "작업절차",
+      "n": 3137,
+      "scenarios": 243,
+      "features": 5,
+      "raw_rounded": 0.598,
+      "relative_rounded": 0.9432,
+      "numerator": 1876,
+      "denominator": 1989
+    },
+    {
+      "name": "장비_및_기기",
+      "n": 2867,
+      "scenarios": 162,
+      "features": 5,
+      "raw_rounded": 0.5455,
+      "relative_rounded": 0.945,
+      "numerator": 1564,
+      "denominator": 1655
+    },
+    {
+      "name": "절차_및_지침",
+      "n": 2705,
+      "scenarios": 484,
+      "features": 6,
+      "raw_rounded": 0.5712,
+      "relative_rounded": 0.8675,
+      "numerator": 1545,
+      "denominator": 1781
+    },
+    {
+      "name": "환경",
+      "n": 2950,
+      "scenarios": 474,
+      "features": 6,
+      "raw_rounded": 0.7271,
+      "relative_rounded": 0.9597,
+      "numerator": 2145,
+      "denominator": 2235
+    }
+  ],
+  "quality95": {
+    "surveys_before_year_exception": {
+      "성실": 406,
+      "불성실": 66
+    },
+    "surveys_after_year_exception": {
+      "성실": 420,
+      "불성실": 52
+    },
+    "surveys_restored_by_year_exception": 14
+  },
+  "split_example_same_scenario_7_to_3": [
+    {
+      "fold": 1,
+      "n_train": 7,
+      "n_test": 3,
+      "scenario_overlap": 1,
+      "test_rows_with_seen_scenario": 3,
+      "person_overlap": 0
+    },
+    {
+      "fold": 2,
+      "n_train": 7,
+      "n_test": 3,
+      "scenario_overlap": 1,
+      "test_rows_with_seen_scenario": 3,
+      "person_overlap": 0
+    },
+    {
+      "fold": 3,
+      "n_train": 8,
+      "n_test": 2,
+      "scenario_overlap": 1,
+      "test_rows_with_seen_scenario": 2,
+      "person_overlap": 0
+    },
+    {
+      "fold": 4,
+      "n_train": 9,
+      "n_test": 1,
+      "scenario_overlap": 1,
+      "test_rows_with_seen_scenario": 1,
+      "person_overlap": 0
+    },
+    {
+      "fold": 5,
+      "n_train": 9,
+      "n_test": 1,
+      "scenario_overlap": 1,
+      "test_rows_with_seen_scenario": 1,
+      "person_overlap": 0
+    }
+  ],
+  "relative_metric_counterexample": 2.0,
+  "distribution_overlap_counterexample": {
+    "raw_accuracy": 0.0,
+    "scenario_overlap": 1.0,
+    "note": "Valid marginal histogram equality, but not evidence that individual responses or model probabilities are correct"
+  },
+  "protected_hashes": {
+    "env_preprocess_v1.ipynb": "0ed5009d9a7ff57c3d37fe3774067e0bb2d719de0ed1e3a5903a403253e9eb8c",
+    "requirements.txt": "fb039a0a93d92c09461ee2dfc9d7dc10ac9eff747ed034be878e00f06ae4772e",
+    "철도 PSF-subPSF 정리 자료.xlsx": "dc9eb6c64e6edb20eddbc80164a37f2f1556afaba54503b7d2b5615836c7cf22",
+    "철도_코레일 종사자 설문조사 결과.txt": "74a4f212a7839b59841ee90f5f9868a307d8a209facb893e7cb48e80f663e15b",
+    "CatBoost_Result\\analysis_v1.5.ipynb": "2203a1dbe944cb8e8cb4553ee2462b0a3019837256e902d6da2fc3f50a543b5a",
+    "CatBoost_Result\\env_preprocess_v1.ipynb": "0606502dc37f3d03c03c5851ffebaf8c98212f1f0a4056560d7199944496a55a",
+    "CatBoost_Result\\preprocess_v1.4.ipynb": "e4b8fd330b1cc193656e535e0fc2146763d831256e11fe39f04d0cd545461d48",
+    "models\\교육_및_훈련_catboost.cbm": "f97508e3544cc313398b4da908722d4241aed6368a4a3f8316a558389b050d52",
+    "models\\복잡성_catboost.cbm": "9f4e4f71c01852dddc4f37e687b5d0972d2ef2aaa7ddd87b99d6664074daa1d3",
+    "models\\의사소통_catboost.cbm": "30f8d5a99c4a47253405395d33d5e41960625d2dbee78e5ffc125d2da8599ac7",
+    "models\\작업부하_catboost.cbm": "fbb6bfb06710be052a1271060267c8edd1947bc33c0ed24656df17691a40bd98",
+    "models\\작업절차_catboost.cbm": "59141462a6011c4c69290ce7ca01a3e4cd66f6ae1b7555262c5c5edd06e35a63",
+    "models\\장비_및_기기_catboost.cbm": "190f9ff0af5df0588b9a9df41c8aa9f7c5204f7da91138a4787c9aafb0ac90e8",
+    "models\\절차_및_지침_catboost.cbm": "c02a082d908ff7e1ed5e64a554203582620b0034ffe50dc42566007432d21597",
+    "models\\환경_catboost.cbm": "79a23119b9be167d62e64eafc3ed22018cac5cdf8b7debb3febe066767f35ea0",
+    "models\\환경_raw14_catboost.cbm": "c4190fa0b79f7565932234cb084f70d10a8321d295820590c42f6abdaa39ddc7",
+    "processed_data\\subpsf_level_mapping.xlsx": "40274ddde0ae9b14e7da3f21ee6604664b2427ebcd1c272722197f3a9b1ede98",
+    "models\\gmm\\psf2_gmm.joblib": "3e7f2fdb1cd58ee313a206f8a5b63be33241d6dd062f928cc26cc8ff1ebdef79",
+    "models\\gmm\\psf4_gmm.joblib": "57e2d5c1c5987882d88aaaea8a4313dbe943cc803529761d7e551872e9e2a238",
+    "models\\gmm\\psf6_gmm.joblib": "7e07c4952d1f78b6c3d98f731ffb3ff665331bd02cb8925a4fd58748237851ba",
+    "models\\gmm\\psf8_gmm.joblib": "002e3abbae7412296cece3443edf704d30b514a71c60fc0b5382f5a6cde2cd9e"
+  },
+  "versions": {
+    "python": "3.13.3",
+    "numpy": "2.3.2",
+    "pandas": "2.3.1",
+    "catboost": "1.2.10",
+    "scikit_learn": "1.7.2"
+  },
+  "out_of_order_execution_probe": {
+    "latest_default_feature_columns": [
+      "empid",
+      "survey_id",
+      "quality_95",
+      "근무시간",
+      "수면시간"
+    ],
+    "earlier_cell22_passes_drop_base_cols": false,
+    "scope": "Demonstrates a rerun hazard; saved deployed models have the correct feature names"
+  },
+  "stored_x2_metric_baselines": {
+    "test_n": 664,
+    "stored_accuracy": 0.5557228915662651,
+    "always_middle_adjacent_accuracy": 1.0,
+    "stored_adjacent_accuracy": 0.9563253012048193,
+    "stored_top2_accuracy": 0.8870481927710844,
+    "constant_two_most_frequent_classes_top2_accuracy": 0.8855421686746988
+  }
+}

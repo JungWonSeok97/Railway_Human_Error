@@ -1,0 +1,2263 @@
+{
+  "scope": "Saved artifacts and current inference routes; exploratory notebook outputs are not deployment defects.",
+  "inventory": [
+    {
+      "filename": "교육_및_훈련_catboost.cbm",
+      "sha256": "f97508e3544cc313398b4da908722d4241aed6368a4a3f8316a558389b050d52",
+      "configured_psf": 4,
+      "default_batch_active": false,
+      "features": [
+        "Training_Program",
+        "Training_Frequency",
+        "Experience_Level",
+        "Technical_Knowledge",
+        "Procedural_Knowledge"
+      ],
+      "classes": [
+        "나쁨",
+        "보통",
+        "좋음"
+      ],
+      "categorical_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_count": 500,
+      "schema_and_labels_match": true
+    },
+    {
+      "filename": "복잡성_catboost.cbm",
+      "sha256": "9f4e4f71c01852dddc4f37e687b5d0972d2ef2aaa7ddd87b99d6664074daa1d3",
+      "configured_psf": 8,
+      "default_batch_active": true,
+      "features": [
+        "Goal_Clarity",
+        "Decision_Complexity",
+        "Concurrent_Decision_Load",
+        "Information_Complexity",
+        "Information_Uncertainty"
+      ],
+      "classes": [
+        "매우 높음",
+        "보통",
+        "약간 높음"
+      ],
+      "categorical_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_count": 500,
+      "schema_and_labels_match": true
+    },
+    {
+      "filename": "의사소통_catboost.cbm",
+      "sha256": "30f8d5a99c4a47253405395d33d5e41960625d2dbee78e5ffc125d2da8599ac7",
+      "configured_psf": 5,
+      "default_batch_active": true,
+      "features": [
+        "의사소통 메시지의 길이",
+        "팀/조직 의사소통 자율성",
+        "의사소통 프로토콜의 구체성",
+        "의사소통자 간 상황인식 공유 정도",
+        "의사소통을 위한 장비/기기의 적절성",
+        "의사소통을 위한 전문용어 숙지 필요성"
+      ],
+      "classes": [
+        "나쁨",
+        "보통"
+      ],
+      "categorical_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "tree_count": 500,
+      "schema_and_labels_match": true
+    },
+    {
+      "filename": "작업부하_catboost.cbm",
+      "sha256": "fbb6bfb06710be052a1271060267c8edd1947bc33c0ed24656df17691a40bd98",
+      "configured_psf": 1,
+      "default_batch_active": true,
+      "features": [
+        "근무시간",
+        "수면시간",
+        "작업시간",
+        "근무시간대",
+        "작업 허용 시간"
+      ],
+      "classes": [
+        "나쁨",
+        "매우나쁨",
+        "보통"
+      ],
+      "categorical_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_count": 500,
+      "schema_and_labels_match": true
+    },
+    {
+      "filename": "작업절차_catboost.cbm",
+      "sha256": "59141462a6011c4c69290ce7ca01a3e4cd66f6ae1b7555262c5c5edd06e35a63",
+      "configured_psf": 7,
+      "default_batch_active": true,
+      "features": [
+        "역할 분담 명료화",
+        "작업 계획 적절성",
+        "작업절차 및 규정",
+        "작업자간 협업 정도",
+        "작업 관리 및 감독 적절성"
+      ],
+      "classes": [
+        "나쁨",
+        "보통",
+        "좋음"
+      ],
+      "categorical_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_count": 500,
+      "schema_and_labels_match": true
+    },
+    {
+      "filename": "장비_및_기기_catboost.cbm",
+      "sha256": "190f9ff0af5df0588b9a9df41c8aa9f7c5204f7da91138a4787c9aafb0ac90e8",
+      "configured_psf": 2,
+      "default_batch_active": true,
+      "features": [
+        "Equipment_Accessibility",
+        "Equipment_Quality",
+        "System_Support",
+        "Documentation_Quality",
+        "Maintenance_Support"
+      ],
+      "classes": [
+        "나쁨",
+        "보통",
+        "좋음"
+      ],
+      "categorical_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tree_count": 500,
+      "schema_and_labels_match": true
+    },
+    {
+      "filename": "절차_및_지침_catboost.cbm",
+      "sha256": "c02a082d908ff7e1ed5e64a554203582620b0034ffe50dc42566007432d21597",
+      "configured_psf": 3,
+      "default_batch_active": true,
+      "features": [
+        "(직무)절차의 일관성",
+        "(직무)절차의 추적성",
+        "(직무)절차의 유무(가용성)",
+        "(직무)절차의 명료성(구체성)",
+        "(직무)절차의 적절성(완전성 포함)",
+        "(직무)절차 기술(description)의 복잡성"
+      ],
+      "classes": [
+        "나쁨",
+        "보통",
+        "좋음"
+      ],
+      "categorical_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "tree_count": 500,
+      "schema_and_labels_match": true
+    },
+    {
+      "filename": "환경_catboost.cbm",
+      "sha256": "79a23119b9be167d62e64eafc3ed22018cac5cdf8b7debb3febe066767f35ea0",
+      "configured_psf": null,
+      "default_batch_active": false,
+      "features": [
+        "Thermal_Comfort",
+        "Visual_Environment",
+        "Surface_Safety",
+        "Workspace",
+        "Acoustic_Environment",
+        "Outdoor_Climate"
+      ],
+      "classes": [
+        "나쁨",
+        "보통"
+      ],
+      "categorical_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "tree_count": 500
+    },
+    {
+      "filename": "환경_raw14_catboost.cbm",
+      "sha256": "c4190fa0b79f7565932234cb084f70d10a8321d295820590c42f6abdaa39ddc7",
+      "configured_psf": 6,
+      "default_batch_active": true,
+      "features": [
+        "낙뢰",
+        "마찰계수",
+        "비",
+        "소음",
+        "실내 습도",
+        "실내 온도",
+        "실외 습도",
+        "실외 온도",
+        "안개",
+        "업무공간 가시성",
+        "작업공간 크기",
+        "통풍",
+        "풍속",
+        "황사"
+      ],
+      "classes": [
+        "나쁨",
+        "보통"
+      ],
+      "categorical_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "tree_count": 500,
+      "schema_and_labels_match": true
+    }
+  ],
+  "psfs": {
+    "1": {
+      "scope": "Every Cartesian combination of the currently defined choice codes; equal scenario weighting, not real-world frequency or held-out accuracy",
+      "n_scenarios": 243,
+      "prediction_counts": {
+        "나쁨": 96,
+        "매우나쁨": 10,
+        "보통": 137
+      },
+      "feature_importance": {
+        "근무시간": 29.78986414218472,
+        "수면시간": 16.25058933741779,
+        "작업시간": 32.882971760042395,
+        "근무시간대": 10.257930561021649,
+        "작업 허용 시간": 10.818644199333427
+      },
+      "raw_question_sensitivity": {
+        "F.1.S.1": {
+          "other_question_contexts": 81,
+          "label_changing_contexts": 48,
+          "max_probability_delta": 0.45701173491258146,
+          "probability_changing_contexts": 81,
+          "transformed_features_that_change": [
+            "근무시간"
+          ]
+        },
+        "F.1.S.2": {
+          "other_question_contexts": 81,
+          "label_changing_contexts": 54,
+          "max_probability_delta": 0.48581316054565166,
+          "probability_changing_contexts": 81,
+          "transformed_features_that_change": [
+            "작업시간"
+          ]
+        },
+        "F.1.S.3": {
+          "other_question_contexts": 81,
+          "label_changing_contexts": 29,
+          "max_probability_delta": 0.2902913393400958,
+          "probability_changing_contexts": 81,
+          "transformed_features_that_change": [
+            "수면시간"
+          ]
+        },
+        "F.1.S.4": {
+          "other_question_contexts": 81,
+          "label_changing_contexts": 34,
+          "max_probability_delta": 0.29277576755024476,
+          "probability_changing_contexts": 81,
+          "transformed_features_that_change": [
+            "작업 허용 시간"
+          ]
+        },
+        "F.1.S.5": {
+          "other_question_contexts": 81,
+          "label_changing_contexts": 21,
+          "max_probability_delta": 0.25300687814034467,
+          "probability_changing_contexts": 81,
+          "transformed_features_that_change": [
+            "근무시간대"
+          ]
+        }
+      },
+      "examples": {
+        "나쁨": {
+          "conditions": {
+            "F.1.S.1": "F.1.S.1.1",
+            "F.1.S.2": "F.1.S.2.2",
+            "F.1.S.3": "F.1.S.3.1",
+            "F.1.S.4": "F.1.S.4.2",
+            "F.1.S.5": "F.1.S.5.2"
+          },
+          "probabilities": {
+            "나쁨": 0.4977818129204621,
+            "매우나쁨": 0.0903720832841978,
+            "보통": 0.4118461037953402
+          }
+        },
+        "매우나쁨": {
+          "conditions": {
+            "F.1.S.1": "F.1.S.1.2",
+            "F.1.S.2": "F.1.S.2.3",
+            "F.1.S.3": "F.1.S.3.1",
+            "F.1.S.4": "F.1.S.4.2",
+            "F.1.S.5": "F.1.S.5.3"
+          },
+          "probabilities": {
+            "나쁨": 0.43427564038188116,
+            "매우나쁨": 0.4441291374385083,
+            "보통": 0.12159522217961048
+          }
+        },
+        "보통": {
+          "conditions": {
+            "F.1.S.1": "F.1.S.1.1",
+            "F.1.S.2": "F.1.S.2.1",
+            "F.1.S.3": "F.1.S.3.1",
+            "F.1.S.4": "F.1.S.4.1",
+            "F.1.S.5": "F.1.S.5.1"
+          },
+          "probabilities": {
+            "나쁨": 0.1484796427726519,
+            "매우나쁨": 0.013035582991713738,
+            "보통": 0.8384847742356344
+          }
+        }
+      }
+    },
+    "2": {
+      "scope": "Every Cartesian combination of the currently defined choice codes; equal scenario weighting, not real-world frequency or held-out accuracy",
+      "n_scenarios": 1458,
+      "prediction_counts": {
+        "나쁨": 192,
+        "보통": 1182,
+        "좋음": 84
+      },
+      "feature_importance": {
+        "Equipment_Accessibility": 24.326851120721685,
+        "Equipment_Quality": 34.956417708945175,
+        "System_Support": 10.954312178051472,
+        "Documentation_Quality": 17.44897723341931,
+        "Maintenance_Support": 12.313441758862343
+      },
+      "raw_question_sensitivity": {
+        "F.2.S.1": {
+          "other_question_contexts": 729,
+          "label_changing_contexts": 222,
+          "max_probability_delta": 0.2863202350475189,
+          "probability_changing_contexts": 729,
+          "transformed_features_that_change": [
+            "Equipment_Accessibility"
+          ]
+        },
+        "F.2.S.2": {
+          "other_question_contexts": 486,
+          "label_changing_contexts": 72,
+          "max_probability_delta": 0.29360486177810624,
+          "probability_changing_contexts": 324,
+          "transformed_features_that_change": [
+            "Equipment_Quality"
+          ]
+        },
+        "F.2.S.3": {
+          "other_question_contexts": 486,
+          "label_changing_contexts": 0,
+          "max_probability_delta": 0.0,
+          "probability_changing_contexts": 0,
+          "transformed_features_that_change": []
+        },
+        "F.2.S.4": {
+          "other_question_contexts": 486,
+          "label_changing_contexts": 135,
+          "max_probability_delta": 0.43578895847546384,
+          "probability_changing_contexts": 486,
+          "transformed_features_that_change": [
+            "Equipment_Quality"
+          ]
+        },
+        "F.2.S.5": {
+          "other_question_contexts": 486,
+          "label_changing_contexts": 189,
+          "max_probability_delta": 0.3013623378233061,
+          "probability_changing_contexts": 486,
+          "transformed_features_that_change": [
+            "Documentation_Quality"
+          ]
+        },
+        "F.2.S.6": {
+          "other_question_contexts": 486,
+          "label_changing_contexts": 111,
+          "max_probability_delta": 0.281916179709041,
+          "probability_changing_contexts": 486,
+          "transformed_features_that_change": [
+            "System_Support"
+          ]
+        },
+        "F.2.S.7": {
+          "other_question_contexts": 486,
+          "label_changing_contexts": 126,
+          "max_probability_delta": 0.2634479215283175,
+          "probability_changing_contexts": 486,
+          "transformed_features_that_change": [
+            "Maintenance_Support"
+          ]
+        }
+      },
+      "examples": {
+        "나쁨": {
+          "conditions": {
+            "F.2.S.1": "F.2.S.1.1",
+            "F.2.S.2": "F.2.S.2.1",
+            "F.2.S.3": "F.2.S.3.1",
+            "F.2.S.4": "F.2.S.4.3",
+            "F.2.S.5": "F.2.S.5.3",
+            "F.2.S.6": "F.2.S.6.3",
+            "F.2.S.7": "F.2.S.7.1"
+          },
+          "probabilities": {
+            "나쁨": 0.4533270937239135,
+            "보통": 0.44909615529011726,
+            "좋음": 0.09757675098596921
+          }
+        },
+        "보통": {
+          "conditions": {
+            "F.2.S.1": "F.2.S.1.1",
+            "F.2.S.2": "F.2.S.2.1",
+            "F.2.S.3": "F.2.S.3.1",
+            "F.2.S.4": "F.2.S.4.1",
+            "F.2.S.5": "F.2.S.5.1",
+            "F.2.S.6": "F.2.S.6.1",
+            "F.2.S.7": "F.2.S.7.3"
+          },
+          "probabilities": {
+            "나쁨": 0.04640058768142454,
+            "보통": 0.4826758999323825,
+            "좋음": 0.4709235123861929
+          }
+        },
+        "좋음": {
+          "conditions": {
+            "F.2.S.1": "F.2.S.1.1",
+            "F.2.S.2": "F.2.S.2.1",
+            "F.2.S.3": "F.2.S.3.1",
+            "F.2.S.4": "F.2.S.4.1",
+            "F.2.S.5": "F.2.S.5.1",
+            "F.2.S.6": "F.2.S.6.1",
+            "F.2.S.7": "F.2.S.7.1"
+          },
+          "probabilities": {
+            "나쁨": 0.02403684158633756,
+            "보통": 0.27753933837746053,
+            "좋음": 0.698423820036202
+          }
+        }
+      }
+    },
+    "3": {
+      "scope": "Every Cartesian combination of the currently defined choice codes; equal scenario weighting, not real-world frequency or held-out accuracy",
+      "n_scenarios": 486,
+      "prediction_counts": {
+        "나쁨": 138,
+        "보통": 271,
+        "좋음": 77
+      },
+      "feature_importance": {
+        "(직무)절차의 일관성": 23.158014444705824,
+        "(직무)절차의 추적성": 8.256773298376665,
+        "(직무)절차의 유무(가용성)": 11.89505604975045,
+        "(직무)절차의 명료성(구체성)": 11.94120224810845,
+        "(직무)절차의 적절성(완전성 포함)": 36.932175446159384,
+        "(직무)절차 기술(description)의 복잡성": 7.816778512899256
+      },
+      "raw_question_sensitivity": {
+        "F.3.S.1": {
+          "other_question_contexts": 243,
+          "label_changing_contexts": 93,
+          "max_probability_delta": 0.3277988126784928,
+          "probability_changing_contexts": 243,
+          "transformed_features_that_change": [
+            "(직무)절차의 유무(가용성)"
+          ]
+        },
+        "F.3.S.2": {
+          "other_question_contexts": 162,
+          "label_changing_contexts": 50,
+          "max_probability_delta": 0.2985269377550477,
+          "probability_changing_contexts": 162,
+          "transformed_features_that_change": [
+            "(직무)절차 기술(description)의 복잡성"
+          ]
+        },
+        "F.3.S.3": {
+          "other_question_contexts": 162,
+          "label_changing_contexts": 62,
+          "max_probability_delta": 0.3529271351042911,
+          "probability_changing_contexts": 162,
+          "transformed_features_that_change": [
+            "(직무)절차의 명료성(구체성)"
+          ]
+        },
+        "F.3.S.4": {
+          "other_question_contexts": 162,
+          "label_changing_contexts": 143,
+          "max_probability_delta": 0.6095371738012374,
+          "probability_changing_contexts": 162,
+          "transformed_features_that_change": [
+            "(직무)절차의 적절성(완전성 포함)"
+          ]
+        },
+        "F.3.S.5": {
+          "other_question_contexts": 162,
+          "label_changing_contexts": 97,
+          "max_probability_delta": 0.5031317490622165,
+          "probability_changing_contexts": 162,
+          "transformed_features_that_change": [
+            "(직무)절차의 일관성"
+          ]
+        },
+        "F.3.S.6": {
+          "other_question_contexts": 162,
+          "label_changing_contexts": 47,
+          "max_probability_delta": 0.29804635133562624,
+          "probability_changing_contexts": 162,
+          "transformed_features_that_change": [
+            "(직무)절차의 추적성"
+          ]
+        }
+      },
+      "examples": {
+        "나쁨": {
+          "conditions": {
+            "F.3.S.1": "F.3.S.1.1",
+            "F.3.S.2": "F.3.S.2.1",
+            "F.3.S.3": "F.3.S.3.1",
+            "F.3.S.4": "F.3.S.4.3",
+            "F.3.S.5": "F.3.S.5.1",
+            "F.3.S.6": "F.3.S.6.3"
+          },
+          "probabilities": {
+            "나쁨": 0.48544182062738794,
+            "보통": 0.4107100504894981,
+            "좋음": 0.10384812888311404
+          }
+        },
+        "보통": {
+          "conditions": {
+            "F.3.S.1": "F.3.S.1.1",
+            "F.3.S.2": "F.3.S.2.1",
+            "F.3.S.3": "F.3.S.3.1",
+            "F.3.S.4": "F.3.S.4.1",
+            "F.3.S.5": "F.3.S.5.2",
+            "F.3.S.6": "F.3.S.6.2"
+          },
+          "probabilities": {
+            "나쁨": 0.04483690635107555,
+            "보통": 0.5353588051389233,
+            "좋음": 0.41980428851000107
+          }
+        },
+        "좋음": {
+          "conditions": {
+            "F.3.S.1": "F.3.S.1.1",
+            "F.3.S.2": "F.3.S.2.1",
+            "F.3.S.3": "F.3.S.3.1",
+            "F.3.S.4": "F.3.S.4.1",
+            "F.3.S.5": "F.3.S.5.1",
+            "F.3.S.6": "F.3.S.6.1"
+          },
+          "probabilities": {
+            "나쁨": 0.02275262840553569,
+            "보통": 0.30055225246199346,
+            "좋음": 0.6766951191324708
+          }
+        }
+      }
+    },
+    "4": {
+      "scope": "Every Cartesian combination of the currently defined choice codes; equal scenario weighting, not real-world frequency or held-out accuracy",
+      "n_scenarios": 2187,
+      "prediction_counts": {
+        "나쁨": 216,
+        "보통": 1971
+      },
+      "feature_importance": {
+        "Training_Program": 47.55539607934543,
+        "Training_Frequency": 6.402311552451018,
+        "Experience_Level": 24.9246240001574,
+        "Technical_Knowledge": 8.165019472248495,
+        "Procedural_Knowledge": 12.952648895797672
+      },
+      "raw_question_sensitivity": {
+        "F.4.S.1": {
+          "other_question_contexts": 729,
+          "label_changing_contexts": 135,
+          "max_probability_delta": 0.3328462631217499,
+          "probability_changing_contexts": 729,
+          "transformed_features_that_change": [
+            "Training_Program"
+          ]
+        },
+        "F.4.S.2": {
+          "other_question_contexts": 729,
+          "label_changing_contexts": 108,
+          "max_probability_delta": 0.160458920400735,
+          "probability_changing_contexts": 729,
+          "transformed_features_that_change": [
+            "Training_Frequency"
+          ]
+        },
+        "F.4.S.3": {
+          "other_question_contexts": 729,
+          "label_changing_contexts": 207,
+          "max_probability_delta": 0.2536689331057749,
+          "probability_changing_contexts": 729,
+          "transformed_features_that_change": [
+            "Experience_Level"
+          ]
+        },
+        "F.4.S.4": {
+          "other_question_contexts": 729,
+          "label_changing_contexts": 0,
+          "max_probability_delta": 0.0,
+          "probability_changing_contexts": 0,
+          "transformed_features_that_change": []
+        },
+        "F.4.S.5": {
+          "other_question_contexts": 729,
+          "label_changing_contexts": 54,
+          "max_probability_delta": 0.1464720581040268,
+          "probability_changing_contexts": 729,
+          "transformed_features_that_change": [
+            "Technical_Knowledge"
+          ]
+        },
+        "F.4.S.6": {
+          "other_question_contexts": 729,
+          "label_changing_contexts": 108,
+          "max_probability_delta": 0.20666792239814724,
+          "probability_changing_contexts": 729,
+          "transformed_features_that_change": [
+            "Procedural_Knowledge"
+          ]
+        },
+        "F.4.S.7": {
+          "other_question_contexts": 729,
+          "label_changing_contexts": 0,
+          "max_probability_delta": 0.0,
+          "probability_changing_contexts": 0,
+          "transformed_features_that_change": []
+        }
+      },
+      "examples": {
+        "나쁨": {
+          "conditions": {
+            "F.4.S.1": "F.4.S.1.1",
+            "F.4.S.2": "F.4.S.2.3",
+            "F.4.S.3": "F.4.S.3.3",
+            "F.4.S.4": "F.4.S.4.1",
+            "F.4.S.5": "F.4.S.5.3",
+            "F.4.S.6": "F.4.S.6.3",
+            "F.4.S.7": "F.4.S.7.1"
+          },
+          "probabilities": {
+            "나쁨": 0.4236319300913949,
+            "보통": 0.3964738206626017,
+            "좋음": 0.1798942492460034
+          }
+        },
+        "보통": {
+          "conditions": {
+            "F.4.S.1": "F.4.S.1.1",
+            "F.4.S.2": "F.4.S.2.1",
+            "F.4.S.3": "F.4.S.3.1",
+            "F.4.S.4": "F.4.S.4.1",
+            "F.4.S.5": "F.4.S.5.1",
+            "F.4.S.6": "F.4.S.6.1",
+            "F.4.S.7": "F.4.S.7.1"
+          },
+          "probabilities": {
+            "나쁨": 0.0424205346894782,
+            "보통": 0.522387712775074,
+            "좋음": 0.43519175253544784
+          }
+        }
+      }
+    },
+    "5": {
+      "scope": "Every Cartesian combination of the currently defined choice codes; equal scenario weighting, not real-world frequency or held-out accuracy",
+      "n_scenarios": 729,
+      "prediction_counts": {
+        "나쁨": 233,
+        "보통": 496
+      },
+      "feature_importance": {
+        "의사소통 메시지의 길이": 2.624117921790847,
+        "팀/조직 의사소통 자율성": 15.334069590883193,
+        "의사소통 프로토콜의 구체성": 9.189429623351328,
+        "의사소통자 간 상황인식 공유 정도": 32.105581194255834,
+        "의사소통을 위한 장비/기기의 적절성": 36.468143221041025,
+        "의사소통을 위한 전문용어 숙지 필요성": 4.278658448677776
+      },
+      "raw_question_sensitivity": {
+        "F.5.S.1": {
+          "other_question_contexts": 243,
+          "label_changing_contexts": 25,
+          "max_probability_delta": 0.1994690755834787,
+          "probability_changing_contexts": 243,
+          "transformed_features_that_change": [
+            "의사소통 메시지의 길이"
+          ]
+        },
+        "F.5.S.2": {
+          "other_question_contexts": 243,
+          "label_changing_contexts": 124,
+          "max_probability_delta": 0.44913342422738234,
+          "probability_changing_contexts": 243,
+          "transformed_features_that_change": [
+            "의사소통을 위한 장비/기기의 적절성"
+          ]
+        },
+        "F.5.S.3": {
+          "other_question_contexts": 243,
+          "label_changing_contexts": 35,
+          "max_probability_delta": 0.17915982488189086,
+          "probability_changing_contexts": 243,
+          "transformed_features_that_change": [
+            "의사소통을 위한 전문용어 숙지 필요성"
+          ]
+        },
+        "F.5.S.4": {
+          "other_question_contexts": 243,
+          "label_changing_contexts": 58,
+          "max_probability_delta": 0.2994181665303744,
+          "probability_changing_contexts": 243,
+          "transformed_features_that_change": [
+            "의사소통 프로토콜의 구체성"
+          ]
+        },
+        "F.5.S.5": {
+          "other_question_contexts": 243,
+          "label_changing_contexts": 122,
+          "max_probability_delta": 0.4587613444080123,
+          "probability_changing_contexts": 243,
+          "transformed_features_that_change": [
+            "의사소통자 간 상황인식 공유 정도"
+          ]
+        },
+        "F.5.S.6": {
+          "other_question_contexts": 243,
+          "label_changing_contexts": 68,
+          "max_probability_delta": 0.29064231345910635,
+          "probability_changing_contexts": 243,
+          "transformed_features_that_change": [
+            "팀/조직 의사소통 자율성"
+          ]
+        }
+      },
+      "examples": {
+        "나쁨": {
+          "conditions": {
+            "F.5.S.1": "F.5.S.1.1",
+            "F.5.S.2": "F.5.S.2.1",
+            "F.5.S.3": "F.5.S.3.1",
+            "F.5.S.4": "F.5.S.4.1",
+            "F.5.S.5": "F.5.S.5.3",
+            "F.5.S.6": "F.5.S.6.3"
+          },
+          "probabilities": {
+            "나쁨": 0.537685508816017,
+            "보통": 0.46231449118398305
+          }
+        },
+        "보통": {
+          "conditions": {
+            "F.5.S.1": "F.5.S.1.1",
+            "F.5.S.2": "F.5.S.2.1",
+            "F.5.S.3": "F.5.S.3.1",
+            "F.5.S.4": "F.5.S.4.1",
+            "F.5.S.5": "F.5.S.5.1",
+            "F.5.S.6": "F.5.S.6.1"
+          },
+          "probabilities": {
+            "나쁨": 0.05824798721472125,
+            "보통": 0.9417520127852788
+          }
+        }
+      }
+    },
+    "6": {
+      "scope": "Every Cartesian combination of the currently defined choice codes; equal scenario weighting, not real-world frequency or held-out accuracy",
+      "n_scenarios": 82944,
+      "prediction_counts": {
+        "나쁨": 81160,
+        "보통": 1784
+      },
+      "feature_importance": {
+        "낙뢰": 0.0,
+        "마찰계수": 5.547028397314148,
+        "비": 3.1950687204400103,
+        "소음": 27.031243166685936,
+        "실내 습도": 10.38580563004329,
+        "실내 온도": 18.29924232230104,
+        "실외 습도": 3.078487265616022,
+        "실외 온도": 7.9281703929105465,
+        "안개": 0.0,
+        "업무공간 가시성": 5.850164668782863,
+        "작업공간 크기": 4.209185816846196,
+        "통풍": 7.055875456941537,
+        "풍속": 4.175668676570899,
+        "황사": 3.244059485547497
+      },
+      "raw_question_sensitivity": {
+        "F.6.S.1": {
+          "other_question_contexts": 41472,
+          "label_changing_contexts": 872,
+          "max_probability_delta": 0.1482944116735727,
+          "probability_changing_contexts": 41472,
+          "transformed_features_that_change": [
+            "풍속"
+          ]
+        },
+        "F.6.S.2": {
+          "other_question_contexts": 41472,
+          "label_changing_contexts": 392,
+          "max_probability_delta": 0.09451353583663002,
+          "probability_changing_contexts": 41472,
+          "transformed_features_that_change": [
+            "비"
+          ]
+        },
+        "F.6.S.3": {
+          "other_question_contexts": 41472,
+          "label_changing_contexts": 464,
+          "max_probability_delta": 0.09626460146748927,
+          "probability_changing_contexts": 41472,
+          "transformed_features_that_change": [
+            "실외 습도"
+          ]
+        },
+        "F.6.S.4": {
+          "other_question_contexts": 41472,
+          "label_changing_contexts": 1528,
+          "max_probability_delta": 0.2129116017403051,
+          "probability_changing_contexts": 41472,
+          "transformed_features_that_change": [
+            "실외 온도"
+          ]
+        },
+        "F.6.S.5": {
+          "other_question_contexts": 41472,
+          "label_changing_contexts": 0,
+          "max_probability_delta": 0.0,
+          "probability_changing_contexts": 0,
+          "transformed_features_that_change": [
+            "낙뢰"
+          ]
+        },
+        "F.6.S.6": {
+          "other_question_contexts": 41472,
+          "label_changing_contexts": 0,
+          "max_probability_delta": 0.0,
+          "probability_changing_contexts": 0,
+          "transformed_features_that_change": [
+            "안개"
+          ]
+        },
+        "F.6.S.7": {
+          "other_question_contexts": 41472,
+          "label_changing_contexts": 552,
+          "max_probability_delta": 0.11624807950732297,
+          "probability_changing_contexts": 41472,
+          "transformed_features_that_change": [
+            "황사"
+          ]
+        },
+        "F.6.S.8": {
+          "other_question_contexts": 41472,
+          "label_changing_contexts": 616,
+          "max_probability_delta": 0.11886128488447872,
+          "probability_changing_contexts": 41472,
+          "transformed_features_that_change": [
+            "작업공간 크기"
+          ]
+        },
+        "F.6.S.9": {
+          "other_question_contexts": 41472,
+          "label_changing_contexts": 920,
+          "max_probability_delta": 0.14257448073220302,
+          "probability_changing_contexts": 41472,
+          "transformed_features_that_change": [
+            "마찰계수"
+          ]
+        },
+        "F.6.S.10": {
+          "other_question_contexts": 27648,
+          "label_changing_contexts": 1044,
+          "max_probability_delta": 0.19663333040780917,
+          "probability_changing_contexts": 27648,
+          "transformed_features_that_change": [
+            "실내 온도"
+          ]
+        },
+        "F.6.S.11": {
+          "other_question_contexts": 27648,
+          "label_changing_contexts": 1032,
+          "max_probability_delta": 0.2784704495231697,
+          "probability_changing_contexts": 27648,
+          "transformed_features_that_change": [
+            "실내 습도"
+          ]
+        },
+        "F.6.S.12": {
+          "other_question_contexts": 41472,
+          "label_changing_contexts": 1456,
+          "max_probability_delta": 0.1673161758536646,
+          "probability_changing_contexts": 41472,
+          "transformed_features_that_change": [
+            "통풍"
+          ]
+        },
+        "F.6.S.13": {
+          "other_question_contexts": 27648,
+          "label_changing_contexts": 1780,
+          "max_probability_delta": 0.4063953761026909,
+          "probability_changing_contexts": 27648,
+          "transformed_features_that_change": [
+            "소음"
+          ]
+        },
+        "F.6.S.14": {
+          "other_question_contexts": 27648,
+          "label_changing_contexts": 716,
+          "max_probability_delta": 0.18815975639774074,
+          "probability_changing_contexts": 27648,
+          "transformed_features_that_change": [
+            "업무공간 가시성"
+          ]
+        }
+      },
+      "examples": {
+        "나쁨": {
+          "conditions": {
+            "F.6.S.1": "F.6.S.1.1",
+            "F.6.S.2": "F.6.S.2.1",
+            "F.6.S.3": "F.6.S.3.1",
+            "F.6.S.4": "F.6.S.4.1",
+            "F.6.S.5": "F.6.S.5.1",
+            "F.6.S.6": "F.6.S.6.1",
+            "F.6.S.7": "F.6.S.7.1",
+            "F.6.S.8": "F.6.S.8.1",
+            "F.6.S.9": "F.6.S.9.1",
+            "F.6.S.10": "F.6.S.10.1",
+            "F.6.S.11": "F.6.S.11.1",
+            "F.6.S.12": "F.6.S.12.1",
+            "F.6.S.13": "F.6.S.13.1",
+            "F.6.S.14": "F.6.S.14.1"
+          },
+          "probabilities": {
+            "나쁨": 0.5852194767740532,
+            "보통": 0.41478052322594683
+          }
+        },
+        "보통": {
+          "conditions": {
+            "F.6.S.1": "F.6.S.1.1",
+            "F.6.S.2": "F.6.S.2.1",
+            "F.6.S.3": "F.6.S.3.1",
+            "F.6.S.4": "F.6.S.4.1",
+            "F.6.S.5": "F.6.S.5.1",
+            "F.6.S.6": "F.6.S.6.1",
+            "F.6.S.7": "F.6.S.7.1",
+            "F.6.S.8": "F.6.S.8.1",
+            "F.6.S.9": "F.6.S.9.1",
+            "F.6.S.10": "F.6.S.10.1",
+            "F.6.S.11": "F.6.S.11.1",
+            "F.6.S.12": "F.6.S.12.1",
+            "F.6.S.13": "F.6.S.13.1",
+            "F.6.S.14": "F.6.S.14.2"
+          },
+          "probabilities": {
+            "나쁨": 0.4830677377635175,
+            "보통": 0.5169322622364825
+          }
+        }
+      },
+      "training_supported_category_domain": {
+        "n_scenarios": 20736,
+        "prediction_counts": {
+          "나쁨": 20290,
+          "보통": 446
+        },
+        "scope": "Restricts fog and lightning to their only observed categories; still includes unseen joint scenarios"
+      },
+      "previous_gmm_model_same_raw_domain": {
+        "n_raw_scenarios": 82944,
+        "n_distinct_composite_inputs": 486,
+        "prediction_counts": {
+          "나쁨": 82944
+        },
+        "scope": "Old saved model with workbook-corrected numeric encoding; not the old UI bug"
+      }
+    },
+    "7": {
+      "scope": "Every Cartesian combination of the currently defined choice codes; equal scenario weighting, not real-world frequency or held-out accuracy",
+      "n_scenarios": 243,
+      "prediction_counts": {
+        "나쁨": 152,
+        "보통": 81,
+        "좋음": 10
+      },
+      "feature_importance": {
+        "역할 분담 명료화": 13.989335547075182,
+        "작업 계획 적절성": 22.908790730430812,
+        "작업절차 및 규정": 19.289189331732448,
+        "작업자간 협업 정도": 17.71423839074183,
+        "작업 관리 및 감독 적절성": 26.098446000019745
+      },
+      "raw_question_sensitivity": {
+        "F.7.S.1": {
+          "other_question_contexts": 81,
+          "label_changing_contexts": 38,
+          "max_probability_delta": 0.47135401689412443,
+          "probability_changing_contexts": 81,
+          "transformed_features_that_change": [
+            "작업 관리 및 감독 적절성"
+          ]
+        },
+        "F.7.S.2": {
+          "other_question_contexts": 81,
+          "label_changing_contexts": 53,
+          "max_probability_delta": 0.4046749524381147,
+          "probability_changing_contexts": 81,
+          "transformed_features_that_change": [
+            "작업 계획 적절성"
+          ]
+        },
+        "F.7.S.3": {
+          "other_question_contexts": 81,
+          "label_changing_contexts": 31,
+          "max_probability_delta": 0.4742864899861203,
+          "probability_changing_contexts": 81,
+          "transformed_features_that_change": [
+            "작업절차 및 규정"
+          ]
+        },
+        "F.7.S.4": {
+          "other_question_contexts": 81,
+          "label_changing_contexts": 29,
+          "max_probability_delta": 0.37934905016108755,
+          "probability_changing_contexts": 81,
+          "transformed_features_that_change": [
+            "역할 분담 명료화"
+          ]
+        },
+        "F.7.S.5": {
+          "other_question_contexts": 81,
+          "label_changing_contexts": 32,
+          "max_probability_delta": 0.3181301480757376,
+          "probability_changing_contexts": 81,
+          "transformed_features_that_change": [
+            "작업자간 협업 정도"
+          ]
+        }
+      },
+      "examples": {
+        "나쁨": {
+          "conditions": {
+            "F.7.S.1": "F.7.S.1.1",
+            "F.7.S.2": "F.7.S.2.2",
+            "F.7.S.3": "F.7.S.3.1",
+            "F.7.S.4": "F.7.S.4.2",
+            "F.7.S.5": "F.7.S.5.2"
+          },
+          "probabilities": {
+            "나쁨": 0.4950298056589905,
+            "보통": 0.3956859891539145,
+            "좋음": 0.109284205187095
+          }
+        },
+        "보통": {
+          "conditions": {
+            "F.7.S.1": "F.7.S.1.1",
+            "F.7.S.2": "F.7.S.2.1",
+            "F.7.S.3": "F.7.S.3.1",
+            "F.7.S.4": "F.7.S.4.2",
+            "F.7.S.5": "F.7.S.5.2"
+          },
+          "probabilities": {
+            "나쁨": 0.12973327296021428,
+            "보통": 0.6501881821264061,
+            "좋음": 0.22007854491337964
+          }
+        },
+        "좋음": {
+          "conditions": {
+            "F.7.S.1": "F.7.S.1.1",
+            "F.7.S.2": "F.7.S.2.1",
+            "F.7.S.3": "F.7.S.3.1",
+            "F.7.S.4": "F.7.S.4.1",
+            "F.7.S.5": "F.7.S.5.1"
+          },
+          "probabilities": {
+            "나쁨": 0.0191040110929031,
+            "보통": 0.17169343655936142,
+            "좋음": 0.8092025523477355
+          }
+        }
+      }
+    },
+    "8": {
+      "scope": "Every Cartesian combination of the currently defined choice codes; equal scenario weighting, not real-world frequency or held-out accuracy",
+      "n_scenarios": 972,
+      "prediction_counts": {
+        "매우 높음": 117,
+        "보통": 90,
+        "약간 높음": 765
+      },
+      "feature_importance": {
+        "Goal_Clarity": 33.72067183554407,
+        "Decision_Complexity": 11.425493749142579,
+        "Concurrent_Decision_Load": 12.338219101498787,
+        "Information_Complexity": 12.774638603042137,
+        "Information_Uncertainty": 29.740976710772447
+      },
+      "raw_question_sensitivity": {
+        "F.8.S.1": {
+          "other_question_contexts": 486,
+          "label_changing_contexts": 207,
+          "max_probability_delta": 0.23638445489131132,
+          "probability_changing_contexts": 486,
+          "transformed_features_that_change": [
+            "Goal_Clarity"
+          ]
+        },
+        "F.8.S.2": {
+          "other_question_contexts": 324,
+          "label_changing_contexts": 0,
+          "max_probability_delta": 0.0,
+          "probability_changing_contexts": 0,
+          "transformed_features_that_change": []
+        },
+        "F.8.S.3": {
+          "other_question_contexts": 324,
+          "label_changing_contexts": 54,
+          "max_probability_delta": 0.13143338116638842,
+          "probability_changing_contexts": 324,
+          "transformed_features_that_change": [
+            "Decision_Complexity"
+          ]
+        },
+        "F.8.S.4": {
+          "other_question_contexts": 324,
+          "label_changing_contexts": 99,
+          "max_probability_delta": 0.13881215717677697,
+          "probability_changing_contexts": 324,
+          "transformed_features_that_change": [
+            "Concurrent_Decision_Load"
+          ]
+        },
+        "F.8.S.5": {
+          "other_question_contexts": 324,
+          "label_changing_contexts": 81,
+          "max_probability_delta": 0.17047272328973284,
+          "probability_changing_contexts": 324,
+          "transformed_features_that_change": [
+            "Information_Complexity"
+          ]
+        },
+        "F.8.S.6": {
+          "other_question_contexts": 324,
+          "label_changing_contexts": 0,
+          "max_probability_delta": 0.0,
+          "probability_changing_contexts": 0,
+          "transformed_features_that_change": []
+        },
+        "F.8.S.7": {
+          "other_question_contexts": 486,
+          "label_changing_contexts": 207,
+          "max_probability_delta": 0.2342475253489637,
+          "probability_changing_contexts": 486,
+          "transformed_features_that_change": [
+            "Information_Uncertainty"
+          ]
+        }
+      },
+      "examples": {
+        "매우 높음": {
+          "conditions": {
+            "F.8.S.1": "F.8.S.1.2",
+            "F.8.S.2": "F.8.S.2.1",
+            "F.8.S.3": "F.8.S.3.1",
+            "F.8.S.4": "F.8.S.4.3",
+            "F.8.S.5": "F.8.S.5.1",
+            "F.8.S.6": "F.8.S.6.1",
+            "F.8.S.7": "F.8.S.7.2"
+          },
+          "probabilities": {
+            "매우 높음": 0.3978984944623663,
+            "보통": 0.21608831738849277,
+            "약간 높음": 0.38601318814914093
+          }
+        },
+        "보통": {
+          "conditions": {
+            "F.8.S.1": "F.8.S.1.1",
+            "F.8.S.2": "F.8.S.2.1",
+            "F.8.S.3": "F.8.S.3.1",
+            "F.8.S.4": "F.8.S.4.1",
+            "F.8.S.5": "F.8.S.5.1",
+            "F.8.S.6": "F.8.S.6.1",
+            "F.8.S.7": "F.8.S.7.1"
+          },
+          "probabilities": {
+            "매우 높음": 0.08835400174683712,
+            "보통": 0.5431915271559743,
+            "약간 높음": 0.3684544710971886
+          }
+        },
+        "약간 높음": {
+          "conditions": {
+            "F.8.S.1": "F.8.S.1.1",
+            "F.8.S.2": "F.8.S.2.1",
+            "F.8.S.3": "F.8.S.3.1",
+            "F.8.S.4": "F.8.S.4.1",
+            "F.8.S.5": "F.8.S.5.1",
+            "F.8.S.6": "F.8.S.6.1",
+            "F.8.S.7": "F.8.S.7.2"
+          },
+          "probabilities": {
+            "매우 높음": 0.22648575264464882,
+            "보통": 0.3089440018070106,
+            "약간 높음": 0.4645702455483406
+          }
+        }
+      }
+    }
+  },
+  "api_model_agreement": [
+    {
+      "psf": 1,
+      "label": "나쁨",
+      "passed": true
+    },
+    {
+      "psf": 1,
+      "label": "매우나쁨",
+      "passed": true
+    },
+    {
+      "psf": 1,
+      "label": "보통",
+      "passed": true
+    },
+    {
+      "psf": 2,
+      "label": "나쁨",
+      "passed": true
+    },
+    {
+      "psf": 2,
+      "label": "보통",
+      "passed": true
+    },
+    {
+      "psf": 2,
+      "label": "좋음",
+      "passed": true
+    },
+    {
+      "psf": 3,
+      "label": "나쁨",
+      "passed": true
+    },
+    {
+      "psf": 3,
+      "label": "보통",
+      "passed": true
+    },
+    {
+      "psf": 3,
+      "label": "좋음",
+      "passed": true
+    },
+    {
+      "psf": 4,
+      "label": "나쁨",
+      "passed": true
+    },
+    {
+      "psf": 4,
+      "label": "보통",
+      "passed": true
+    },
+    {
+      "psf": 5,
+      "label": "나쁨",
+      "passed": true
+    },
+    {
+      "psf": 5,
+      "label": "보통",
+      "passed": true
+    },
+    {
+      "psf": 6,
+      "label": "나쁨",
+      "passed": true
+    },
+    {
+      "psf": 6,
+      "label": "보통",
+      "passed": true
+    },
+    {
+      "psf": 7,
+      "label": "나쁨",
+      "passed": true
+    },
+    {
+      "psf": 7,
+      "label": "보통",
+      "passed": true
+    },
+    {
+      "psf": 7,
+      "label": "좋음",
+      "passed": true
+    },
+    {
+      "psf": 8,
+      "label": "매우 높음",
+      "passed": true
+    },
+    {
+      "psf": 8,
+      "label": "보통",
+      "passed": true
+    },
+    {
+      "psf": 8,
+      "label": "약간 높음",
+      "passed": true
+    }
+  ],
+  "route_traces": {
+    "/api/predict": {
+      "loaded_catboost_psfs": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "loaded_gmm_psfs": [
+        2,
+        8
+      ],
+      "response": {
+        "success": true,
+        "results": [
+          {
+            "psf_id": "F.1",
+            "predicted_label": 0,
+            "predicted_text": "F.1.1",
+            "psf_multiplier": 1.0,
+            "probabilities": {
+              "F.1.1": 0.8384847742356344,
+              "F.1.2": 0.1484796427726519,
+              "F.1.3": 0.013035582991713738
+            }
+          },
+          {
+            "psf_id": "F.2",
+            "predicted_label": 0,
+            "predicted_text": "F.2.1",
+            "psf_multiplier": 0.492,
+            "probabilities": {
+              "F.2.1": 0.698423820036202,
+              "F.2.2": 0.27753933837746053,
+              "F.2.3": 0.02403684158633756
+            }
+          },
+          {
+            "psf_id": "F.3",
+            "predicted_label": 0,
+            "predicted_text": "F.3.1",
+            "psf_multiplier": 0.292,
+            "probabilities": {
+              "F.3.1": 0.6766951191324708,
+              "F.3.2": 0.30055225246199346,
+              "F.3.3": 0.02275262840553569
+            }
+          },
+          {
+            "predicted_label": 1,
+            "predicted_text": "F.4.2",
+            "probabilities": null,
+            "psf_id": "F.4",
+            "psf_multiplier": 1.0
+          },
+          {
+            "psf_id": "F.5",
+            "predicted_label": 0,
+            "predicted_text": "F.5.1",
+            "psf_multiplier": 1.0,
+            "probabilities": {
+              "F.5.1": 0.9417520127852788,
+              "F.5.2": 0.05824798721472125
+            }
+          },
+          {
+            "psf_id": "F.6",
+            "predicted_label": 1,
+            "predicted_text": "F.6.2",
+            "psf_multiplier": 11.576,
+            "probabilities": {
+              "F.6.1": 0.41478052322594683,
+              "F.6.2": 0.5852194767740532
+            }
+          },
+          {
+            "psf_id": "F.7",
+            "predicted_label": 0,
+            "predicted_text": "F.7.1",
+            "psf_multiplier": 0.322,
+            "probabilities": {
+              "F.7.1": 0.8092025523477355,
+              "F.7.2": 0.17169343655936142,
+              "F.7.3": 0.0191040110929031
+            }
+          },
+          {
+            "psf_id": "F.8",
+            "predicted_label": 0,
+            "predicted_text": "F.8.1",
+            "psf_multiplier": 1.0,
+            "probabilities": {
+              "F.8.1": 0.5431915271559743,
+              "F.8.2": 0.3684544710971886,
+              "F.8.3": 0.08835400174683712
+            }
+          }
+        ],
+        "psf_multiplier_product": 0.535503537408,
+        "missing_psfs": []
+      }
+    },
+    "/api/catboost/predict": {
+      "loaded_catboost_psfs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "loaded_gmm_psfs": [
+        2,
+        4,
+        8
+      ],
+      "response": {
+        "success": true,
+        "results": [
+          {
+            "psf_id": "F.1",
+            "predicted_label": 0,
+            "predicted_text": "F.1.1",
+            "psf_multiplier": 1.0,
+            "probabilities": {
+              "F.1.1": 0.8384847742356344,
+              "F.1.2": 0.1484796427726519,
+              "F.1.3": 0.013035582991713738
+            }
+          },
+          {
+            "psf_id": "F.2",
+            "predicted_label": 0,
+            "predicted_text": "F.2.1",
+            "psf_multiplier": 0.492,
+            "probabilities": {
+              "F.2.1": 0.698423820036202,
+              "F.2.2": 0.27753933837746053,
+              "F.2.3": 0.02403684158633756
+            }
+          },
+          {
+            "psf_id": "F.3",
+            "predicted_label": 0,
+            "predicted_text": "F.3.1",
+            "psf_multiplier": 0.292,
+            "probabilities": {
+              "F.3.1": 0.6766951191324708,
+              "F.3.2": 0.30055225246199346,
+              "F.3.3": 0.02275262840553569
+            }
+          },
+          {
+            "psf_id": "F.4",
+            "predicted_label": 1,
+            "predicted_text": "F.4.2",
+            "psf_multiplier": 1.0,
+            "probabilities": {
+              "F.4.1": 0.43519175253544784,
+              "F.4.2": 0.522387712775074,
+              "F.4.3": 0.0424205346894782
+            }
+          },
+          {
+            "psf_id": "F.5",
+            "predicted_label": 0,
+            "predicted_text": "F.5.1",
+            "psf_multiplier": 1.0,
+            "probabilities": {
+              "F.5.1": 0.9417520127852788,
+              "F.5.2": 0.05824798721472125
+            }
+          },
+          {
+            "psf_id": "F.6",
+            "predicted_label": 1,
+            "predicted_text": "F.6.2",
+            "psf_multiplier": 11.576,
+            "probabilities": {
+              "F.6.1": 0.41478052322594683,
+              "F.6.2": 0.5852194767740532
+            }
+          },
+          {
+            "psf_id": "F.7",
+            "predicted_label": 0,
+            "predicted_text": "F.7.1",
+            "psf_multiplier": 0.322,
+            "probabilities": {
+              "F.7.1": 0.8092025523477355,
+              "F.7.2": 0.17169343655936142,
+              "F.7.3": 0.0191040110929031
+            }
+          },
+          {
+            "psf_id": "F.8",
+            "predicted_label": 0,
+            "predicted_text": "F.8.1",
+            "psf_multiplier": 1.0,
+            "probabilities": {
+              "F.8.1": 0.5431915271559743,
+              "F.8.2": 0.3684544710971886,
+              "F.8.3": 0.08835400174683712
+            }
+          }
+        ],
+        "psf_multiplier_product": 0.535503537408,
+        "missing_psfs": []
+      }
+    }
+  },
+  "request_checks": {
+    "missing_workload_single_route": {
+      "route": "/api/predict/1",
+      "request": {},
+      "status": 200,
+      "response": {
+        "success": true,
+        "result": {
+          "psf_id": "F.1",
+          "predicted_label": 1,
+          "predicted_text": "F.1.2",
+          "psf_multiplier": 14.45,
+          "probabilities": {
+            "F.1.1": 0.3322120800556848,
+            "F.1.2": 0.5139907529904255,
+            "F.1.3": 0.15379716695388976
+          }
+        }
+      }
+    },
+    "incomplete_workload_batch": {
+      "route": "/api/predict",
+      "request": {
+        "F.1": {
+          "F.1.S.1": "F.1.S.1.1"
+        }
+      },
+      "status": 200,
+      "response": {
+        "success": true,
+        "results": [
+          {
+            "psf_id": "F.1",
+            "predicted_label": 0,
+            "predicted_text": "F.1.1",
+            "psf_multiplier": 1.0,
+            "probabilities": {
+              "F.1.1": 0.5557195229482955,
+              "F.1.2": 0.3941762644253781,
+              "F.1.3": 0.050104212626326354
+            }
+          }
+        ],
+        "psf_multiplier_product": null,
+        "missing_psfs": [
+          "F.2",
+          "F.3",
+          "F.4",
+          "F.5",
+          "F.6",
+          "F.7",
+          "F.8"
+        ]
+      }
+    },
+    "missing_workload_questions": {
+      "route": "/api/test/predict/1",
+      "request": {},
+      "status": 200,
+      "response": {
+        "success": true,
+        "result": {
+          "psf_id": "F.1",
+          "psf": "작업부하",
+          "prediction": "나쁨",
+          "psf_multiplier": 14.45,
+          "probabilities": {
+            "보통": "33.22%",
+            "나쁨": "51.40%",
+            "매우나쁨": "15.38%"
+          },
+          "model_input": {
+            "근무시간": 1,
+            "수면시간": 1,
+            "작업시간": 1,
+            "근무시간대": 1,
+            "작업 허용 시간": 1
+          }
+        }
+      }
+    },
+    "unknown_workload_question": {
+      "route": "/api/test/predict/1",
+      "request": {
+        "F.1.S.3_typo": "F.1.S.3.3"
+      },
+      "status": 200,
+      "response": {
+        "success": true,
+        "result": {
+          "psf_id": "F.1",
+          "psf": "작업부하",
+          "prediction": "나쁨",
+          "psf_multiplier": 14.45,
+          "probabilities": {
+            "보통": "33.22%",
+            "나쁨": "51.40%",
+            "매우나쁨": "15.38%"
+          },
+          "model_input": {
+            "근무시간": 1,
+            "수면시간": 1,
+            "작업시간": 1,
+            "근무시간대": 1,
+            "작업 허용 시간": 1
+          }
+        }
+      }
+    },
+    "conflicting_workload_aliases": {
+      "route": "/api/test/predict/1",
+      "request": {
+        "F.1.S.3": "F.1.S.3.3",
+        "F.1.3": "F.1.3.1"
+      },
+      "status": 200,
+      "response": {
+        "success": true,
+        "result": {
+          "psf_id": "F.1",
+          "psf": "작업부하",
+          "prediction": "나쁨",
+          "psf_multiplier": 14.45,
+          "probabilities": {
+            "보통": "37.22%",
+            "나쁨": "47.86%",
+            "매우나쁨": "14.92%"
+          },
+          "model_input": {
+            "근무시간": 1,
+            "수면시간": 0,
+            "작업시간": 1,
+            "근무시간대": 1,
+            "작업 허용 시간": 1
+          }
+        }
+      }
+    },
+    "missing_environment_questions": {
+      "route": "/api/predict/6",
+      "request": {},
+      "status": 400,
+      "response": {
+        "success": false,
+        "error": "F.6에는 14개 문항이 모두 필요합니다. 누락: F.6.S.1, F.6.S.2, F.6.S.3, F.6.S.4, F.6.S.5, F.6.S.6, F.6.S.7, F.6.S.8, F.6.S.9, F.6.S.10, F.6.S.11, F.6.S.12, F.6.S.13, F.6.S.14"
+      }
+    },
+    "malformed_json": {
+      "route": "/api/predict",
+      "status": 500,
+      "response": {
+        "success": false,
+        "error": "400 Bad Request: The browser (or proxy) sent a request that this server could not understand."
+      }
+    },
+    "education_same_months": [
+      {
+        "request": {
+          "F.4.S.1": "F.4.S.1.1",
+          "F.4.S.2": "F.4.S.2.1",
+          "F.4.S.3": "F.4.S.3.1",
+          "F.4.S.4": "F.4.S.4.1",
+          "F.4.S.5": "F.4.S.5.1",
+          "F.4.S.6": "F.4.S.6.1",
+          "F.4.S.7": "F.4.S.7.1",
+          "training_elapsed_months": 12
+        },
+        "response": {
+          "success": true,
+          "results": [
+            {
+              "predicted_label": 1,
+              "predicted_text": "F.4.2",
+              "probabilities": null,
+              "psf_id": "F.4",
+              "psf_multiplier": 1.0
+            }
+          ],
+          "psf_multiplier_product": null,
+          "missing_psfs": [
+            "F.1",
+            "F.2",
+            "F.3",
+            "F.5",
+            "F.6",
+            "F.7",
+            "F.8"
+          ]
+        }
+      },
+      {
+        "request": {
+          "F.4.S.1": "F.4.S.1.3",
+          "F.4.S.2": "F.4.S.2.3",
+          "F.4.S.3": "F.4.S.3.3",
+          "F.4.S.4": "F.4.S.4.3",
+          "F.4.S.5": "F.4.S.5.3",
+          "F.4.S.6": "F.4.S.6.3",
+          "F.4.S.7": "F.4.S.7.3",
+          "training_elapsed_months": 12
+        },
+        "response": {
+          "success": true,
+          "results": [
+            {
+              "predicted_label": 1,
+              "predicted_text": "F.4.2",
+              "probabilities": null,
+              "psf_id": "F.4",
+              "psf_multiplier": 1.0
+            }
+          ],
+          "psf_multiplier_product": null,
+          "missing_psfs": [
+            "F.1",
+            "F.2",
+            "F.3",
+            "F.5",
+            "F.6",
+            "F.7",
+            "F.8"
+          ]
+        }
+      }
+    ],
+    "route_inventory": [
+      "/",
+      "/api/catboost/predict",
+      "/api/catboost/predict/<int:psf_id>",
+      "/api/predict",
+      "/api/predict/<int:psf_id>",
+      "/api/predict/catboost",
+      "/api/predict/catboost/<int:psf_id>",
+      "/api/psf1/predict",
+      "/api/psf4/forecast",
+      "/api/test/predict/<int:psf_id>",
+      "/detail_result",
+      "/detail_result.html",
+      "/images/<path:filename>",
+      "/input",
+      "/input.html",
+      "/result",
+      "/result.html",
+      "/static/<path:filename>"
+    ]
+  },
+  "gmm_mapping_tables": [
+    {
+      "psf": 2,
+      "composite_feature": "System_Support",
+      "row_field_then_column_field": [
+        "F.2.S.3",
+        "F.2.S.6"
+      ],
+      "row_and_column_numeric_levels": [
+        0,
+        1,
+        2
+      ],
+      "output_levels": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "psf": 8,
+      "composite_feature": "Decision_Complexity",
+      "row_field_then_column_field": [
+        "F.8.S.2",
+        "F.8.S.3"
+      ],
+      "row_and_column_numeric_levels": [
+        0,
+        1,
+        2
+      ],
+      "output_levels": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "psf": 8,
+      "composite_feature": "Information_Complexity",
+      "row_field_then_column_field": [
+        "F.8.S.5",
+        "F.8.S.6"
+      ],
+      "row_and_column_numeric_levels": [
+        0,
+        1,
+        2
+      ],
+      "output_levels": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "psf": 4,
+      "composite_feature": "Training_Frequency",
+      "row_field_then_column_field": [
+        "F.4.S.2",
+        "F.4.S.4"
+      ],
+      "row_and_column_numeric_levels": [
+        0,
+        1,
+        2
+      ],
+      "output_levels": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "psf": 4,
+      "composite_feature": "Technical_Knowledge",
+      "row_field_then_column_field": [
+        "F.4.S.5",
+        "F.4.S.7"
+      ],
+      "row_and_column_numeric_levels": [
+        0,
+        1,
+        2
+      ],
+      "output_levels": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ]
+    }
+  ],
+  "environment_training_reprediction": {
+    "n_responses": 2950,
+    "classes": [
+      "나쁨",
+      "보통"
+    ],
+    "prediction_counts": {
+      "나쁨": 2886,
+      "보통": 64
+    },
+    "prediction_ratios": {
+      "나쁨": 0.9783050847457627,
+      "보통": 0.02169491525423729
+    },
+    "unique_scenario_prediction_counts": {
+      "나쁨": 2702,
+      "보통": 60
+    },
+    "accuracy": 0.7359322033898306,
+    "balanced_accuracy": 0.5235214061301018,
+    "log_loss": 0.5401000423097234,
+    "confusion_matrix_actual_rows_predicted_columns": [
+      [
+        2126,
+        19
+      ],
+      [
+        760,
+        45
+      ]
+    ],
+    "recall": {
+      "나쁨": 0.9911421911421912,
+      "보통": 0.055900621118012424
+    }
+  },
+  "environment_metadata_verified": true,
+  "environment_existing_oof_not_rerun": {
+    "split": "GroupKFold(n_splits=5, shuffle=False); group=original 14-variable scenario",
+    "scope": "response-weighted, unseen scenarios; not respondent-held-out or an external test set",
+    "folds": [
+      {
+        "fold": 1,
+        "n_train": 2360,
+        "n_test": 590,
+        "scenario_overlap": 0
+      },
+      {
+        "fold": 2,
+        "n_train": 2360,
+        "n_test": 590,
+        "scenario_overlap": 0
+      },
+      {
+        "fold": 3,
+        "n_train": 2360,
+        "n_test": 590,
+        "scenario_overlap": 0
+      },
+      {
+        "fold": 4,
+        "n_train": 2360,
+        "n_test": 590,
+        "scenario_overlap": 0
+      },
+      {
+        "fold": 5,
+        "n_train": 2360,
+        "n_test": 590,
+        "scenario_overlap": 0
+      }
+    ],
+    "n_responses": 2950,
+    "classes": [
+      "나쁨",
+      "보통"
+    ],
+    "prediction_counts": {
+      "나쁨": 2818,
+      "보통": 132
+    },
+    "prediction_ratios": {
+      "나쁨": 0.9552542372881356,
+      "보통": 0.04474576271186441
+    },
+    "unique_scenario_prediction_counts": {
+      "나쁨": 2638,
+      "보통": 124
+    },
+    "accuracy": 0.7189830508474576,
+    "balanced_accuracy": 0.5153585544889893,
+    "log_loss": 0.571319825490558,
+    "confusion_matrix_actual_rows_predicted_columns": [
+      [
+        2067,
+        78
+      ],
+      [
+        751,
+        54
+      ]
+    ],
+    "recall": {
+      "나쁨": 0.9636363636363636,
+      "보통": 0.0670807453416149
+    }
+  },
+  "environment_actual_label_counts": {
+    "나쁨": 2145,
+    "보통": 805
+  },
+  "environment_unobserved_categories": {
+    "낙뢰": [
+      "낙뢰가 발생하지 않은 경우"
+    ],
+    "안개": [
+      "안개가 발생하지 않은 경우"
+    ]
+  },
+  "previous_full_refit_evidence": {
+    "source": "research/notebook_review_20261118/results.json",
+    "source_sha256": "3551f18293e2d3092bf7538041d052115602747bc97cd085be3c4b8c0e2fe9cb",
+    "all_protected_hashes_still_match": true,
+    "scope": "Prior eight legacy full fits were not repeated; PSF6 there is the old GMM model. Equality is on training rows only.",
+    "results": {
+      "1": {
+        "n": 2971,
+        "max_probability_difference": 0.0,
+        "different_prediction_rows": 0,
+        "scope": "Fresh fit with section-2 parameters, no artifact save; not a held-out evaluation"
+      },
+      "2": {
+        "n": 2867,
+        "max_probability_difference": 0.0,
+        "different_prediction_rows": 0,
+        "scope": "Fresh fit with section-2 parameters, no artifact save; not a held-out evaluation"
+      },
+      "3": {
+        "n": 2705,
+        "max_probability_difference": 0.0,
+        "different_prediction_rows": 0,
+        "scope": "Fresh fit with section-2 parameters, no artifact save; not a held-out evaluation"
+      },
+      "4": {
+        "n": 2747,
+        "max_probability_difference": 0.0,
+        "different_prediction_rows": 0,
+        "scope": "Fresh fit with section-2 parameters, no artifact save; not a held-out evaluation"
+      },
+      "5": {
+        "n": 2980,
+        "max_probability_difference": 0.0,
+        "different_prediction_rows": 0,
+        "scope": "Fresh fit with section-2 parameters, no artifact save; not a held-out evaluation"
+      },
+      "6": {
+        "n": 2950,
+        "max_probability_difference": 0.0,
+        "different_prediction_rows": 0,
+        "scope": "Fresh fit with section-2 parameters, no artifact save; not a held-out evaluation"
+      },
+      "7": {
+        "n": 3137,
+        "max_probability_difference": 0.0,
+        "different_prediction_rows": 0,
+        "scope": "Fresh fit with section-2 parameters, no artifact save; not a held-out evaluation"
+      },
+      "8": {
+        "n": 3105,
+        "max_probability_difference": 0.0,
+        "different_prediction_rows": 0,
+        "scope": "Fresh fit with section-2 parameters, no artifact save; not a held-out evaluation"
+      }
+    }
+  },
+  "protected_files_unchanged": 53,
+  "protected_hashes": {
+    "app.py": "94ecdc22f0cba5d5059e41ccd6153b51780ad24817a691ddbb17724c76770c4b",
+    "detail_result.html": "d7a7286378d090d8b7c5f5d986998bd932451afbcf32ae8d1319882fbfcb6efb",
+    "env_preprocess_v1.ipynb": "0ed5009d9a7ff57c3d37fe3774067e0bb2d719de0ed1e3a5903a403253e9eb8c",
+    "input.html": "0ec59082edbddd31a4b8627d41546a1ce6ad2e2a0f7781b8be8a4af7d348cbf3",
+    "requirements.txt": "fb039a0a93d92c09461ee2dfc9d7dc10ac9eff747ed034be878e00f06ae4772e",
+    "result.html": "94e2fcb34952123c84bb93693f2a88683871d824a11fe2dd4c06787112596248",
+    "철도 PSF-subPSF 정리 자료.xlsx": "dc9eb6c64e6edb20eddbc80164a37f2f1556afaba54503b7d2b5615836c7cf22",
+    "철도_코레일 종사자 설문조사 결과.txt": "74a4f212a7839b59841ee90f5f9868a307d8a209facb893e7cb48e80f663e15b",
+    "CatBoost_Result\\analysis_v1.5.ipynb": "2203a1dbe944cb8e8cb4553ee2462b0a3019837256e902d6da2fc3f50a543b5a",
+    "CatBoost_Result\\env_preprocess_v1.ipynb": "0606502dc37f3d03c03c5851ffebaf8c98212f1f0a4056560d7199944496a55a",
+    "CatBoost_Result\\preprocess_v1.4.ipynb": "e4b8fd330b1cc193656e535e0fc2146763d831256e11fe39f04d0cd545461d48",
+    "config\\catboost_config.py": "5a452c996e18b86e6ba1170b33f18c88966085c5fe1ff6ebebdfbc714fedb5fe",
+    "config\\catboost_mappings.py": "30508e8af6857c1e3145120dfb0aa76fc8d268e2450bc4481f9191f2b5c9d952",
+    "config\\environment_schema.py": "4bd23e91990fcde014ad164de3134923d41d16dcc4d6b9be6a492bd9c0b9a7d1",
+    "config\\mappings.py": "5431d79fdf8e2cfef386f33e8c4b991ae3e7325c8e7f4e40f3107f146d28d314",
+    "config\\paths.py": "5ae42579c29302388e6b951bfc99b339992123d1ac8349e635b8cb40b2b03f5d",
+    "config\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "models\\environment_raw14_metadata.json": "036943615c876744d0b68dccac6597d0daaa6e980bb05899ad5b56add0c05ee8",
+    "models\\교육_및_훈련_catboost.cbm": "f97508e3544cc313398b4da908722d4241aed6368a4a3f8316a558389b050d52",
+    "models\\복잡성_catboost.cbm": "9f4e4f71c01852dddc4f37e687b5d0972d2ef2aaa7ddd87b99d6664074daa1d3",
+    "models\\의사소통_catboost.cbm": "30f8d5a99c4a47253405395d33d5e41960625d2dbee78e5ffc125d2da8599ac7",
+    "models\\작업부하_catboost.cbm": "fbb6bfb06710be052a1271060267c8edd1947bc33c0ed24656df17691a40bd98",
+    "models\\작업절차_catboost.cbm": "59141462a6011c4c69290ce7ca01a3e4cd66f6ae1b7555262c5c5edd06e35a63",
+    "models\\장비_및_기기_catboost.cbm": "190f9ff0af5df0588b9a9df41c8aa9f7c5204f7da91138a4787c9aafb0ac90e8",
+    "models\\절차_및_지침_catboost.cbm": "c02a082d908ff7e1ed5e64a554203582620b0034ffe50dc42566007432d21597",
+    "models\\환경_catboost.cbm": "79a23119b9be167d62e64eafc3ed22018cac5cdf8b7debb3febe066767f35ea0",
+    "models\\환경_raw14_catboost.cbm": "c4190fa0b79f7565932234cb084f70d10a8321d295820590c42f6abdaa39ddc7",
+    "output\\psf1-baseline-zero.py": "56c6c81bfb575a35b9a7416d0f32a53f4a31f2e00f3a79dd6410569e18e7e77b",
+    "output\\psf1-graph-example.py": "e0b562b39d571f4f40033b2343c443ee68b5db95555cf363de505f29af64f94d",
+    "output\\psf4-monthly-example.py": "a0989db471600153bf3326ba487c529a8fd1067b4a1c38969b0b520e4f0fbbfa",
+    "predictors\\catboost.py": "37acbda301c9965f263bf1dd76ffe47877f00dc8bd9fc00b47f32e6417cffa81",
+    "predictors\\psf1_forecast.py": "d726a85525107cd3057d5e265ae35714a866dfd2d9bcd02b78d2dc179d198c4e",
+    "predictors\\psf4_formula.py": "626d04efd80ce9d5a937b6ed39b241bc88239537c061513457bc469ceff9f9f9",
+    "predictors\\psf_multipliers.py": "6f71caecbd30d7621aa44acb750a18e261acf7100d012ba760297cc2d532dfbc",
+    "predictors\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "preprocessing\\catboost_features.py": "f9192fd12272a39cca846edb1b74af3c27dfcabfa57c96b3c53981bc9f22b01b",
+    "preprocessing\\environment_features.py": "51725681726099e3174f9c2846bc7c584be663a8d25bf485c17c0381f2f60da7",
+    "preprocessing\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "processed_data\\subpsf_level_mapping.xlsx": "40274ddde0ae9b14e7da3f21ee6604664b2427ebcd1c272722197f3a9b1ede98",
+    "static\\forecast.js": "609fee312b029822f4d52497828e4cdc807a37c6748104f6e313c876b76b8f6b",
+    "static\\input-encoding.js": "d5195d2da841d5fd019c31d03e3eed1e538f84f9612a77f218ba240087d0641b",
+    "static\\psf-multipliers.js": "f9b93695637c66697df822f9c52d633b5420fffa51e43c320c6bef2c45820c15",
+    "tests\\forecast.test.cjs": "fcf591d70f4d0a3aab3c2227c6da8869957a31c0aff24278cd1adebc9919253f",
+    "tests\\input-encoding.test.cjs": "2e71daf3d6c9204c5d1c6b3eddb33936204566e4755bcaeec9076db6da33ef72",
+    "tests\\psf-multipliers.test.cjs": "2468c85d274be6c751095a8caaed5713f55d13d5e564f049cdb82b6e4a72f7f8",
+    "tests\\test_catboost_encoding.py": "6e46ff76da15cda4b51430e8e18f6de70955a5767906f8d195cc5bcd17f71667",
+    "tests\\test_environment_raw14.py": "5492a919244abf3941a720a1df688f86e358f14c6648524d1c8ebb77f356f565",
+    "tests\\test_psf_multipliers.py": "1896c34291df90c4f5ba9312724ab7f0bb92155396a28eabf86b0df6c42b97be",
+    "training\\train_environment_raw14.py": "e6a0425d371793f8688aeb394141954d10ebf586c90715f65a4d8ea932f29251",
+    "models\\gmm\\psf2_gmm.joblib": "3e7f2fdb1cd58ee313a206f8a5b63be33241d6dd062f928cc26cc8ff1ebdef79",
+    "models\\gmm\\psf4_gmm.joblib": "57e2d5c1c5987882d88aaaea8a4313dbe943cc803529761d7e551872e9e2a238",
+    "models\\gmm\\psf6_gmm.joblib": "7e07c4952d1f78b6c3d98f731ffb3ff665331bd02cb8925a4fd58748237851ba",
+    "models\\gmm\\psf8_gmm.joblib": "002e3abbae7412296cece3443edf704d30b514a71c60fc0b5382f5a6cde2cd9e"
+  },
+  "psf4_class_selection_check": {
+    "classes": [
+      "나쁨",
+      "보통",
+      "좋음"
+    ],
+    "n_valid_raw_combinations": 2187,
+    "n_distinct_model_inputs": 243,
+    "max_probability_good": 0.4693401796325869,
+    "best_good_probability_scenario": {
+      "F.4.S.1": "F.4.S.1.1",
+      "F.4.S.2": "F.4.S.2.2",
+      "F.4.S.3": "F.4.S.3.1",
+      "F.4.S.4": "F.4.S.4.1",
+      "F.4.S.5": "F.4.S.5.1",
+      "F.4.S.6": "F.4.S.6.1",
+      "F.4.S.7": "F.4.S.7.1"
+    },
+    "probabilities_at_max_good": {
+      "나쁨": 0.052441140877412036,
+      "보통": 0.47821867949000113,
+      "좋음": 0.4693401796325869
+    },
+    "selected_label_at_max_good": "보통"
+  }
+}

@@ -2,3 +2,7 @@
 research/gmm_comparison_20261118/*.py text eol=lf
 # Evidence files are hashed byte-for-byte; keep their recorded line endings.
 research/gmm_comparison_20261118/results/*.json -text whitespace=cr-at-eol
+# Preserve review evidence bytes referenced by SHA-256 in subsequent reviews.
+research/code_review_20261118/results.json -text whitespace=cr-at-eol
+research/deployed_models_review_20261118/results.json -text whitespace=cr-at-eol
+research/notebook_review_20261118/results.json -text whitespace=cr-at-eol
