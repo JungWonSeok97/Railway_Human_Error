@@ -1,0 +1,23 @@
+[project]
+name = "railway-human-error-model-benchmark"
+version = "0.1.0"
+description = "Compare the CatBoost PSF/HEP predictor of Railway_hep with local LLMs served on the KISTI Hangang cluster"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "catboost>=1.2",
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "scikit-learn==1.9.0",
+  "joblib>=1.3",
+  "httpx>=0.27",
+  "scipy>=1.12",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

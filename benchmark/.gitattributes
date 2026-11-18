@@ -1,0 +1,2 @@
+# patches carry binary model files: never convert line endings
+*.patch -text

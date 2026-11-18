@@ -1,0 +1,123 @@
+From aeab77fef3560ec55b3a29419953f15db8dd7177 Mon Sep 17 00:00:00 2001
+From: abito <33889084+abitocodes@users.noreply.github.com>
+Date: Wed, 18 Nov 2026 11:10:43 +0900
+Subject: [PATCH] Show both lightning and fog options; sample each item
+ independently
+
+The environment question only offered 'lightning occurs' and 'fog
+occurs', so all 3,433 environment answers in the Korail survey were
+given under lightning and fog, and no model can learn their effect.
+Add the 'does not occur' options (same wording as Railway_hep's form).
+
+Scenarios were drawn by building every combination and picking one;
+with the two new options the environment question would have ~330,000
+combinations in the browser. Pick each item's option independently,
+which gives the same uniform distribution without the memory cost.
+
+Co-Authored-By: Claude <noreply@anthropic.com>
+---
+ app/survey/page.tsx           | 23 +++++------------------
+ src/components/SurveyForm.tsx | 23 +++++------------------
+ src/lib/surveyData.ts         |  4 ++--
+ 3 files changed, 12 insertions(+), 38 deletions(-)
+
+diff --git a/app/survey/page.tsx b/app/survey/page.tsx
+index 9127483..2683622 100644
+--- a/app/survey/page.tsx
++++ b/app/survey/page.tsx
+@@ -66,22 +66,6 @@ export default function SurveyPage() {
+     }
+   }, [currentRound, showQuestionSelector, selectedQuestionIds]);
+ 
+-  const generateCombinations = (arrays: string[][]): string[][] => {
+-    if (arrays.length === 0) return [];
+-    if (arrays.length === 1) return arrays[0].map((item) => [item]);
+-
+-    const result: string[][] = [];
+-    const restCombinations = generateCombinations(arrays.slice(1));
+-
+-    for (const item of arrays[0]) {
+-      for (const rest of restCombinations) {
+-        result.push([item, ...rest]);
+-      }
+-    }
+-
+-    return result;
+-  };
+-
+   const populateQuestions = () => {
+     const newQuestions = SURVEY_DATA.filter((qDef: any) => selectedQuestionIds.includes(qDef.id))
+       .map((qDef: any) => {
+@@ -89,8 +73,11 @@ export default function SurveyPage() {
+         const listsToCombing = keysForThisQ.map((key: string) => ALL_OPTION_LISTS[key as keyof typeof ALL_OPTION_LISTS]);
+         
+         // 랜덤 시나리오 선택
+-        const allScenarios = generateCombinations(listsToCombing);
+-        const selectedScenario = allScenarios[Math.floor(Math.random() * allScenarios.length)];
++        // 문항마다 보기를 독립적으로 고른다. 모든 조합을 만든 뒤 하나를 고르는 것과 같은 균등 분포이고,
++        // 조합 수(환경 문항은 수십만 개)만큼 메모리를 쓰지 않는다.
++        const selectedScenario = listsToCombing.map(
++          (options: string[]) => options[Math.floor(Math.random() * options.length)]
++        );
+ 
+         const qConditions: Record<string, string> = {};
+         const qDetails: Record<string, any> = {};
+diff --git a/src/components/SurveyForm.tsx b/src/components/SurveyForm.tsx
+index cf959e7..7993ffd 100644
+--- a/src/components/SurveyForm.tsx
++++ b/src/components/SurveyForm.tsx
+@@ -71,22 +71,6 @@ export default function SurveyForm({ questionIds, groupName }: SurveyFormProps)
+     }
+   }, [currentRound, isInfoFormFilled]);
+ 
+-  const generateCombinations = (arrays: string[][]): string[][] => {
+-    if (arrays.length === 0) return [];
+-    if (arrays.length === 1) return arrays[0].map((item) => [item]);
+-
+-    const result: string[][] = [];
+-    const restCombinations = generateCombinations(arrays.slice(1));
+-
+-    for (const item of arrays[0]) {
+-      for (const rest of restCombinations) {
+-        result.push([item, ...rest]);
+-      }
+-    }
+-
+-    return result;
+-  };
+-
+   const populateQuestions = () => {
+     const newQuestions = SURVEY_DATA.filter((qDef: any) => questionIds.includes(qDef.id))
+       .map((qDef: any) => {
+@@ -94,8 +78,11 @@ export default function SurveyForm({ questionIds, groupName }: SurveyFormProps)
+         const listsToCombing = keysForThisQ.map((key: string) => ALL_OPTION_LISTS[key as keyof typeof ALL_OPTION_LISTS]);
+         
+         // 랜덤 시나리오 선택
+-        const allScenarios = generateCombinations(listsToCombing);
+-        const selectedScenario = allScenarios[Math.floor(Math.random() * allScenarios.length)];
++        // 문항마다 보기를 독립적으로 고른다. 모든 조합을 만든 뒤 하나를 고르는 것과 같은 균등 분포이고,
++        // 조합 수(환경 문항은 수십만 개)만큼 메모리를 쓰지 않는다.
++        const selectedScenario = listsToCombing.map(
++          (options: string[]) => options[Math.floor(Math.random() * options.length)]
++        );
+ 
+         const qConditions: Record<string, string> = {};
+         const qDetails: Record<string, any> = {};
+diff --git a/src/lib/surveyData.ts b/src/lib/surveyData.ts
+index 0fd04db..b65d9b3 100644
+--- a/src/lib/surveyData.ts
++++ b/src/lib/surveyData.ts
+@@ -69,8 +69,8 @@ export const ALL_OPTION_LISTS = {
+   env_rain: ['비가 10mm/h(눈의 경우 1cm/h) 미만', '비가 10mm/s(눈의 경우 1cm/s) 이상'],
+   env_out_humidity: ['실외 습도가 90% 이하인 경우', '실외 습도가 90% 이상인 경우'],
+   env_out_temp: ['실외 온도가 35℃(체감 온도) 이하인 경우', '실외 온도가 35℃(체감 온도) 이상인 경우'],
+-  env_lightning: ['낙뢰가 발생할 경우'],
+-  env_fog: ['안개가 발생할 경우'],
++  env_lightning: ['낙뢰가 발생하지 않을 경우', '낙뢰가 발생할 경우'],
++  env_fog: ['안개가 발생하지 않을 경우', '안개가 발생할 경우'],
+   env_dust: ['황사로 인해 작업자가 확실히 사물을 볼 수 없는 경우', '황사로 인해 작업자가 숨 쉬기가 불편할 경우'],
+   env_space: ['작업공간의 크기가 10m^3 이상인 경우', '작업공간의 크기가 10m^3 이하인 경우'],
+   env_friction: ['바닥 (정지)마찰계수(SCOF)가 ≥ 0.63인 경우', '바닥 (정지)마찰계수(SCOF)가 < 0.63인 경우'],
+-- 
+2.49.0.windows.1
+

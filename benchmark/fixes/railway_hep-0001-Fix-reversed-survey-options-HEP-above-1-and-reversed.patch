@@ -1,0 +1,129 @@
+From 160a77d4c508eda7bc8719c0c2701bb3a03a5943 Mon Sep 17 00:00:00 2001
+From: abito <33889084+abitocodes@users.noreply.github.com>
+Date: Wed, 18 Nov 2026 11:10:43 +0900
+Subject: [PATCH 1/3] Fix reversed survey options, HEP above 1 and reversed
+ text maps
+
+- input.html: fill optionCodeNumbersByField so sleep hours, procedure
+  complexity, yellow dust and floor friction send the code whose value
+  matches its meaning (2 = worst). The table was empty, so these four
+  items were sent reversed. The direction is confirmed by the Korail
+  worker survey (e.g. under 6 h of sleep is rated worse than 8 h+).
+- result.html, detail_result.html: when the saturation correction is
+  used, combine diagnosis and execution HEP as 1-(1-d)(1-e) instead of
+  adding them, so the final HEP stays <= 1 (it reached ~2 before).
+- config/mappings.py: jargon_need_map and info_uncertainty_map had 0 and
+  2 swapped (used by the CNN path).
+- tests: regression test that the final HEP stays <= 1 with every PSF
+  at its worst level (fails on the previous code with 1.99999).
+
+Co-Authored-By: Claude <noreply@anthropic.com>
+---
+ config/mappings.py      |  8 ++++----
+ detail_result.html      |  3 ++-
+ input.html              |  9 ++++++++-
+ result.html             |  3 ++-
+ tests/forecast.test.cjs | 15 +++++++++++++++
+ 5 files changed, 31 insertions(+), 7 deletions(-)
+
+diff --git a/config/mappings.py b/config/mappings.py
+index db6fa87..252dabe 100644
+--- a/config/mappings.py
++++ b/config/mappings.py
+@@ -187,9 +187,9 @@ psf5_mappings = {
+         "의사소통을 하기 위한 장비/기기가 부적절한 상태일 경우": 2,
+     },
+     "jargon_need_map": {
+-        "의사소통을 하기 위해 전문용어를 숙지할 필요가 없는 경우": 2,
++        "의사소통을 하기 위해 전문용어를 숙지할 필요가 없는 경우": 0,
+         "의사소통을 하기 위해 전문용어를 부분적으로 숙지할 필요가 있는 경우": 1,
+-        "의사소통을 하기 위해 전문용어를 항상 숙지할 필요가 있는 경우": 0,
++        "의사소통을 하기 위해 전문용어를 항상 숙지할 필요가 있는 경우": 2,
+     },
+     "feature_cols": ["의사소통 메시지의 길이", "팀/조직 의사소통 자율성", "의사소통 프로토콜의 구체성", "의사소통자 간 상황인식 공유 정도", "의사소통을 위한 장비/기기의 적절성", "의사소통을 위한 전문용어 숙지 필요성"],
+     "english_cols": ["F.5.S.1", "F.5.S.6", "F.5.S.4", "F.5.S.5", "F.5.S.2", "F.5.S.3"],
+@@ -304,8 +304,8 @@ psf7_mappings = {
+ # =====================================================
+ psf8_mappings = {
+     "info_uncertainty_map": {
+-        "업무수행 및 의사결정을 위해 필요한 정보의 불확실성이 높지 않은 경우": 2,
+-        "업무수행 및 의사결정을 위해 필요한 정보의 불확실성이 높은 경우": 0,
++        "업무수행 및 의사결정을 위해 필요한 정보의 불확실성이 높지 않은 경우": 0,
++        "업무수행 및 의사결정을 위해 필요한 정보의 불확실성이 높은 경우": 2,
+     },
+     "observed_info_amount_map": {
+         "업무수행 및 의사결정을 위해 관측 되어야 하는 정보의 양이 3개 이하일 경우": 0,
+diff --git a/detail_result.html b/detail_result.html
+index 9eaf2b8..4a41505 100644
+--- a/detail_result.html
++++ b/detail_result.html
+@@ -287,7 +287,8 @@
+ 
+       const big_diagnosisHEP = (baseHEP.diagnosis * psfMultiplier) / (baseHEP.diagnosis * (psfMultiplier - 1) + 1)
+       const big_executionHEP = (baseHEP.execution * psfMultiplier) / (baseHEP.execution * (psfMultiplier - 1) + 1)
+-      const big_finalHEP = big_diagnosisHEP + big_executionHEP;
++      // 보정한 두 확률을 더하면 1을 넘을 수 있으므로(최대 2) 둘 중 하나라도 실패할 확률로 합친다.
++      const big_finalHEP = 1 - (1 - big_diagnosisHEP) * (1 - big_executionHEP);
+ 
+ 
+       if (finalHEP > 1) {
+diff --git a/input.html b/input.html
+index 98e94a7..521e9b5 100644
+--- a/input.html
++++ b/input.html
+@@ -897,7 +897,14 @@
+       }
+       const houses = document.querySelectorAll('.house');
+ 
+-      const optionCodeNumbersByField = {};
++      // 화면 보기 순서와 config/mappings.py code_to_value의 코드 순서가 다른 문항.
++      // 화면 n번째 보기 -> 보낼 코드 번호 (값이 클수록 나쁨: 0 좋음 ~ 2 나쁨)
++      const optionCodeNumbersByField = {
++        'F.1.S.3': [3, 2, 1], // 수면시간: 8시간 이상, 6~8시간, 6시간 이내
++        'F.3.S.2': [3, 2, 1], // 절차 기술의 복잡성: 낮음, 보통, 높음
++        'F.6.S.7': [2, 1],    // 황사: 숨 쉬기 불편, 사물을 볼 수 없음
++        'F.6.S.9': [2, 1],    // 마찰계수: SCOF >= 0.63(안전), < 0.63
++      };
+ 
+       const getValue = (select, fieldKey) => {
+         const selectedText = select?.selectedOptions[0]?.text.trim() || '';
+diff --git a/result.html b/result.html
+index 630e6fc..9976727 100644
+--- a/result.html
++++ b/result.html
+@@ -116,7 +116,8 @@
+ 
+             const big_diagnosisHEP = (baseHEP.diagnosis * psfMultiplier) / (baseHEP.diagnosis * (psfMultiplier - 1) + 1)
+             const big_executionHEP = (baseHEP.execution * psfMultiplier) / (baseHEP.execution * (psfMultiplier - 1) + 1)
+-            const big_finalHEP = big_diagnosisHEP + big_executionHEP;
++            // 보정한 두 확률을 더하면 1을 넘을 수 있으므로(최대 2) 둘 중 하나라도 실패할 확률로 합친다.
++            const big_finalHEP = 1 - (1 - big_diagnosisHEP) * (1 - big_executionHEP);
+ 
+ 
+             if (finalHEP > 1) {
+diff --git a/tests/forecast.test.cjs b/tests/forecast.test.cjs
+index 56f449e..7bf71fe 100644
+--- a/tests/forecast.test.cjs
++++ b/tests/forecast.test.cjs
+@@ -136,3 +136,18 @@ test('missing old-session inputs prompt for input; API failure keeps other graph
+   failed.nodes.monthlyForecastForm.listeners.submit({ preventDefault() {} }); await settle();
+   assert.equal(failed.calls.length, 3);
+ });
++
++test('HEP stays a probability (<= 1) when every PSF is at its worst level', () => {
++  const worst = { 1: 3, 2: 3, 3: 3, 4: 3, 5: 2, 6: 2, 7: 3, 8: 3 };
++  const extreme = Array.from({ length: 8 }, (_, i) => ({
++    psf_id: `F.${i + 1}`,
++    predicted_label: worst[i + 1] - 1,
++    predicted_text: `F.${i + 1}.${worst[i + 1]}`,
++    ...(i === 3 ? { hep_multiplier: 4.83, probabilities: null } : {}),
++  }));
++  const hep = calculate(extreme);
++  assert.ok(hep.psfMultiplier > 1e6);
++  assert.ok(hep.diagnosisHEP < 1 && hep.executionHEP < 1);
++  assert.ok(hep.finalHEP <= 1, `finalHEP=${hep.finalHEP}`);
++  assert.ok(Math.abs(hep.finalHEP - (1 - (1 - hep.diagnosisHEP) * (1 - hep.executionHEP))) < 1e-12);
++});
+-- 
+2.49.0.windows.1
+
